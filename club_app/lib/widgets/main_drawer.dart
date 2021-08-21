@@ -5,6 +5,7 @@ import 'package:club_app/page/settings/member_management.dart';
 import 'package:club_app/page/settings/my_club_page.dart';
 import 'package:club_app/page/settings/profile_setting_page.dart';
 import 'package:club_app/page/settings/alert_setting_page.dart';
+import 'package:club_app/page/settings/edit_password.dart';
 
 class MainDrawer extends StatelessWidget {
   final drawerHeader = UserAccountsDrawerHeader(
@@ -52,9 +53,9 @@ class MainDrawer extends StatelessWidget {
           ),    drawerheader 다른 예시*/
           SizedBox(height: 30),
           ListTile(
-            onTap: () => Navigator.pushReplacementNamed(
+            onTap: () =>Navigator.push(
               context,
-              ChatScreen.route,
+              MaterialPageRoute(builder: (context) => EditPassword()),
             ),
             leading: Icon(Icons.account_circle),
             title: Text(
