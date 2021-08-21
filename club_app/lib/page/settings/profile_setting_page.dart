@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'dart:io';
+import 'package:image_picker/image_picker.dart';
 
 class ProfileSetting extends StatefulWidget {
   const ProfileSetting({Key? key}) : super(key: key);
@@ -9,10 +11,46 @@ class ProfileSetting extends StatefulWidget {
 
 class _ProfileSettingState extends State<ProfileSetting> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+  File? image;
+
+  Future pickImage(ImageSource source) async {
+
+    try {
+      final image = await ImagePicker().pickImage(source: source);
+      if (image == null) return ;
+      
+      final imageTemporary = File(image.path);
+      setState(() => this.image = imageTemporary);
+    } on Exception catch (e) {
+      print ('이미지 설정 실패: $e');
+      // TODO
+    }
+
+
+  }
+
+  List<XFile>? _imageFileList;
+  set _imageFile(XFile? value) {
+    _imageFileList = value == null ? null : [value];
+  }
+  
+
+  final ImagePicker _picker = ImagePicker();
+
+  Future _getImage() async{
+    final pickedFile = await _picker.pickImage(source: ImageSource.gallery);
+    setState(() {
+      if(pickedFile != null){
+        _imageFile = XFile(pickedFile.path);
+      }
+    });
+  }
+
+
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    /*return Scaffold(
       appBar: AppBar(
         title: Text('프로필 설정'),
       ),
@@ -31,20 +69,11 @@ class _ProfileSettingState extends State<ProfileSetting> {
               Positioned(
                   bottom: 10,
                   child:
-                      /*Image(
-                  height: 120,
-                  width: 120,
-                  image: AssetImage('images/profile.jpg'),
-                  fit: BoxFit.cover,
-                ),*/
+                
                       IconButton(
                     icon: Image.asset('images/profile.jpg'),
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => ProfileSetting()),
-                      );
+                      _getImage();
                     },
                     iconSize: 90,
                   )),
@@ -93,4 +122,33 @@ class _ProfileSettingState extends State<ProfileSetting> {
       ),
     );
   }
-}
+}*/
+  return Scaffold(
+    backgroundColor: Colors.amber.shade300,
+    body: Container(
+      padding: EdgeInsets.all(32),
+      child: Column(
+        children: [
+          Spacer(),
+          image != null 
+              ? ClipOval(
+                    child: Image.file(
+                      image!,
+                      width: 160,
+                      height: 160,
+                      fit: BoxFit.cover,
+              ),
+              )
+              : FlutterLogo(size: 160),
+          const SizedBox(height: 24),
+          Text('Text'),
+          TextButton(
+            child: Text( 'pick Gallery'),
+            onPressed: () => pickImage(ImageSource.gallery),
+          )
+        ],
+      )
+    ),
+
+  );
+  }}
