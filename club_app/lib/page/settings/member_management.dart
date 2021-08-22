@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:club_app/page/settings/application_page.dart';
 
@@ -10,13 +12,7 @@ class MemberManagement extends StatefulWidget {
 
 class _MemberManagementState extends State<MemberManagement> {
   final memberNameController = TextEditingController();
-  final List<String> members = <String>[
-    '동아리원1',
-    '동아리원2',
-    '동아리원3',
-    '동아리원4',
-    '동아리원5'
-  ];
+  final members = List<String>.generate(30, (i) => "동아리원 ${i+1}");
 
   @override
   void initState() {
@@ -115,7 +111,50 @@ class _MemberManagementState extends State<MemberManagement> {
                     Container(
                       height: MediaQuery.of(context).size.height * 0.7,
                       width: MediaQuery.of(context).size.width * 0.4,
-                      child: ListView(
+                      child: ListView.builder(
+                        itemCount: members.length,
+                        itemBuilder: (context,index) {
+                          final member = members[index];
+
+                          return Dismissible(
+                            confirmDismiss: (direction) {
+                              return showDialog(
+                                context: context, 
+                                builder: (context) => AlertDialog(
+                                  title: Text('주의'),
+                                  content: Text('정말로 추방하시겠습니까'),
+                                  actions: <Widget> [
+                                    TextButton(
+                                      onPressed: () {
+                                        Navigator.of(context).pop(false);
+                                      }, 
+                                      child: Text('아니오'),),
+                                    TextButton(
+                                      onPressed: () {
+                                        Navigator.of(context).pop(true);
+                                      }, 
+                                      child: Text('예'),) 
+                                  ]
+                                ));
+                            },
+                            key: Key(member),
+                            child: ListTile(
+                              subtitle: Text('동아리원'),
+                              title: Text('$member'),
+                              leading: ExcludeSemantics(
+                                child: CircleAvatar(child: Text('사진')),
+                              ),)
+                              ,
+                            background: Container(color: Colors.red),
+                            onDismissed: (direction) { 
+                              setState(() {
+                                members.removeAt(index);
+                              });
+                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("$member 추방되었습니다")));
+                            }
+                          );
+                        }
+                      )/*ListView(
                         padding: const EdgeInsets.symmetric(vertical: 8),
                         children: [
                           for (int index = 1; index < 20; index++)
@@ -127,7 +166,8 @@ class _MemberManagementState extends State<MemberManagement> {
                               subtitle: Text('동아리원$index세부정보'),
                             )
                         ],
-                      ),
+                      ),*/
+                       
                     ),
                   ],
                 ))
