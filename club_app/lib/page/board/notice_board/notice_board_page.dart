@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:club_app/page/board/notice_board/notice_page.dart';
-import 'package:club_app/page/board/notice_board/create_notice_page.dart';
+//import 'package:club_app/page/board/notice_board/notice_page.dart';
+//import 'package:club_app/page/board/notice_board/create_notice_page.dart';
+import 'package:get/get.dart';
+
+import 'detail_page.dart';
+import 'write_page.dart';
 
 class NoticeBoardPage extends StatefulWidget {
   const NoticeBoardPage({Key? key}) : super(key: key);
@@ -13,95 +17,55 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Container(
+        width: 300,
+        height: double.infinity,
+        color: Colors.grey[300],
+      ),
       appBar: AppBar(
-          title: Text('공지사항 게시판', style: TextStyle(color: Colors.black)),
-          leading: IconButton(
-            icon: Icon(Icons.close),
-            onPressed: () => Navigator.of(context).pop(),
-          )),
-      body: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            children: <Widget>[
-              ElevatedButton(
-                child: Text('go back'),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-              ),
-              Expanded(
-                  child: ListView(
-                shrinkWrap: true,
-                padding: EdgeInsets.all(10.0),
-                children: <Widget>[
-                  Container(
-                      padding: EdgeInsets.all(1.0),
-                      child: OutlinedButton(
-                        child: Text('공지사항1'),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => NoticePage()));
-                        },
-                      )),
-                  Container(
-                      padding: EdgeInsets.all(1.0),
-                      child: OutlinedButton(
-                        child: Text('공지사항2'),
-                        onPressed: () {},
-                      )),
-                  Container(
-                    padding: EdgeInsets.all(1.0),
-                    child: OutlinedButton(
-                      child: Text('공지사항3'),
-                      onPressed: () {},
-                    ),
-                  ),
-                  Container(
-                      padding: EdgeInsets.all(1.0),
-                      child: OutlinedButton(
-                        child: Text('공지사항4'),
-                        onPressed: () {},
-                      )),
-                  Container(
-                      padding: EdgeInsets.all(1.0),
-                      child: OutlinedButton(
-                        child: Text('공지사항5'),
-                        onPressed: () {},
-                      )),
-                  Container(
-                      padding: EdgeInsets.all(1.0),
-                      child: OutlinedButton(
-                        child: Text('공지사항6'),
-                        onPressed: () {},
-                      )),
-                  Container(
-                      padding: EdgeInsets.all(1.0),
-                      child: OutlinedButton(
-                        child: Text('공지사항7'),
-                        onPressed: () {},
-                      )),
-                  Container(
-                      padding: EdgeInsets.all(1.0),
-                      child: OutlinedButton(
-                        child: Text('공지사항8'),
-                        onPressed: () {},
-                      )),
-                ],
-              )),
-              FloatingActionButton.extended(
-                icon: const Icon(Icons.add),
-                label: Text('게시글쓰기'),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => CreateNotice()),
-                  );
-                },
-              ),
-            ],
-          )),
+        backgroundColor: Colors.lightGreen,
+        title: Text('공지사항'),
+        centerTitle: true,
+        elevation: 0.0,
+        actions: <Widget>[
+           IconButton(
+          icon: Icon(Icons.create),
+          onPressed: () {
+            print('create button is clicked');
+            Get.to(WritePage());
+            }
+          ),
+          IconButton(
+          icon: Icon(Icons.sync_alt),
+          onPressed: () {
+            print('sync_alt button is clicked');
+            }
+          ),
+          IconButton(
+          icon: Icon(Icons.settings),
+          onPressed: () {
+            print('setting button is clicked');
+            }
+          ),
+          ]
+      ),
+      body: 
+       ListView.separated(
+        itemCount : 20,
+        itemBuilder: (context, index) {
+          return ListTile(
+            onTap: () { 
+              Get.to(DetailPage(index),arguments: "arguments 속성 테스트");
+            },
+            title: Text('공지사항 제목',style: TextStyle(fontSize: 20.0),),
+            leading: Text("1"),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal:0.0),
+            );
+          }, 
+      separatorBuilder:  (context, index) {
+        return Divider();
+      } ,
+    ),
     );
   }
 }
