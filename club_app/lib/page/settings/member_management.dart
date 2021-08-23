@@ -1,4 +1,4 @@
-import 'dart:js';
+//import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:club_app/page/settings/application_page.dart';
