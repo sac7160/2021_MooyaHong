@@ -34,7 +34,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   carousel_slider: ^4.0.0
   syncfusion_flutter_datepicker: ^19.2.55
-  image_picker: ^0.8.3+2
+  image_picker: ^0.8.3+2    #pick image
+  path_provider: ^2.0.1    #store image
 
 dev_dependencies:
   flutter_test:

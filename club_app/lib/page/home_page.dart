@@ -21,10 +21,7 @@ class _HomePageState extends State<HomePage> {
       drawer: MainDrawer(),
       body: Container(
         padding: EdgeInsets.only(left: 10, right: 10),
-        child: Column(
-          children: <Widget>[
-            SizedBox(
-              height: MediaQuery.of(context).size.height - 56,
+ 
               child: ListView(children: <Widget>[
                 /*Positioned(
                   top:40,
@@ -54,9 +51,6 @@ class _HomePageState extends State<HomePage> {
                 example(),
               ]),
             ),
-          ],
-        ),
-      ),
     );
   }
 }
