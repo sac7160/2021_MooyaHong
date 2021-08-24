@@ -23,7 +23,7 @@ class _ProfileSettingState extends State<ProfileSetting> {
       setState(() => this.image = imageTemporary);
     } on Exception catch (e) {
       print ('이미지 설정 실패: $e');
-      // TODO
+      //todo
     }
 
 
