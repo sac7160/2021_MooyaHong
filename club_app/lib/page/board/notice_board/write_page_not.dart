@@ -22,11 +22,12 @@ class WritePage extends StatelessWidget {
             children:[
             CustomTextFormField(
               hint: "Title", 
-              funValidator: validateTitle(),
+              funValidator: validateTitle(), //제목에는 ~가 들어갈 수 없습니다. 
             ),
             CustomTextArea(
               hint: "Content" ,
               funValidator: validateContent(),
+               //내용에는 ~가 들어갈 수 없습니다. 
             ),
             CustomElevatedButton(
               text: "글쓰기",

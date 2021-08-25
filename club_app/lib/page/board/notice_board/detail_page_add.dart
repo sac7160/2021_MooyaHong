@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'notice_board_page.dart';
-import 'write_page.dart';
+import 'write_page_not.dart';
 
-class DetailPage extends StatelessWidget {
+class DetailPageadd extends StatelessWidget {
 
   final int id;
 
-  const DetailPage(this.id); 
+  const DetailPageadd(this.id); 
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class DetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Center(child: Text("공지 제목!",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 35),)),
+            Center(child: Text("홍보게시글 제목!",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 35),)),
             Divider(),
             Row(
               children: [
@@ -53,7 +53,7 @@ class DetailPage extends StatelessWidget {
             ),
             Expanded(
               child: SingleChildScrollView(
-                child: Text("공지 내용 " * 500 )))
+                child: Text("홍보 내용 " * 500 )))
           ],),
       )
     );

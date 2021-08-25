@@ -1,6 +1,9 @@
+import 'package:club_app/page/board/notice_board/detail_page_add.dart';
+import 'package:club_app/page/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:club_app/page/board/notice_board/notice_page.dart';
-import 'package:club_app/page/board/notice_board/create_notice_page.dart';
+import 'package:get/get.dart';
+
+import 'notice_board/write_page_ad.dart';
 
 class AdBoardPage extends StatefulWidget {
   const AdBoardPage({Key? key}) : super(key: key);
@@ -14,94 +17,45 @@ class _AdBoardPageState extends State<AdBoardPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text('홍보 게시판', style: TextStyle(color: Colors.black)),
-          leading: IconButton(
-            icon: Icon(Icons.close),
-            onPressed: () => Navigator.of(context).pop(),
-          )),
-      body: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            children: <Widget>[
-              ElevatedButton(
-                child: Text('go back'),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
+        backgroundColor: Colors.lightGreen,
+        title: Text('동아리 홍보 게시판'),
+        centerTitle: true,
+        elevation: 0.0,
+        leading: IconButton(
+            icon: Icon(
+              Icons.arrow_back_ios,
               ),
-              Expanded(
-                  child: ListView(
-                      shrinkWrap: true,
-                      padding: EdgeInsets.all(10.0),
-                      children: <Widget>[
-                    Container(
-                        padding: EdgeInsets.all(1.0),
-                        child: OutlinedButton(
-                          child: Text('홍보글1'),
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => NoticePage()));
-                          },
-                        )),
-                    Container(
-                        padding: EdgeInsets.all(1.0),
-                        child: OutlinedButton(
-                          child: Text('홍보글2'),
-                          onPressed: () {},
-                        )),
-                    Container(
-                      padding: EdgeInsets.all(1.0),
-                      child: OutlinedButton(
-                        child: Text('홍보글3'),
-                        onPressed: () {},
-                      ),
-                    ),
-                    Container(
-                        padding: EdgeInsets.all(1.0),
-                        child: OutlinedButton(
-                          child: Text('홍보글4'),
-                          onPressed: () {},
-                        )),
-                    Container(
-                        padding: EdgeInsets.all(1.0),
-                        child: OutlinedButton(
-                          child: Text('홍보글5'),
-                          onPressed: () {},
-                        )),
-                    Container(
-                        padding: EdgeInsets.all(1.0),
-                        child: OutlinedButton(
-                          child: Text('홍보글6'),
-                          onPressed: () {},
-                        )),
-                    Container(
-                        padding: EdgeInsets.all(1.0),
-                        child: OutlinedButton(
-                          child: Text('홍보글7'),
-                          onPressed: () {},
-                        )),
-                    Container(
-                        padding: EdgeInsets.all(1.0),
-                        child: OutlinedButton(
-                          child: Text('홍보글8'),
-                          onPressed: () {},
-                        )),
-                  ])),
-              FloatingActionButton.extended(
-                icon: const Icon(Icons.add),
-                label: Text('홍보글쓰기'),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => CreateNotice()), //홍보글로 수정필요
-                  );
-                },
-              ),
-            ],
-          )),
+            onPressed: () {
+              print('create button is clicked');
+              Get.to(HomePage());},
+          ),
+        actions: <Widget>[
+           IconButton(
+          icon: Icon(Icons.create),
+          onPressed: () {
+            print('create button is clicked');
+            Get.to(WritePageadd());
+            }
+          ),
+          ]
+      ),
+      body: 
+       ListView.separated(
+        itemCount : 20,
+        itemBuilder: (context, index) {
+          return ListTile(
+            onTap: () { 
+              Get.to(DetailPageadd(index),arguments: "arguments 속성 테스트");
+            },
+            title: Text('홍보게시글 제목',style: TextStyle(fontSize: 20.0),),
+            leading: Text("1"),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal:0.0),
+            );
+          }, 
+      separatorBuilder:  (context, index) {
+        return Divider();
+      } ,
+    ),
     );
   }
 }

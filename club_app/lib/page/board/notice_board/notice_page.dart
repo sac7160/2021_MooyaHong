@@ -16,7 +16,8 @@ class _NoticePageState extends State<NoticePage> {
           leading: IconButton(
             icon: Icon(Icons.close),
             onPressed: () => Navigator.of(context).pop(),
-          )),
+          ),
+          ),
     );
   }
 }
