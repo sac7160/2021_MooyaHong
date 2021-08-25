@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:club_app/page/board/notice_board/notice_board_page.dart';
 import 'package:club_app/page/chat/chat_page.dart';
 import 'package:club_app/page/home_page.dart';
-import 'package:club_app/page/board/ad_board_page.dart';
+import 'board/ad_board_newpage.dart';
 
 class FirstPage extends StatefulWidget {
   const FirstPage({Key? key}) : super(key: key);
