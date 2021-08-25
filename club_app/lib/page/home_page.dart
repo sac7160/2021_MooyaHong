@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:club_app/page/board/notice_board/notice_board_page.dart';
 import 'package:club_app/page/chat/chat_page.dart';
@@ -37,7 +39,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                 ),*/
                 _pageOfTop(),
-                _pageOfMyClub(),
+                //_pageOfMyClub(),
+                SelectClub(),
+
                 SizedBox(height: 30),
                 _pageOfMyClub2(),
                 SizedBox(height: 30),
@@ -60,50 +64,53 @@ Widget _pageOfTop() {
   return Padding(padding: EdgeInsets.only(top: 50.0));
 }
 
-Widget _pageOfMyClub() {
+/*Widget _pageOfMyClub() {
   String selectedClub = '동아리 1';
 
-  void selectClub( String value){
+  void selectClub( BuildContext context,String value){
     selectedClub = value;
   }
 
-  return Row(children: <Widget>[
-    PopupMenuButton(
-      onSelected: (value) => selectClub(selectedClub),
-      padding: EdgeInsets.only(right: 8.0),
-      offset: Offset(-16, 20),
-      child: Container(
-        decoration: BoxDecoration(
-            color: Colors.white,
-            border:Border.all(color: Colors.black),
-            borderRadius: BorderRadius.all(
-              Radius.circular(5.0),
-            )),
-        padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 120.0),
-        child: Text(
-          selectedClub,
-          style: TextStyle(color: Colors.black),
+  return Container(
+    child: //Builder(builder: (context)=>
+     Row(children: <Widget>[
+      PopupMenuButton(
+        onSelected: (value) => selectClub(context,selectedClub),
+        padding: EdgeInsets.only(right: 8.0),
+        offset: Offset(-16, 20),
+        child: Container(
+          decoration: BoxDecoration(
+              color: Colors.white,
+              border:Border.all(color: Colors.black),
+              borderRadius: BorderRadius.all(
+                Radius.circular(5.0),
+              )),
+          padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 120.0),
+          child: Text(
+            selectedClub,
+            style: TextStyle(color: Colors.black),
+          ),
         ),
+        itemBuilder: (context) => <PopupMenuItem<String>>[
+          new PopupMenuItem<String>(
+              child: Row(
+                children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 1'), SizedBox(width: 80)],
+              ),
+              value: '1'),
+              PopupMenuItem(child: Row(
+                children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 2'), SizedBox(width: 80)],
+              ),
+              value: '2',),
+              PopupMenuItem(child: Row(
+                children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 3'), SizedBox(width: 80)],
+              ),
+              value: '3',),
+        ],
       ),
-      itemBuilder: (context) => <PopupMenuItem<String>>[
-        new PopupMenuItem<String>(
-            child: Row(
-              children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 1'), SizedBox(width: 80)],
-            ),
-            value: '1'),
-            PopupMenuItem(child: Row(
-              children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 2'), SizedBox(width: 80)],
-            ),
-            value: '2',),
-            PopupMenuItem(child: Row(
-              children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 3'), SizedBox(width: 80)],
-            ),
-            value: '3',),
-      ],
-    ),
-  ]);
+    ]),
+  );
 }
-
+*/
 
 Widget _pageOfMyClub2() {
   //슬라이드형식 동아리선택?
@@ -176,3 +183,66 @@ Widget example() {
           borderRadius: BorderRadius.circular(5)),
       child: Text('예시'));
 }
+
+class SelectClub extends StatefulWidget {
+  const SelectClub({ Key? key }) : super(key: key);
+
+  @override
+  _SelectClubState createState() => _SelectClubState();
+}
+
+class _SelectClubState extends State<SelectClub> {
+  String _selectedClub = '동아리 선택';
+
+  void selectClub( BuildContext context,String value){
+    setState(() {
+      _selectedClub = value;
+    });
+  }
+  @override
+  void initState() {
+    super.initState();
+    _selectedClub = '동아리?';
+  }
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+    child: //Builder(builder: (context)=>
+     Row(children: <Widget>[
+      PopupMenuButton(
+        initialValue: _selectedClub,
+        onSelected: (value) => selectClub(context,_selectedClub),
+        padding: EdgeInsets.only(right: 8.0),
+        offset: Offset(-16, 20),
+        child: Container(
+          decoration: BoxDecoration(
+              color: Colors.white,
+              border:Border.all(color: Colors.black),
+              borderRadius: BorderRadius.all(
+                Radius.circular(5.0),
+              )),
+          padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 120.0),
+          child: Text(
+            _selectedClub,
+            style: TextStyle(color: Colors.black),
+          ),
+        ),
+        itemBuilder: (context) => <PopupMenuItem<String>>[
+          new PopupMenuItem<String>(
+              child: Row(
+                children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 1'), SizedBox(width: 80)],
+              ),
+              value: '1'),
+              PopupMenuItem(child: Row(
+                children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 2'), SizedBox(width: 80)],
+              ),
+              value: '2',),
+              PopupMenuItem(child: Row(
+                children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 3'), SizedBox(width: 80)],
+              ),
+              value: '3',),
+        ],
+      ),
+    ]),
+  );
+}}
