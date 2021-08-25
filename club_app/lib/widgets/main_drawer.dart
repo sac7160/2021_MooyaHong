@@ -13,18 +13,42 @@ class MainDrawer extends StatelessWidget {
     accountEmail: Text('컴퓨터공학과 1학년'),
     currentAccountPicture: Container(
       child: Builder(
-          builder: (context) => IconButton(
-                icon: Image.asset('images/profile.jpg'),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ProfileSetting()),
-                  );
-                },
-                iconSize: 100,
-              )),
-    ),
+          builder: (context) => 
+              ClipOval(
+                       child: Material(
+                         color: Colors.blue,
+                         child: InkWell(
+                           child: SizedBox(
+                             child: Image.asset('images/profile.jpg',
+                                                  fit: BoxFit.cover)),
+                         onTap: (){
+                           Navigator.push(
+                                       context,
+                                      MaterialPageRoute(builder: (context) => ProfileSetting()),
+                  );},))
+                         
+                       ),
+    ),)
   );
+
+ _showMessageDialog(BuildContext context) => showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+            title: Text('주의'),
+            content: Text('로그아웃 하시겠습니까?'),
+            actions: <Widget>[
+              TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: Text('아니요')),
+              TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: Text('예')),
+            ],
+          ));
 
   @override
   Widget build(BuildContext context) {
@@ -118,10 +142,7 @@ class MainDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            onTap: () => Navigator.pushReplacementNamed(
-              context,
-              HomePage.route,
-            ),
+            onTap: () => _showMessageDialog(context),
             leading: Icon(Icons.exit_to_app),
             title: Text(
               '로그아웃',
@@ -133,5 +154,7 @@ class MainDrawer extends StatelessWidget {
         ],
       ),
     );
+  
+  
   }
 }

@@ -3,6 +3,7 @@ import 'package:club_app/page/board/notice_board/notice_board_page.dart';
 import 'package:club_app/page/chat/chat_page.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:club_app/widgets/main_drawer.dart';
+import 'package:get/get_navigation/src/routes/default_transitions.dart';
 //import 'package:get/route_manager.dart';
 
 class HomePage extends StatefulWidget {
@@ -60,37 +61,57 @@ Widget _pageOfTop() {
 }
 
 Widget _pageOfMyClub() {
+  String selectedClub = '동아리 1';
+
+  void selectClub( String value){
+    selectedClub = value;
+  }
+
   return Row(children: <Widget>[
     PopupMenuButton(
+      onSelected: (value) => selectClub(selectedClub),
       padding: EdgeInsets.only(right: 8.0),
-      offset: Offset(-16, 0),
+      offset: Offset(-16, 20),
       child: Container(
         decoration: BoxDecoration(
-            color: Colors.orange,
+            color: Colors.white,
+            border:Border.all(color: Colors.black),
             borderRadius: BorderRadius.all(
-              Radius.circular(16.0),
+              Radius.circular(5.0),
             )),
-        padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
+        padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 120.0),
         child: Text(
-          "동아리1",
-          style: TextStyle(color: Colors.white),
+          selectedClub,
+          style: TextStyle(color: Colors.black),
         ),
       ),
-      itemBuilder: (_) => <PopupMenuItem<String>>[
+      itemBuilder: (context) => <PopupMenuItem<String>>[
         new PopupMenuItem<String>(
             child: Row(
-              children: <Widget>[Icon(Icons.arrow_right), Text('동아리')],
+              children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 1'), SizedBox(width: 80)],
             ),
             value: '1'),
+            PopupMenuItem(child: Row(
+              children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 2'), SizedBox(width: 80)],
+            ),
+            value: '2',),
+            PopupMenuItem(child: Row(
+              children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 3'), SizedBox(width: 80)],
+            ),
+            value: '3',),
       ],
     ),
   ]);
 }
 
+
 Widget _pageOfMyClub2() {
   //슬라이드형식 동아리선택?
   return CarouselSlider(
-    options: CarouselOptions(height: 200.0),
+    options: CarouselOptions(
+      height: 200.0, 
+      autoPlay: true, 
+      autoPlayInterval: Duration(seconds: 3)),
     items: [1, 2, 3, 4, 5].map((i) {
       return Builder(
         builder: (BuildContext context) {
