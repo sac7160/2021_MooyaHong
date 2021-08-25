@@ -35,18 +35,18 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
             Get.to(WritePage());
             }
           ),
-          IconButton(
-          icon: Icon(Icons.sync_alt),
-          onPressed: () {
-            print('sync_alt button is clicked');
-            }
-          ),
-          IconButton(
-          icon: Icon(Icons.settings),
-          onPressed: () {
-            print('setting button is clicked');
-            }
-          ),
+          // IconButton(
+          // icon: Icon(Icons.sync_alt),
+          // onPressed: () {
+          //   print('sync_alt button is clicked');
+          //   }
+          // ),
+          // IconButton(
+          // icon: Icon(Icons.settings),
+          // onPressed: () {
+          //   print('setting button is clicked');
+          //   }
+          // ),
           ]
       ),
       body: 

@@ -18,7 +18,8 @@ class DetailPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightGreen,),
+        backgroundColor: Colors.lightGreen,
+        ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -32,14 +33,21 @@ class DetailPage extends StatelessWidget {
                   onPressed : () { 
                     Get.off(NoticeBoardPage());
                   }, 
-                  child: Text("삭제")
+                  child: Text("삭제"),
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.lightGreen[700],
+                    // textStyle: TextStyle(fontSize: 15, fontWeight: FontWeight.normal)
+                    ),
                 ),
                 SizedBox(width: 10),
                 ElevatedButton(
                   onPressed : () {
                     Get.to(WritePage());
                    }, 
-                  child: Text("수정")
+                  child: Text("수정"),
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.lightGreen[700]
+                  ),
                 ),
               ],
             ),
