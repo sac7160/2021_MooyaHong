@@ -17,16 +17,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: MainDrawer(),
       body: Container(
         padding: EdgeInsets.only(left: 10, right: 10),
- 
-              child: ListView(children: <Widget>[
-                /*Positioned(
+        child: ListView(children: <Widget>[
+          /*Positioned(
                   top:40,
                   left:20,
                   child: IconButton(
@@ -38,24 +36,22 @@ class _HomePageState extends State<HomePage> {
                     },
                     ),
                 ),*/
-                _pageOfTop(),
-                //_pageOfMyClub(),
-                SelectClub(),
+          _pageOfTop(),
+          //_pageOfMyClub(),
+          SelectClub(),
 
-                SizedBox(height: 30),
-                _pageOfMyClub2(),
-                SizedBox(height: 30),
-                _pageOfMiddle(),
-                SizedBox(height: 10),
-                _pageOfMiddle2(),
-                SizedBox(height: 30),
-                example(),
-                example(),
-                example(),
-                example(),
-                example(),
-              ]),
-            ),
+          SizedBox(height: 30),
+          _pageOfMyClub2(),
+          SizedBox(height: 30),
+          _pageOfMiddle(),
+          SizedBox(height: 30),
+          example(),
+          example(),
+          example(),
+          example(),
+          example(),
+        ]),
+      ),
     );
   }
 }
@@ -113,12 +109,9 @@ Widget _pageOfTop() {
 */
 
 Widget _pageOfMyClub2() {
-  //슬라이드형식 동아리선택?
   return CarouselSlider(
     options: CarouselOptions(
-      height: 200.0, 
-      autoPlay: true, 
-      autoPlayInterval: Duration(seconds: 3)),
+        height: 200.0, autoPlay: true, autoPlayInterval: Duration(seconds: 3)),
     items: [1, 2, 3, 4, 5].map((i) {
       return Builder(
         builder: (BuildContext context) {
@@ -141,35 +134,45 @@ Widget _pageOfMyClub2() {
 
 Widget _pageOfMiddle() {
   return Container(
-      child: Builder(
-    builder: (context) => ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          primary: Colors.red,
-          onPrimary: Colors.white,
+      child: Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Builder(
+        builder: (context) => Container(
+          width: 100,
+          height: 100,
+          child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.orange,
+                onPrimary: Colors.white,
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NoticeBoardPage()),
+                );
+              },
+              child: Text('공지사항')),
         ),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => NoticeBoardPage()),
-          );
-        },
-        child: Text('공지사항')),
-  ));
-}
-
-Widget _pageOfMiddle2() {
-  return Container(
-      child: Builder(
-    builder: (context) => ElevatedButton(
-        style: ElevatedButton.styleFrom(
-            primary: Colors.red, onPrimary: Colors.white),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => ChatScreen()),
-          );
-        },
-        child: Text('채팅')),
+      ),
+      SizedBox(width: 50),
+      Builder(
+        builder: (context) => Container(
+          width: 100,
+          height: 100,
+          child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.orange, onPrimary: Colors.white),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ChatScreen()),
+                );
+              },
+              child: Text('채팅')),
+        ),
+      )
+    ],
   ));
 }
 
@@ -185,7 +188,7 @@ Widget example() {
 }
 
 class SelectClub extends StatefulWidget {
-  const SelectClub({ Key? key }) : super(key: key);
+  const SelectClub({Key? key}) : super(key: key);
 
   @override
   _SelectClubState createState() => _SelectClubState();
@@ -194,55 +197,77 @@ class SelectClub extends StatefulWidget {
 class _SelectClubState extends State<SelectClub> {
   String _selectedClub = '동아리 선택';
 
-  void selectClub( BuildContext context,String value){
+  void selectClub(BuildContext context, String value) {
     setState(() {
       _selectedClub = value;
     });
   }
+
   @override
   void initState() {
     super.initState();
     _selectedClub = '동아리?';
   }
+
   @override
   Widget build(BuildContext context) {
     return Container(
-    child: //Builder(builder: (context)=>
-     Row(children: <Widget>[
-      PopupMenuButton(
-        initialValue: _selectedClub,
-        onSelected: (value) => selectClub(context,_selectedClub),
-        padding: EdgeInsets.only(right: 8.0),
-        offset: Offset(-16, 20),
-        child: Container(
-          decoration: BoxDecoration(
-              color: Colors.white,
-              border:Border.all(color: Colors.black),
-              borderRadius: BorderRadius.all(
-                Radius.circular(5.0),
-              )),
-          padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 120.0),
-          child: Text(
-            _selectedClub,
-            style: TextStyle(color: Colors.black),
+      child: //Builder(builder: (context)=>
+          Row(children: <Widget>[
+        PopupMenuButton(
+          initialValue: _selectedClub,
+          onSelected: (value) => selectClub(context, _selectedClub),
+          padding: EdgeInsets.only(right: 8.0),
+          offset: Offset(-16, 20),
+          child: Container(
+            decoration: BoxDecoration(
+                color: Colors.white,
+                border: Border.all(color: Colors.black),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5.0),
+                )),
+            padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 120.0),
+            child: Text(
+              _selectedClub,
+              style: TextStyle(color: Colors.black),
+            ),
           ),
-        ),
-        itemBuilder: (context) => <PopupMenuItem<String>>[
-          new PopupMenuItem<String>(
+          itemBuilder: (context) => <PopupMenuItem<String>>[
+            new PopupMenuItem<String>(
+                child: Row(
+                  children: <Widget>[
+                    SizedBox(width: 80),
+                    Icon(Icons.arrow_right),
+                    Text('동아리 1'),
+                    SizedBox(width: 80)
+                  ],
+                ),
+                value: '1'),
+            PopupMenuItem(
               child: Row(
-                children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 1'), SizedBox(width: 80)],
+                children: <Widget>[
+                  SizedBox(width: 80),
+                  Icon(Icons.arrow_right),
+                  Text('동아리 2'),
+                  SizedBox(width: 80)
+                ],
               ),
-              value: '1'),
-              PopupMenuItem(child: Row(
-                children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 2'), SizedBox(width: 80)],
+              value: '2',
+            ),
+            PopupMenuItem(
+              child: Row(
+                children: <Widget>[
+                  SizedBox(width: 80),
+                  Icon(Icons.arrow_right),
+                  Text('동아리 3'),
+                  SizedBox(width: 80)
+                ],
               ),
-              value: '2',),
-              PopupMenuItem(child: Row(
-                children: <Widget>[SizedBox(width: 80),Icon(Icons.arrow_right), Text('동아리 3'), SizedBox(width: 80)],
-              ),
-              value: '3',),
-        ],
-      ),
-    ]),
-  );
-}}
+              value: '3',
+            ),
+          ],
+        ),
+      ]),
+    );
+  }
+}

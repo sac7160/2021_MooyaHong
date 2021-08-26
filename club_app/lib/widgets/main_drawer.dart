@@ -1,37 +1,37 @@
 import 'package:club_app/page/home_page.dart';
 import 'package:flutter/material.dart';
-//import 'package:club_app/page/chat/chat_page.dart';
 import 'package:club_app/page/settings/member_management.dart';
 import 'package:club_app/page/settings/my_club_page.dart';
 import 'package:club_app/page/settings/profile_setting_page.dart';
 import 'package:club_app/page/settings/alert_setting_page.dart';
 import 'package:club_app/page/settings/edit_password.dart';
+import 'package:club_app/page/login/login.dart';
 
 class MainDrawer extends StatelessWidget {
   final drawerHeader = UserAccountsDrawerHeader(
-    accountName: Text('사용자1'),
-    accountEmail: Text('컴퓨터공학과 1학년'),
-    currentAccountPicture: Container(
-      child: Builder(
-          builder: (context) => 
-              ClipOval(
-                       child: Material(
-                         color: Colors.blue,
-                         child: InkWell(
-                           child: SizedBox(
-                             child: Image.asset('images/profile.jpg',
-                                                  fit: BoxFit.cover)),
-                         onTap: (){
-                           Navigator.push(
-                                       context,
-                                      MaterialPageRoute(builder: (context) => ProfileSetting()),
-                  );},))
-                         
-                       ),
-    ),)
-  );
+      accountName: Text('사용자1'),
+      accountEmail: Text('컴퓨터공학과 1학년'),
+      currentAccountPicture: Container(
+        child: Builder(
+          builder: (context) => ClipOval(
+              child: Material(
+                  color: Colors.blue,
+                  child: InkWell(
+                    child: SizedBox(
+                        child: Image.asset('images/profile.jpg',
+                            fit: BoxFit.cover)),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ProfileSetting()),
+                      );
+                    },
+                  ))),
+        ),
+      ));
 
- _showMessageDialog(BuildContext context) => showDialog(
+  _showMessageDialog(BuildContext context) => showDialog(
       context: context,
       builder: (context) => AlertDialog(
             title: Text('주의'),
@@ -45,6 +45,8 @@ class MainDrawer extends StatelessWidget {
               TextButton(
                   onPressed: () {
                     Navigator.of(context).pop();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LoginPage()));
                   },
                   child: Text('예')),
             ],
@@ -77,7 +79,7 @@ class MainDrawer extends StatelessWidget {
           ),    drawerheader 다른 예시*/
           SizedBox(height: 30),
           ListTile(
-            onTap: () =>Navigator.push(
+            onTap: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => EditPassword()),
             ),
@@ -154,7 +156,5 @@ class MainDrawer extends StatelessWidget {
         ],
       ),
     );
-  
-  
   }
 }

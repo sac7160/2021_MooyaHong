@@ -5,8 +5,7 @@ import 'package:club_app/widgets/Image_widget.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart';
 import 'dart:async';
-import 'package:flutter/foundation.dart'show kIsWeb;
-
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class ProfileSetting extends StatefulWidget {
   const ProfileSetting({Key? key}) : super(key: key);
@@ -17,20 +16,19 @@ class ProfileSetting extends StatefulWidget {
 
 class _ProfileSettingState extends State<ProfileSetting> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-  
+
   File? image;
 
   Future pickImage(ImageSource source) async {
-
     try {
       final image = await ImagePicker().pickImage(source: source);
-      if (image == null) return ;
-      
+      if (image == null) return;
+
       final imageTemporary = File(image.path);
       //final imagePermanent = await saveImagePermanently(image.path);
       setState(() => this.image = imageTemporary);
     } on Exception catch (e) {
-      print ('이미지 설정 실패: $e');
+      print('이미지 설정 실패: $e');
       //todo
     }
   }
@@ -45,7 +43,6 @@ class _ProfileSettingState extends State<ProfileSetting> {
 
   @override
   Widget build(BuildContext context) {
-    
     /*return Scaffold(
       appBar: AppBar(
         title: Text('프로필 설정'),
@@ -119,15 +116,15 @@ class _ProfileSettingState extends State<ProfileSetting> {
     );
   }
 }*/
-  return Scaffold(
-    body: Container(
-      padding: EdgeInsets.all(32),
-      child: Center(
-        child: Column(
-          children: [
-            Spacer(),
-            image != null 
-                /*? ClipOval(
+    return Scaffold(
+      body: Container(
+          padding: EdgeInsets.all(32),
+          child: Center(
+            child: Column(
+              children: [
+                Spacer(),
+                image != null
+                    /*? ClipOval(
                       child: Image.file(
                         image!,
                         width: 160,
@@ -136,72 +133,65 @@ class _ProfileSettingState extends State<ProfileSetting> {
                 ),
                 )
                 : FlutterLogo(size: 160),*/
-                ? ImageWidget(
-                     image: image!,
-                     onClicked: (source) => pickImage(source)
-                   )
-                   : ClipOval(
-                       child: Image.asset('images/profile.jpg',
-                           width: 160, 
-                           height: 160,
-                           fit: BoxFit.cover),
-                       ),//FlutterLogo(size: 160),
-            const SizedBox(height: 24),
-            Text(
-              '홍길동',
-              style: TextStyle(
-                fontSize: 48,
-                fontWeight: FontWeight.bold
-              ),),
-            TextButton(
-              child: Text( '갤러리에서 선택'),
-              onPressed: () => pickImage(ImageSource.gallery),
-            ),
-            TextButton(
-              child: Text( '카메라 촬영'),
-              onPressed: () => pickImage(ImageSource.camera),
-            ),
-            SizedBox(height: 30),
-            Card(
+                    ? ImageWidget(
+                        image: image!, onClicked: (source) => pickImage(source))
+                    : ClipOval(
+                        child: Image.asset('images/profile.jpg',
+                            width: 160, height: 160, fit: BoxFit.cover),
+                      ), //FlutterLogo(size: 160),
+                const SizedBox(height: 24),
+                Text(
+                  '홍길동',
+                  style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
+                ),
+                TextButton(
+                  child: Text('갤러리에서 선택'),
+                  onPressed: () => pickImage(ImageSource.gallery),
+                ),
+                TextButton(
+                  child: Text('카메라 촬영'),
+                  onPressed: () => pickImage(ImageSource.camera),
+                ),
+                SizedBox(height: 30),
+                Card(
                   child: ListTile(
                     leading: Icon(Icons.email),
                     title: Text('컴퓨터공학과'),
-                    onTap: (){},
+                    onTap: () {},
                   ),
                 ),
-            Card(
+                Card(
                   child: ListTile(
                     leading: Icon(Icons.phone),
                     title: Text('1학년'),
-                    onTap: (){},
+                    onTap: () {},
                   ),
                 ),
-            Card(
+                Card(
                   child: ListTile(
                     leading: Icon(Icons.location_city),
                     title: Text('예시'),
-                    onTap: (){},
+                    onTap: () {},
                   ),
                 ),
-            Card(
+                Card(
                   child: ListTile(
                     leading: Icon(Icons.favorite),
                     title: Text('예시'),
-                    onTap: (){},
+                    onTap: () {},
                   ),
                 ),
-            Card(
+                Card(
                   child: ListTile(
                     leading: Icon(Icons.favorite),
                     title: Text('예시'),
-                    onTap: (){},
+                    onTap: () {},
                   ),
                 ),
-            Spacer()
-          ],
-        ),
-      )
-    ),
-
-  );
-  }}
+                Spacer()
+              ],
+            ),
+          )),
+    );
+  }
+}
