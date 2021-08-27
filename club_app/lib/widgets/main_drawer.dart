@@ -1,5 +1,6 @@
 import 'package:club_app/page/home_page.dart';
 import 'package:flutter/material.dart';
+//import 'package:club_app/page/chat/chat_page.dart';
 import 'package:club_app/page/settings/member_management.dart';
 import 'package:club_app/page/settings/my_club_page.dart';
 import 'package:club_app/page/settings/profile_setting_page.dart';

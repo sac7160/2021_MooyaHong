@@ -3,7 +3,6 @@ import 'package:club_app/page/board/notice_board/notice_board_page.dart';
 import 'package:club_app/page/chat/chat_page.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:club_app/widgets/main_drawer.dart';
-
 //import 'package:get/route_manager.dart';
 
 class HomePage extends StatefulWidget {
