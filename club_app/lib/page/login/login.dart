@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:club_app/page/page_container.dart';
+import 'package:club_app/page/login/sign_up_page1.dart';
 
 class LoginPage extends StatefulWidget {
   static final route = 'LoginPage';
@@ -126,7 +127,12 @@ class _LoginPageState extends State<LoginPage> {
                         TextButton(
                             style: TextButton.styleFrom(primary: Colors.black),
                             child: Text('회원가입'),
-                            onPressed: () {}),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => SignUpPage1()));
+                            }),
                       ]),
                 ),
               ],
