@@ -2,6 +2,8 @@ import 'package:club_app/page/page_container.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+//수정...되나???끄아!
+
 void main() {
   runApp(MyApp());
 }
