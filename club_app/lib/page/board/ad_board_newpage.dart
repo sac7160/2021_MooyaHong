@@ -44,10 +44,14 @@ class _AdBoardPageState extends State<AdBoardPagenew> {
 
   Widget _bodywidget() {
     return ListView.separated(
-      itemBuilder: (BuildContext _context, int index) {
+      itemBuilder: (context, index) {
+        Map<String, String> data = datas[index];
+        String image = data["image"] as String;
         return Container(
           child: Row(
-            children: [Image.asset(datas[index]["images"].toString())],
+            children: [
+              Image.asset(image),
+            ],
           )
           );
         }, 
