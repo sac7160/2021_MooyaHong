@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
 
 class AdBoardPagenew extends StatefulWidget {
   const AdBoardPagenew({ Key? key }) : super(key: key);
@@ -28,7 +30,7 @@ class _AdBoardPageState extends State<AdBoardPagenew> {
       "title":"royalblack",
       "category":"기타",
       "state":"모집중",
-      "date":"~09.20",
+      "date":"~09.21",
       "likes":"8"
     },
     {
@@ -36,7 +38,7 @@ class _AdBoardPageState extends State<AdBoardPagenew> {
       "title":"BITA",
       "category":"학술",
       "state":"모집중",
-      "date":"~09.20",
+      "date":"~09.22",
       "likes":"77"
     },
     { 
@@ -44,7 +46,7 @@ class _AdBoardPageState extends State<AdBoardPagenew> {
       "title":"signal",
       "category":"영상",
       "state":"모집중",
-      "date":"~09.20",
+      "date":"~09.10",
       "likes":"55"
     },
     {
@@ -52,7 +54,7 @@ class _AdBoardPageState extends State<AdBoardPagenew> {
       "title":"SNoL",
       "category":"기타",
       "state":"모집중",
-      "date":"~09.20",
+      "date":"~09.19",
       "likes":"56"
     },
     {
@@ -100,6 +102,7 @@ class _AdBoardPageState extends State<AdBoardPagenew> {
 
   Widget _bodywidget() {
     return ListView.separated(
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       itemBuilder: (context, index) {
         Map<String?, String?> data = datas[index];
         String image = data["image"] as String;
@@ -110,27 +113,61 @@ class _AdBoardPageState extends State<AdBoardPagenew> {
         String likes = data["likes"] as String;
 
         return Container(
+          padding: const EdgeInsets.symmetric(vertical: 10),
           child: Row(
                     children: [
                       ClipRRect(
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         child: Image.asset(
                           image,
-                          width: 150,
-                          height: 150,
+                          width: 100,
+                          height: 100,
                         ),
                       ),
-                      Container(
-                        height: 180,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(title),
-                            Text(category),
-                            Text(state),
-                            Text(date),
-                            Text(likes),],
-                          ),
+                      SizedBox(width:20),
+                      Expanded(
+                        child:Container(
+                          height: 100,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                title,
+                                overflow:TextOverflow.ellipsis, //textoverflow시에 ...으로 처리.
+                                style: TextStyle(
+                                  fontSize: 15,fontWeight: FontWeight.bold),),
+                              Text(category,
+                                  style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.normal,
+                                  color: Colors.black.withOpacity(0.3)),),
+                              Text(date,
+                                  style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.normal,
+                                  color: Colors.blue[900]),),
+                              Text(state,
+                                  style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.normal,
+                                  color: Colors.red[400]),),
+                              Expanded(
+                                child: Container(
+                                  height: 100,
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    crossAxisAlignment: CrossAxisAlignment.end,
+                                    children: [
+                                    SvgPicture.asset("assets/svg/heart_off.svg",width:13,height: 13,),
+                                    SizedBox(width: 5),
+                                    Text(likes),
+                                   ],
+                              ),
+                                ),
+                              ),
+                              ],
+                            ),
+                        ),
                       )
                     ],
                   )
