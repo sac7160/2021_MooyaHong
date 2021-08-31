@@ -52,6 +52,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
     return Scaffold(
       appBar: AppBar(
           title: Text('단체채팅방'),
+          backgroundColor: Colors.lightGreen,
           elevation:
               Theme.of(context).platform == TargetPlatform.iOS ? 0.0 : 4.0,
           leading: IconButton(

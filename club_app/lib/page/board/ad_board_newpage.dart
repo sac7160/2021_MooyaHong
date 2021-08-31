@@ -136,16 +136,19 @@ class _AdBoardPageState extends State<AdBoardPagenew> {
                                 overflow:TextOverflow.ellipsis, //textoverflow시에 ...으로 처리.
                                 style: TextStyle(
                                   fontSize: 15,fontWeight: FontWeight.bold),),
+                              SizedBox(height: 5),
                               Text(category,
                                   style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.normal,
                                   color: Colors.black.withOpacity(0.3)),),
+                              SizedBox(height: 5),
                               Text(date,
                                   style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.normal,
                                   color: Colors.blue[900]),),
+                              SizedBox(height: 5),
                               Text(state,
                                   style: TextStyle(
                                   fontSize: 15,
@@ -184,7 +187,9 @@ class _AdBoardPageState extends State<AdBoardPagenew> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('동아리 홍보 게시판'),
+      appBar: AppBar(
+        title: Text('동아리 홍보 게시판'),
+        backgroundColor: Colors.lightGreen,
       ),
       body: _bodywidget(),
     );
