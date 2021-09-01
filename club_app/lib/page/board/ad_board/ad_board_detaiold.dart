@@ -2,19 +2,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'notice_board_page.dart';
-import 'write_page_not.dart';
+import '../notice_board/notice_board_page.dart';
+import '../notice_board/write_page_not.dart';
 
-class DetailPagenot extends StatelessWidget {
+class DetailPageadd extends StatelessWidget {
 
   final int id;
 
-  const DetailPagenot(this.id); 
+  const DetailPageadd(this.id); 
 
   @override
   Widget build(BuildContext context) {
 
-    String data = Get.arguments;
+    // String data =Get.arguments;
 
     return Scaffold(
       appBar: AppBar(
@@ -25,9 +25,7 @@ class DetailPagenot extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Center(child: Text("공지 제목!",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 35),)),
-            Divider(),
-            Text("Page Number $id $data;"),
+            Center(child: Text("홍보게시글 제목!",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 35),)),
             Divider(),
             Row(
               children: [
@@ -55,7 +53,7 @@ class DetailPagenot extends StatelessWidget {
             ),
             Expanded(
               child: SingleChildScrollView(
-                child: Text("공지 내용 " * 500 )))
+                child: Text("홍보 내용 " * 500 )))
           ],),
       )
     );

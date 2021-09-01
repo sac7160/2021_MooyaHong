@@ -3,7 +3,7 @@ import 'package:club_app/components/custom_textarea.dart';
 import 'package:club_app/components/custsom_text_formfield.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'notice_board_page.dart';
+import '../notice_board/notice_board_page.dart';
 
 class WritePageadd extends StatelessWidget {
 
@@ -13,7 +13,8 @@ class WritePageadd extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightGreen,),
+        backgroundColor: Colors.lightGreen,
+        title: Text("홍보 게시글 작성"),),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Form(

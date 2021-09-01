@@ -1,15 +1,15 @@
 
+import 'package:club_app/page/board/notice_board/notice_board_page.dart';
+import 'package:club_app/page/board/notice_board/write_page_not.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'notice_board_page.dart';
-import 'write_page_not.dart';
 
-class DetailPageadd extends StatelessWidget {
+class DetailPagenot extends StatelessWidget {
 
   final int id;
 
-  const DetailPageadd(this.id); 
+  const DetailPagenot(this.id); 
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class DetailPageadd extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Center(child: Text("홍보게시글 제목!",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 35),)),
+            Center(child: Text("홍보글 제목!",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 35),)),
             Divider(),
             Row(
               children: [

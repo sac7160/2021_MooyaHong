@@ -1,4 +1,4 @@
-import 'package:club_app/page/board/ad_board_newpage.dart';
+import 'package:club_app/page/board/ad_board/ad_board_newpage.dart';
 import 'package:flutter/material.dart';
 import 'package:club_app/page/board/notice_board/notice_board_page.dart';
 import 'package:club_app/page/chat/chat_page.dart';
