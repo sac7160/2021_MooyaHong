@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:club_app/page/page_container.dart';
 import 'package:club_app/page/login/sign_up_page1.dart';
+import 'package:club_app/page/login/find_id_page.dart';
 
 class LoginPage extends StatefulWidget {
   static final route = 'LoginPage';
@@ -88,6 +89,7 @@ class _LoginPageState extends State<LoginPage> {
                               primary: Colors.orange[400],
                               onPrimary: Colors.black),
                           onPressed: () {
+                            Navigator.pop(context);
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -101,7 +103,16 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ],
                 ),
-                SizedBox(height: 80),
+                SizedBox(height: 30),
+                Container(
+                    width: MediaQuery.of(context).size.width * 0.7,
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            primary: Colors.orange[400],
+                            onPrimary: Colors.black),
+                        onPressed: () {},
+                        child: Text('gmail 로 로그인'))),
+                SizedBox(height: 10),
                 Container(
                   width: MediaQuery.of(context).size.width * 0.7,
                   child: Divider(
@@ -117,7 +128,12 @@ class _LoginPageState extends State<LoginPage> {
                         TextButton(
                             style: TextButton.styleFrom(primary: Colors.black),
                             child: Text('아이디 찾기'),
-                            onPressed: () {}),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => FindId()));
+                            }),
                         SizedBox(width: 45),
                         TextButton(
                             style: TextButton.styleFrom(primary: Colors.black),

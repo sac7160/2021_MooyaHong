@@ -16,21 +16,13 @@ class CustomElevatedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-<<<<<<< HEAD
-=======
-        primary: Colors.lightGreen[700],
->>>>>>> e5d714c23cf944ef174f5a5ab568938451a07963
         minimumSize: Size(double.infinity, 50),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
       ),
       onPressed: funPageRoute,
-<<<<<<< HEAD
       child: Text("$text")
-=======
-      child: Text("$text"),
->>>>>>> e5d714c23cf944ef174f5a5ab568938451a07963
       );
   }
 }

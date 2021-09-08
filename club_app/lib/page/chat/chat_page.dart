@@ -53,11 +53,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
       appBar: AppBar(
           title: Text('단체채팅방'),
           elevation:
-              Theme.of(context).platform == TargetPlatform.iOS ? 0.0 : 4.0,
-          leading: IconButton(
-              //여기서 오류발생
-              icon: Icon(Icons.close),
-              onPressed: () => Navigator.of(context).pop())),
+              Theme.of(context).platform == TargetPlatform.iOS ? 0.0 : 4.0,),
       body: Column(
         children: <Widget>[
           Flexible(

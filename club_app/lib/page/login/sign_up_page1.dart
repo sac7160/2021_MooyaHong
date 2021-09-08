@@ -34,6 +34,7 @@ class _SignUpPage1State extends State<SignUpPage1> {
     return Scaffold(
       body: SafeArea(
         child: Container(
+          color: Colors.yellow,
           padding: EdgeInsets.all(20),
           child: Center(
             child: Column(
@@ -86,8 +87,12 @@ class _SignUpPage1State extends State<SignUpPage1> {
                   ],
                 ),
                 Container(
-                  height: 50,
-                  padding: EdgeInsets.all(10),
+                  padding: EdgeInsets.only(top: 10, left: 10),
+                  margin: EdgeInsets.only(top: 10, bottom: 10, left: 25, right: 25),
+                  height: 150,
+                  decoration: BoxDecoration(
+                  border: Border.all(color: Colors.black, width: 1),
+                  borderRadius: BorderRadius.circular(5)),
                   child: ListView(
                     children: [Text('이용약관이용약관이용약관 ')],
                   ),
@@ -110,6 +115,17 @@ class _SignUpPage1State extends State<SignUpPage1> {
                     Text('개인정보 이용 동의 (필수)')
                   ],
                 ),
+                Container(
+                  padding: EdgeInsets.only(top: 10, left: 10),
+                  margin: EdgeInsets.only(top: 10, bottom: 10, left: 25, right: 25),
+                  height: 150,
+                  decoration: BoxDecoration(
+                  border: Border.all(color: Colors.black, width: 1),
+                  borderRadius: BorderRadius.circular(5)),
+                  child: ListView(
+                    children: [Text('개인정보 개인정보 개인정보 개인정보 ')],
+                  ),
+                ),
                 Row(
                   children: [
                     Checkbox(
@@ -128,28 +144,57 @@ class _SignUpPage1State extends State<SignUpPage1> {
                     Text('홍보')
                   ],
                 ),
+                Container(
+                  padding: EdgeInsets.only(top: 10, left: 10),
+                  margin: EdgeInsets.only(top: 10, bottom: 10, left: 25, right: 25),
+                  height: 150,
+                  decoration: BoxDecoration(
+                  border: Border.all(color: Colors.black, width: 1),
+                  borderRadius: BorderRadius.circular(5)),
+                  child: ListView(
+                    children: [Text('이용약관이용약관이용약관 ')],
+                  ),
+                ),
+                SizedBox(height: 30),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
+                    Builder(
+                       builder: (context) => Container(
+                       width: 100,
+                       height: 50,
+                       child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                          primary: Colors.orange,
+                          onPrimary: Colors.white,
+                                 ),
+                       onPressed: () {
+                               Navigator.pop(context);
+                           },
+                       child: Text('취소')),
+                       ),
+                    ),
+                   SizedBox(width: 50),
+                   Builder(
+                         builder: (context) => Container(
+                         width: 100,
+                         height: 50,
+                         child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                         primary: Colors.orange, onPrimary: Colors.white),
+                         onPressed: () {
+                           if(_isChecked_1 == false || _isChecked_2 ==false){
+                             _showMessageDialog(context);
+                           }else{
+                              Navigator.pop(context); 
+                              Navigator.push(
                               context,
-                              MaterialPageRoute(
-                                  builder: (context) => LoginPage()));
-                        },
-                        child: Text('취소')),
-                    ElevatedButton(
-                        onPressed: () {
-                          if (_isChecked_1 == false || _isChecked_2 == false) {
-                            _showMessageDialog(context);
-                          } else {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => SignUpPage2()));
-                          }
-                        },
-                        child: Text('다음')),
+                              MaterialPageRoute(builder: (context) => SignUpPage2()),
+                              );
+                         }},
+                         child: Text('다음')),
+                          ),
+                   )
                   ],
                 ),
               ],

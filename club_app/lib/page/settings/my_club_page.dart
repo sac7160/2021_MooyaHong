@@ -11,6 +11,7 @@ class MyClubPage extends StatefulWidget {
 enum MyClubs { club1, club2, club3, club4, club5 }
 final List<String> clubs = <String>['동아리1', '동아리2', '동아리3', '동아리4', '동아리5'];
 
+
 class _MyClubPageState extends State<MyClubPage> {
   MyClubs _myClubs = MyClubs.club1;
 
@@ -35,7 +36,8 @@ class _MyClubPageState extends State<MyClubPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return WillPopScope(    //회원가입이나 아이디찾기 후 로그인하면 메인화면에서 뒤로가기가능함
+      child: Scaffold(
         body: Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
@@ -165,7 +167,9 @@ class _MyClubPageState extends State<MyClubPage> {
           ),
         ],
       ),
-    ));
+    )),
+    onWillPop: ()async{
+    return false;},);
   }
 }
 
