@@ -74,42 +74,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "firebase_auth",
-      "rootUri": "file:///Users/changhyeonpark/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-3.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "firebase_auth_platform_interface",
-      "rootUri": "file:///Users/changhyeonpark/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_platform_interface-6.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "firebase_auth_web",
-      "rootUri": "file:///Users/changhyeonpark/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-3.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "firebase_core",
-      "rootUri": "file:///Users/changhyeonpark/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.6.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "firebase_core_platform_interface",
-      "rootUri": "file:///Users/changhyeonpark/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-4.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "firebase_core_web",
-      "rootUri": "file:///Users/changhyeonpark/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "flutter",
       "rootUri": "file:///Users/changhyeonpark/Documents/development/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -344,7 +308,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-09-08T17:23:43.861172Z",
+  "generated": "2021-09-08T17:33:36.960593Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }

@@ -36,7 +36,7 @@ dependencies:
   syncfusion_flutter_datepicker: ^19.2.55
   image_picker: ^0.8.3+2    #pick image
   path_provider: ^2.0.2   #store image
-  firebase_auth: ^3.1.0
+  
 
   
  
