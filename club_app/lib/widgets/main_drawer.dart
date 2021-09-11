@@ -18,8 +18,8 @@ class MainDrawer extends StatelessWidget {
                   color: Colors.blue,
                   child: InkWell(
                     child: SizedBox(
-                       // child: Image.asset('club_app/assets/images/profile.jpg',
-                          //  fit: BoxFit.cover) 기본사진 등록시 에러발생
+                       child: Image.asset('assets/profile.jpg',
+                       fit: BoxFit.cover) 
                           ),
                     onTap: () {
                       Navigator.push(

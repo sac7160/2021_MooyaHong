@@ -136,9 +136,9 @@ class _ProfileSettingState extends State<ProfileSetting> {
                     ? ImageWidget(
                         image: image!, onClicked: (source) => pickImage(source))
                     : ClipOval(
-                        child: /*Image.asset('assets/images/profile.jpg',
-                            width: 160, height: 160, fit: BoxFit.cover),          drawer와 마찬가지로 기본 사진설정시 오류발생
-                      ),*/ FlutterLogo(size: 160),),
+                        child: Image.asset('assets/profile.jpg',
+                            width: 160, height: 160, fit: BoxFit.cover),    
+                      ), 
                 const SizedBox(height: 24),
                 Text(
                   '홍길동',

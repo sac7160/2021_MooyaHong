@@ -19,27 +19,27 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		069C3AE458665CC78A875B9DF66A0C62 /* FLTPHPickerSaveImageToPathOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F03050AF80166B701A4695443D72C47 /* FLTPHPickerSaveImageToPathOperation.m */; };
+		0639167E5B9EFF4FD94FE76154F2D6FA /* FLTImagePickerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3DE49B753F10AD37FC1F921170FD9 /* FLTImagePickerPlugin.m */; };
 		0BB8ADC7457596AC1E2302F3D6F712C9 /* FLTPathProviderPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BDD01E26AA333B28E22AA37F7802E4 /* FLTPathProviderPlugin.m */; };
 		19DB9602F02032C340222EF299B97F57 /* Pods-Runner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF45FBE2BC9AD7B2D7E56D01B5EE46 /* Pods-Runner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DFEF620E8E0478C322476E90DF713E7 /* image_picker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6817E74547126F672E45733F23388D9 /* image_picker-dummy.m */; };
-		2258B03344EF61D0992672E72192A71A /* FLTImagePickerPhotoAssetUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BF39290588C2D1F3A230E6803620A7C3 /* FLTImagePickerPhotoAssetUtil.m */; };
-		40E8A3796C34D4536CB954F2D2696C00 /* FLTImagePickerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = B1F9930263F70C8F890001ABCC454999 /* FLTImagePickerPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47020FC9CE027D084008219A9635EA4A /* image_picker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D14416142B86006A8C8675763FE0A307 /* image_picker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4853C3D03928F5BD010926E30509E7F4 /* FLTPHPickerSaveImageToPathOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 65533A6F542A64177A5C0FD62E9CB72A /* FLTPHPickerSaveImageToPathOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		742F279007BB9CE862BCCBB0A676F8BA /* FLTImagePickerImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AF042B58165D704CBF1413F19B1298 /* FLTImagePickerImageUtil.m */; };
-		77EABC0C619A133BC3DE059386198F65 /* FLTImagePickerPhotoAssetUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 078E070B6DBD86FE1E962E0C09979039 /* FLTImagePickerPhotoAssetUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DFEF620E8E0478C322476E90DF713E7 /* image_picker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 151337322873519CAB88EE6DF4617C9F /* image_picker-dummy.m */; };
+		1E420B05DD72B2E99B3091EECAD8878C /* FLTImagePickerImageUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 26BDD7EB853BE3F90E95118809B511ED /* FLTImagePickerImageUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3355D47E66D747BD0C2C0486F5266A79 /* FLTImagePickerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = B69844A5E3F5D5E818AE8248A8620A9E /* FLTImagePickerPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AD5F24B48626AAB1FBE74CECC6EEB8E /* FLTImagePickerImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D74C8635DCA9DD9154FCC05A098E58 /* FLTImagePickerImageUtil.m */; };
+		47020FC9CE027D084008219A9635EA4A /* image_picker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 014A29761F938A6E0F7D008805424A8F /* image_picker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E6FC84297757CD4CA74EC0A07005017 /* FLTImagePickerPhotoAssetUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B7238C1C6364783A029EF5F6B0E3A9F1 /* FLTImagePickerPhotoAssetUtil.m */; };
+		61E5F7573D622574A5E598F056D15C07 /* FLTImagePickerMetaDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 401DE29B66E2772AF7E3EAE86AB6166B /* FLTImagePickerMetaDataUtil.m */; };
 		84A06383F8757DDDDBEA31108DDBC384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		900E8A69D49B6A21AFFD32468D5BDDEC /* FLTImagePickerImageUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = CB48B5429C24D7D75D35AD753732D1AB /* FLTImagePickerImageUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F17477684E9357C05DA5413404E95EE /* FLTImagePickerMetaDataUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D386A0C04F70DF5E02ABDB55FFEB571B /* FLTImagePickerMetaDataUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9C5F84997874FB087E6FA4CA6D14095 /* FLTImagePickerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2233C5081181FEEFA74875C5B030D5AA /* FLTImagePickerPlugin.m */; };
+		9C9AC56D64132B8A6C0C6626CCD11866 /* FLTImagePickerMetaDataUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A2AE0038D64F3DEA3FC7C94AD4D1F77 /* FLTImagePickerMetaDataUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A22C82B460EF7AD5054E85778CC85133 /* FLTPHPickerSaveImageToPathOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF10097D1B622E8E0204C414AC52ADA8 /* FLTPHPickerSaveImageToPathOperation.m */; };
 		ABFF9E96E57BC7D996200183AA718C3A /* path_provider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E421788C85A59333D5A82149F09F93 /* path_provider-dummy.m */; };
 		AC8F3432A387C55F83CD079873D8AE77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		B808547BA2A3D587850A2E866BCD72EE /* Pods-Runner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3C932BD54DBB963102A89E0F9E3948 /* Pods-Runner-dummy.m */; };
-		D78E735EF13A217BD8B37CCF66146D72 /* FLTImagePickerMetaDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D300654A1B6DAD24A28FF5FA7534544E /* FLTImagePickerMetaDataUtil.m */; };
+		CB561905C46EBF152D0C570AB264BF66 /* FLTPHPickerSaveImageToPathOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCBA91BA048196F8D816AFED1475D16 /* FLTPHPickerSaveImageToPathOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8A36E6F3E14C5749D59AC156DB4DFDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F68A6671759426F15F9FDED146F443F9 /* FLTPathProviderPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 825871909E9A6A6D390D5B50B0CA767E /* FLTPathProviderPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F96FFDF9BF7F14A2DE29CB1F2DB9B45D /* path_provider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D72414309E19790CB60763F111792CF /* path_provider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF8AB3E7B832B411A99DDD698F744C19 /* FLTImagePickerPhotoAssetUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DDAA21E6640ABE8E28A2C3AFB50CD0 /* FLTImagePickerPhotoAssetUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,54 +81,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		014A29761F938A6E0F7D008805424A8F /* image_picker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "image_picker-umbrella.h"; sourceTree = "<group>"; };
 		0344D963FC8E44B2706A8D6286ABBA36 /* Flutter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.debug.xcconfig; sourceTree = "<group>"; };
-		078E070B6DBD86FE1E962E0C09979039 /* FLTImagePickerPhotoAssetUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerPhotoAssetUtil.h; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/ios/Classes/FLTImagePickerPhotoAssetUtil.h"; sourceTree = "<group>"; };
+		0FA3DE49B753F10AD37FC1F921170FD9 /* FLTImagePickerPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerPlugin.m; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/ios/Classes/FLTImagePickerPlugin.m"; sourceTree = "<group>"; };
+		12DCEEA9736AD2459742666CE7D7D9F9 /* image_picker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = image_picker.podspec; path = "../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/ios/image_picker.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1421CDEE908887B92D22931D29BE0FDB /* image_picker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "image_picker-prefix.pch"; sourceTree = "<group>"; };
+		151337322873519CAB88EE6DF4617C9F /* image_picker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "image_picker-dummy.m"; sourceTree = "<group>"; };
 		1ADDCFD4E9747F4E28F9E8D892825ACB /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1EFB7595FC3A1D9563A6085085623EB9 /* image_picker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = image_picker.modulemap; sourceTree = "<group>"; };
-		21C4EEABEA072B8690338C84825E4BF6 /* image_picker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = image_picker.debug.xcconfig; sourceTree = "<group>"; };
-		2233C5081181FEEFA74875C5B030D5AA /* FLTImagePickerPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerPlugin.m; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/ios/Classes/FLTImagePickerPlugin.m"; sourceTree = "<group>"; };
+		26BDD7EB853BE3F90E95118809B511ED /* FLTImagePickerImageUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerImageUtil.h; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/ios/Classes/FLTImagePickerImageUtil.h"; sourceTree = "<group>"; };
 		295C6F6C0B7B2E314051FE425F95EF53 /* path_provider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = path_provider.debug.xcconfig; sourceTree = "<group>"; };
+		2A2AE0038D64F3DEA3FC7C94AD4D1F77 /* FLTImagePickerMetaDataUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerMetaDataUtil.h; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/ios/Classes/FLTImagePickerMetaDataUtil.h"; sourceTree = "<group>"; };
+		2BCBA91BA048196F8D816AFED1475D16 /* FLTPHPickerSaveImageToPathOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTPHPickerSaveImageToPathOperation.h; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/ios/Classes/FLTPHPickerSaveImageToPathOperation.h"; sourceTree = "<group>"; };
 		2C017031A3CADA1B1F32E3DDCB86D1B8 /* path_provider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = path_provider.release.xcconfig; sourceTree = "<group>"; };
 		317C26B9A7CEDD34ADE8F37FAAB7AC20 /* Pods-Runner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Runner-frameworks.sh"; sourceTree = "<group>"; };
 		3D72414309E19790CB60763F111792CF /* path_provider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "path_provider-umbrella.h"; sourceTree = "<group>"; };
-		4D2031C0A2D56478D169BE72F493BBBF /* image_picker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "image_picker-prefix.pch"; sourceTree = "<group>"; };
+		401DE29B66E2772AF7E3EAE86AB6166B /* FLTImagePickerMetaDataUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerMetaDataUtil.m; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/ios/Classes/FLTImagePickerMetaDataUtil.m"; sourceTree = "<group>"; };
+		46DDAA21E6640ABE8E28A2C3AFB50CD0 /* FLTImagePickerPhotoAssetUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerPhotoAssetUtil.h; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/ios/Classes/FLTImagePickerPhotoAssetUtil.h"; sourceTree = "<group>"; };
+		4E8E334FCF26BF666E3E7B6136EDFF09 /* image_picker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "image_picker-Info.plist"; sourceTree = "<group>"; };
 		51825CD8F0558EFA53D9510F0E5BFA16 /* Pods-Runner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-Info.plist"; sourceTree = "<group>"; };
 		5ADDB1827D8043CE159F703FB1B3E0F3 /* Flutter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.release.xcconfig; sourceTree = "<group>"; };
-		5F03050AF80166B701A4695443D72C47 /* FLTPHPickerSaveImageToPathOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTPHPickerSaveImageToPathOperation.m; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/ios/Classes/FLTPHPickerSaveImageToPathOperation.m"; sourceTree = "<group>"; };
-		65533A6F542A64177A5C0FD62E9CB72A /* FLTPHPickerSaveImageToPathOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTPHPickerSaveImageToPathOperation.h; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/ios/Classes/FLTPHPickerSaveImageToPathOperation.h"; sourceTree = "<group>"; };
+		62D74C8635DCA9DD9154FCC05A098E58 /* FLTImagePickerImageUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerImageUtil.m; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/ios/Classes/FLTImagePickerImageUtil.m"; sourceTree = "<group>"; };
 		669E8F25E1897672BDB80B7EB784DA24 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Runner.framework; path = "Pods-Runner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E421788C85A59333D5A82149F09F93 /* path_provider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "path_provider-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		73D09A62AD2F3A8D78F572A836857DCC /* image_picker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = image_picker.podspec; path = "../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/ios/image_picker.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7864897F799E45665256FE45A5D090A8 /* path_provider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "path_provider-prefix.pch"; sourceTree = "<group>"; };
 		7B3C932BD54DBB963102A89E0F9E3948 /* Pods-Runner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Runner-dummy.m"; sourceTree = "<group>"; };
 		81BDD01E26AA333B28E22AA37F7802E4 /* FLTPathProviderPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTPathProviderPlugin.m; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.2/ios/Classes/FLTPathProviderPlugin.m"; sourceTree = "<group>"; };
 		825871909E9A6A6D390D5B50B0CA767E /* FLTPathProviderPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTPathProviderPlugin.h; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.2/ios/Classes/FLTPathProviderPlugin.h"; sourceTree = "<group>"; };
 		82E59F73EFCFED5A91D21FE6046A6F0A /* image_picker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = image_picker.framework; path = image_picker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96BF45FBE2BC9AD7B2D7E56D01B5EE46 /* Pods-Runner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Runner-umbrella.h"; sourceTree = "<group>"; };
-		9A655C96D4FAAD62FD4ED88610FA2F9F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/LICENSE"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F79F8269DC34AC56BB3D1D9652C0D86 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+		A0C091E1E67497C1925AAF4B7639F816 /* image_picker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = image_picker.release.xcconfig; sourceTree = "<group>"; };
 		A59E675DA0DBC17564C3C7481E7A6E14 /* path_provider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = path_provider.modulemap; sourceTree = "<group>"; };
-		B1F9930263F70C8F890001ABCC454999 /* FLTImagePickerPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerPlugin.h; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/ios/Classes/FLTImagePickerPlugin.h"; sourceTree = "<group>"; };
-		BCD3CA365ECF6FBDCA28A5D479A280D5 /* image_picker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = image_picker.release.xcconfig; sourceTree = "<group>"; };
-		BF39290588C2D1F3A230E6803620A7C3 /* FLTImagePickerPhotoAssetUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerPhotoAssetUtil.m; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/ios/Classes/FLTImagePickerPhotoAssetUtil.m"; sourceTree = "<group>"; };
+		AC89E4294D87D314278367F7C60B0A92 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/LICENSE"; sourceTree = "<group>"; };
+		B69844A5E3F5D5E818AE8248A8620A9E /* FLTImagePickerPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerPlugin.h; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/ios/Classes/FLTImagePickerPlugin.h"; sourceTree = "<group>"; };
+		B7238C1C6364783A029EF5F6B0E3A9F1 /* FLTImagePickerPhotoAssetUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerPhotoAssetUtil.m; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/ios/Classes/FLTImagePickerPhotoAssetUtil.m"; sourceTree = "<group>"; };
+		BA6743FABB5C2C9548AC7807CA56D421 /* image_picker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = image_picker.modulemap; sourceTree = "<group>"; };
+		BF10097D1B622E8E0204C414AC52ADA8 /* FLTPHPickerSaveImageToPathOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTPHPickerSaveImageToPathOperation.m; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/ios/Classes/FLTPHPickerSaveImageToPathOperation.m"; sourceTree = "<group>"; };
 		C6EA98402A94995D022D330B64B5203D /* Pods-Runner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Runner-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C712477AF411881A28149F8262FEEE38 /* path_provider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "path_provider-Info.plist"; sourceTree = "<group>"; };
-		CB48B5429C24D7D75D35AD753732D1AB /* FLTImagePickerImageUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerImageUtil.h; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/ios/Classes/FLTImagePickerImageUtil.h"; sourceTree = "<group>"; };
 		CBC65ABDC604A8B762863AC0163CAD9C /* path_provider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = path_provider.podspec; path = "../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.2/ios/path_provider.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CDAECCF4B5E08124ED410F09FD5A5DF9 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
-		D14416142B86006A8C8675763FE0A307 /* image_picker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "image_picker-umbrella.h"; sourceTree = "<group>"; };
 		D2FA70CA298C392CB8332ADEEDD1CE85 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
-		D300654A1B6DAD24A28FF5FA7534544E /* FLTImagePickerMetaDataUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerMetaDataUtil.m; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/ios/Classes/FLTImagePickerMetaDataUtil.m"; sourceTree = "<group>"; };
-		D386A0C04F70DF5E02ABDB55FFEB571B /* FLTImagePickerMetaDataUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTImagePickerMetaDataUtil.h; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/ios/Classes/FLTImagePickerMetaDataUtil.h"; sourceTree = "<group>"; };
-		D6817E74547126F672E45733F23388D9 /* image_picker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "image_picker-dummy.m"; sourceTree = "<group>"; };
 		D9F2B4CB813B4BDC4D164C6E0868930A /* Pods-Runner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-acknowledgements.plist"; sourceTree = "<group>"; };
 		DAE35F9EEF7110C6DC7645F4C250E0F5 /* path_provider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = path_provider.framework; path = path_provider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC6988ADDF22351B9D2F22D9BC236153 /* image_picker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "image_picker-Info.plist"; sourceTree = "<group>"; };
 		E5A98CA5891B44D573FFD718FFE2E555 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.2/LICENSE"; sourceTree = "<group>"; };
 		F49C32B3B8CF59AB437BFD7314674868 /* Pods-Runner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Runner.modulemap"; sourceTree = "<group>"; };
-		F5AF042B58165D704CBF1413F19B1298 /* FLTImagePickerImageUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTImagePickerImageUtil.m; path = "../../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/ios/Classes/FLTImagePickerImageUtil.m"; sourceTree = "<group>"; };
+		F79F41A2725D80DB5C3FC05DC2112DEA /* image_picker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = image_picker.debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,15 +168,6 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		02A61F63857F39BD014360DCE015003E /* flutter_project */ = {
-			isa = PBXGroup;
-			children = (
-				96A0F7445B837EB183DC2789B28201D8 /* mooyahong */,
-			);
-			name = flutter_project;
-			path = flutter_project;
-			sourceTree = "<group>";
-		};
 		09D6E779FE71D65D4FC8A3A0A5F390A7 /* .symlinks */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,17 +175,6 @@
 			);
 			name = .symlinks;
 			path = .symlinks;
-			sourceTree = "<group>";
-		};
-		0CBBD767B2A81007010AFDA888B1C81A /* image_picker */ = {
-			isa = PBXGroup;
-			children = (
-				6391BDB61684B96D0D8C78A2EB38D1DF /* .. */,
-				A262258F01936D98716B55FCC8415AEF /* Pod */,
-				A9047B9B237C0073AD0D5DBAD40F7D74 /* Support Files */,
-			);
-			name = image_picker;
-			path = ../.symlinks/plugins/image_picker/ios;
 			sourceTree = "<group>";
 		};
 		0D07056A0F65FDDE2BE7988F8FF2D5C3 /* path_provider */ = {
@@ -210,19 +190,10 @@
 			isa = PBXGroup;
 			children = (
 				4E02F944BB1704281B83FC7425E34860 /* Flutter */,
-				0CBBD767B2A81007010AFDA888B1C81A /* image_picker */,
+				34A1F35C365E3D0BB1608D1AC485222C /* image_picker */,
 				B82075295733F621C9522AF01270D078 /* path_provider */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		15E0BCDC465484710477DDAD10F86C05 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				86A97464251C2BBE9299585BCBE182F9 /* .. */,
-			);
-			name = ..;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		1C0824DC1855A43F19A7E508D0CC38B0 /* .. */ = {
@@ -241,6 +212,15 @@
 			);
 			name = ios;
 			path = ios;
+			sourceTree = "<group>";
+		};
+		1F152EED195EF63BBCB69BD35A0DC0F0 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				3E2451C0C4C269AC40728F1C123ECEA5 /* image_picker */,
+			);
+			name = plugins;
+			path = plugins;
 			sourceTree = "<group>";
 		};
 		1F5508C87E31926A707C16D96B0C133C /* Classes */ = {
@@ -286,13 +266,42 @@
 			path = mooyahong;
 			sourceTree = "<group>";
 		};
-		34CAF3C9D471EC8945F98A29D909E24A /* ios */ = {
+		34A1F35C365E3D0BB1608D1AC485222C /* image_picker */ = {
 			isa = PBXGroup;
 			children = (
-				9E02E3A528FA2C93200ED016ED9D6407 /* .symlinks */,
+				7D94052147A3EBCBF1132515B89E6389 /* .. */,
+				F689AAD177B5524B61C0AD00CFE40FED /* Pod */,
+				ABCB302E3D8B500ADABE898443E89CAF /* Support Files */,
 			);
-			name = ios;
-			path = ios;
+			name = image_picker;
+			path = ../.symlinks/plugins/image_picker/ios;
+			sourceTree = "<group>";
+		};
+		37EAAB24309D76BBB111F01085D8EEDF /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				6430AA005B93A35528582A149CB9F370 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3E2451C0C4C269AC40728F1C123ECEA5 /* image_picker */ = {
+			isa = PBXGroup;
+			children = (
+				C7DE7B7E624D299A13B6709DED56566C /* ios */,
+			);
+			name = image_picker;
+			path = image_picker;
+			sourceTree = "<group>";
+		};
+		435B925D1024946D636A6D026207F4BD /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				550A04822A8A40760D5C20D53AF7F45F /* flutter_project */,
+			);
+			name = ..;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		47554B42FF4318C9D8DF5432F6F25D2D /* .. */ = {
@@ -302,15 +311,6 @@
 			);
 			name = ..;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		4A082ADC2298174E81A1FB9053D8A827 /* 2021_MooyaHong */ = {
-			isa = PBXGroup;
-			children = (
-				BB2256525C4B2E6676B5AEBDFCFD2367 /* club_app */,
-			);
-			name = 2021_MooyaHong;
-			path = 2021_MooyaHong;
 			sourceTree = "<group>";
 		};
 		4E02F944BB1704281B83FC7425E34860 /* Flutter */ = {
@@ -323,13 +323,13 @@
 			path = ../Flutter;
 			sourceTree = "<group>";
 		};
-		54A92527A76C290BB3FE34CC81F9BFD0 /* ios */ = {
+		550A04822A8A40760D5C20D53AF7F45F /* flutter_project */ = {
 			isa = PBXGroup;
 			children = (
-				CAF2259B1F5E3D7FE4CC511F54DA960A /* Classes */,
+				A50271FCA75DE14404F4E75EA16926F1 /* mooyahong */,
 			);
-			name = ios;
-			path = ios;
+			name = flutter_project;
+			path = flutter_project;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -340,13 +340,40 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6391BDB61684B96D0D8C78A2EB38D1DF /* .. */ = {
+		6430AA005B93A35528582A149CB9F370 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				D7FA4700F6964525801ABCB56CB4ED0C /* .. */,
+				F2D7A654D4847A3C58A643E3A5A4B688 /* .. */,
 			);
 			name = ..;
-			path = "../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.3+2/ios";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		64A54E2E02F4418F41501FD02CF923D0 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				D94A8EA2B9C9CB7C08CCD754969A5BBE /* .symlinks */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+		6B4F39F2FF09B446A875D8093BF8E6F6 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				37EAAB24309D76BBB111F01085D8EEDF /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		6F378198DD999E8C2C75F08B3C4B0CD0 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				E1AE9FBBE303372040EB4FEA5239306A /* .. */,
+			);
+			name = ..;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		76F8AFE55722322F9472BE62741FEB40 /* plugins */ = {
@@ -384,13 +411,31 @@
 			path = "Target Support Files/Pods-Runner";
 			sourceTree = "<group>";
 		};
-		80BEE236A09DE57695DB5C85310838C4 /* .. */ = {
+		7D94052147A3EBCBF1132515B89E6389 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				C54D26D3ACC5735561DF6DFC26D8B211 /* .. */,
+				B9FB42908F3F97A654060F2811D16D95 /* .. */,
 			);
 			name = ..;
-			path = ..;
+			path = "../../../../../../../../../Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4/ios";
+			sourceTree = "<group>";
+		};
+		80FA5DA66E7C5C8048E7825FA7745FCD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				26BDD7EB853BE3F90E95118809B511ED /* FLTImagePickerImageUtil.h */,
+				62D74C8635DCA9DD9154FCC05A098E58 /* FLTImagePickerImageUtil.m */,
+				2A2AE0038D64F3DEA3FC7C94AD4D1F77 /* FLTImagePickerMetaDataUtil.h */,
+				401DE29B66E2772AF7E3EAE86AB6166B /* FLTImagePickerMetaDataUtil.m */,
+				46DDAA21E6640ABE8E28A2C3AFB50CD0 /* FLTImagePickerPhotoAssetUtil.h */,
+				B7238C1C6364783A029EF5F6B0E3A9F1 /* FLTImagePickerPhotoAssetUtil.m */,
+				B69844A5E3F5D5E818AE8248A8620A9E /* FLTImagePickerPlugin.h */,
+				0FA3DE49B753F10AD37FC1F921170FD9 /* FLTImagePickerPlugin.m */,
+				2BCBA91BA048196F8D816AFED1475D16 /* FLTPHPickerSaveImageToPathOperation.h */,
+				BF10097D1B622E8E0204C414AC52ADA8 /* FLTPHPickerSaveImageToPathOperation.m */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		84294C603919DBC903057172A0620989 /* .. */ = {
@@ -411,15 +456,6 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		86A97464251C2BBE9299585BCBE182F9 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				900842D53548F8F90664D7D16BEE871B /* .. */,
-			);
-			name = ..;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		8E9D5C6268A7D1B403582BE8CEAA700C /* 2021_MooyaHong */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,24 +463,6 @@
 			);
 			name = 2021_MooyaHong;
 			path = 2021_MooyaHong;
-			sourceTree = "<group>";
-		};
-		900842D53548F8F90664D7D16BEE871B /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				DC5E8D5D01777A4C68338FF7AEABDFE9 /* .. */,
-			);
-			name = ..;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		96A0F7445B837EB183DC2789B28201D8 /* mooyahong */ = {
-			isa = PBXGroup;
-			children = (
-				4A082ADC2298174E81A1FB9053D8A827 /* 2021_MooyaHong */,
-			);
-			name = mooyahong;
-			path = mooyahong;
 			sourceTree = "<group>";
 		};
 		9A07BAD8E56EDB11B4CEB902E3ADBE47 /* .. */ = {
@@ -466,15 +484,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9E02E3A528FA2C93200ED016ED9D6407 /* .symlinks */ = {
-			isa = PBXGroup;
-			children = (
-				BDAED9AF2660B5E7CB2B0E943B459DB3 /* plugins */,
-			);
-			name = .symlinks;
-			path = .symlinks;
-			sourceTree = "<group>";
-		};
 		9F0F7FC499973EE0786792618035C7E1 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,13 +501,22 @@
 			path = club_app;
 			sourceTree = "<group>";
 		};
-		A262258F01936D98716B55FCC8415AEF /* Pod */ = {
+		A0104C79EBC9B9E6357AB45B675CD758 /* club_app */ = {
 			isa = PBXGroup;
 			children = (
-				73D09A62AD2F3A8D78F572A836857DCC /* image_picker.podspec */,
-				9A655C96D4FAAD62FD4ED88610FA2F9F /* LICENSE */,
+				64A54E2E02F4418F41501FD02CF923D0 /* ios */,
 			);
-			name = Pod;
+			name = club_app;
+			path = club_app;
+			sourceTree = "<group>";
+		};
+		A50271FCA75DE14404F4E75EA16926F1 /* mooyahong */ = {
+			isa = PBXGroup;
+			children = (
+				EA43ECF2EE9CE957F6C2167B80FD27AC /* 2021_MooyaHong */,
+			);
+			name = mooyahong;
+			path = mooyahong;
 			sourceTree = "<group>";
 		};
 		A73358E77E186211259AC44DA1007C71 /* Pod */ = {
@@ -510,16 +528,16 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		A9047B9B237C0073AD0D5DBAD40F7D74 /* Support Files */ = {
+		ABCB302E3D8B500ADABE898443E89CAF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1EFB7595FC3A1D9563A6085085623EB9 /* image_picker.modulemap */,
-				D6817E74547126F672E45733F23388D9 /* image_picker-dummy.m */,
-				DC6988ADDF22351B9D2F22D9BC236153 /* image_picker-Info.plist */,
-				4D2031C0A2D56478D169BE72F493BBBF /* image_picker-prefix.pch */,
-				D14416142B86006A8C8675763FE0A307 /* image_picker-umbrella.h */,
-				21C4EEABEA072B8690338C84825E4BF6 /* image_picker.debug.xcconfig */,
-				BCD3CA365ECF6FBDCA28A5D479A280D5 /* image_picker.release.xcconfig */,
+				BA6743FABB5C2C9548AC7807CA56D421 /* image_picker.modulemap */,
+				151337322873519CAB88EE6DF4617C9F /* image_picker-dummy.m */,
+				4E8E334FCF26BF666E3E7B6136EDFF09 /* image_picker-Info.plist */,
+				1421CDEE908887B92D22931D29BE0FDB /* image_picker-prefix.pch */,
+				014A29761F938A6E0F7D008805424A8F /* image_picker-umbrella.h */,
+				F79F41A2725D80DB5C3FC05DC2112DEA /* image_picker.debug.xcconfig */,
+				A0C091E1E67497C1925AAF4B7639F816 /* image_picker.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../../../../Pods/Target Support Files/image_picker";
@@ -536,49 +554,22 @@
 			path = ../.symlinks/plugins/path_provider/ios;
 			sourceTree = "<group>";
 		};
-		BB2256525C4B2E6676B5AEBDFCFD2367 /* club_app */ = {
+		B9FB42908F3F97A654060F2811D16D95 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				34CAF3C9D471EC8945F98A29D909E24A /* ios */,
-			);
-			name = club_app;
-			path = club_app;
-			sourceTree = "<group>";
-		};
-		BDAED9AF2660B5E7CB2B0E943B459DB3 /* plugins */ = {
-			isa = PBXGroup;
-			children = (
-				E02385CFBE8AB9573A8FE67A69401801 /* image_picker */,
-			);
-			name = plugins;
-			path = plugins;
-			sourceTree = "<group>";
-		};
-		C54D26D3ACC5735561DF6DFC26D8B211 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				F83779FB4B0C9BA9E2FE7D998602E2AE /* .. */,
+				6B4F39F2FF09B446A875D8093BF8E6F6 /* .. */,
 			);
 			name = ..;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		CAF2259B1F5E3D7FE4CC511F54DA960A /* Classes */ = {
+		C7DE7B7E624D299A13B6709DED56566C /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				CB48B5429C24D7D75D35AD753732D1AB /* FLTImagePickerImageUtil.h */,
-				F5AF042B58165D704CBF1413F19B1298 /* FLTImagePickerImageUtil.m */,
-				D386A0C04F70DF5E02ABDB55FFEB571B /* FLTImagePickerMetaDataUtil.h */,
-				D300654A1B6DAD24A28FF5FA7534544E /* FLTImagePickerMetaDataUtil.m */,
-				078E070B6DBD86FE1E962E0C09979039 /* FLTImagePickerPhotoAssetUtil.h */,
-				BF39290588C2D1F3A230E6803620A7C3 /* FLTImagePickerPhotoAssetUtil.m */,
-				B1F9930263F70C8F890001ABCC454999 /* FLTImagePickerPlugin.h */,
-				2233C5081181FEEFA74875C5B030D5AA /* FLTImagePickerPlugin.m */,
-				65533A6F542A64177A5C0FD62E9CB72A /* FLTPHPickerSaveImageToPathOperation.h */,
-				5F03050AF80166B701A4695443D72C47 /* FLTPHPickerSaveImageToPathOperation.m */,
+				80FA5DA66E7C5C8048E7825FA7745FCD /* Classes */,
 			);
-			name = Classes;
-			path = Classes;
+			name = ios;
+			path = ios;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -600,15 +591,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D7FA4700F6964525801ABCB56CB4ED0C /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				15E0BCDC465484710477DDAD10F86C05 /* .. */,
-			);
-			name = ..;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		D90A8B761EFCCDAF2623EF45963BB782 /* ios */ = {
 			isa = PBXGroup;
 			children = (
@@ -616,6 +598,15 @@
 			);
 			name = ios;
 			path = ios;
+			sourceTree = "<group>";
+		};
+		D94A8EA2B9C9CB7C08CCD754969A5BBE /* .symlinks */ = {
+			isa = PBXGroup;
+			children = (
+				1F152EED195EF63BBCB69BD35A0DC0F0 /* plugins */,
+			);
+			name = .symlinks;
+			path = .symlinks;
 			sourceTree = "<group>";
 		};
 		DC59AE0A0D823DB0BBB8B0A4B37059B8 /* .. */ = {
@@ -627,28 +618,37 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		DC5E8D5D01777A4C68338FF7AEABDFE9 /* .. */ = {
+		E1AE9FBBE303372040EB4FEA5239306A /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				80BEE236A09DE57695DB5C85310838C4 /* .. */,
+				435B925D1024946D636A6D026207F4BD /* .. */,
 			);
 			name = ..;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		E02385CFBE8AB9573A8FE67A69401801 /* image_picker */ = {
-			isa = PBXGroup;
-			children = (
-				54A92527A76C290BB3FE34CC81F9BFD0 /* ios */,
-			);
-			name = image_picker;
-			path = image_picker;
 			sourceTree = "<group>";
 		};
 		E383227E36490270C9715300DD3E1373 /* .. */ = {
 			isa = PBXGroup;
 			children = (
 				226E272BB63A00F62C618EBDC97CC709 /* flutter_project */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EA43ECF2EE9CE957F6C2167B80FD27AC /* 2021_MooyaHong */ = {
+			isa = PBXGroup;
+			children = (
+				A0104C79EBC9B9E6357AB45B675CD758 /* club_app */,
+			);
+			name = 2021_MooyaHong;
+			path = 2021_MooyaHong;
+			sourceTree = "<group>";
+		};
+		F2D7A654D4847A3C58A643E3A5A4B688 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				6F378198DD999E8C2C75F08B3C4B0CD0 /* .. */,
 			);
 			name = ..;
 			path = ..;
@@ -664,13 +664,13 @@
 			path = "../Pods/Target Support Files/Flutter";
 			sourceTree = "<group>";
 		};
-		F83779FB4B0C9BA9E2FE7D998602E2AE /* .. */ = {
+		F689AAD177B5524B61C0AD00CFE40FED /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				02A61F63857F39BD014360DCE015003E /* flutter_project */,
+				12DCEEA9736AD2459742666CE7D7D9F9 /* image_picker.podspec */,
+				AC89E4294D87D314278367F7C60B0A92 /* LICENSE */,
 			);
-			name = ..;
-			path = ..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		FD7982E25FC2362A06C30ADE20BB9725 /* .. */ = {
@@ -706,11 +706,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900E8A69D49B6A21AFFD32468D5BDDEC /* FLTImagePickerImageUtil.h in Headers */,
-				9F17477684E9357C05DA5413404E95EE /* FLTImagePickerMetaDataUtil.h in Headers */,
-				77EABC0C619A133BC3DE059386198F65 /* FLTImagePickerPhotoAssetUtil.h in Headers */,
-				40E8A3796C34D4536CB954F2D2696C00 /* FLTImagePickerPlugin.h in Headers */,
-				4853C3D03928F5BD010926E30509E7F4 /* FLTPHPickerSaveImageToPathOperation.h in Headers */,
+				1E420B05DD72B2E99B3091EECAD8878C /* FLTImagePickerImageUtil.h in Headers */,
+				9C9AC56D64132B8A6C0C6626CCD11866 /* FLTImagePickerMetaDataUtil.h in Headers */,
+				FF8AB3E7B832B411A99DDD698F744C19 /* FLTImagePickerPhotoAssetUtil.h in Headers */,
+				3355D47E66D747BD0C2C0486F5266A79 /* FLTImagePickerPlugin.h in Headers */,
+				CB561905C46EBF152D0C570AB264BF66 /* FLTPHPickerSaveImageToPathOperation.h in Headers */,
 				47020FC9CE027D084008219A9635EA4A /* image_picker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -845,11 +845,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				742F279007BB9CE862BCCBB0A676F8BA /* FLTImagePickerImageUtil.m in Sources */,
-				D78E735EF13A217BD8B37CCF66146D72 /* FLTImagePickerMetaDataUtil.m in Sources */,
-				2258B03344EF61D0992672E72192A71A /* FLTImagePickerPhotoAssetUtil.m in Sources */,
-				A9C5F84997874FB087E6FA4CA6D14095 /* FLTImagePickerPlugin.m in Sources */,
-				069C3AE458665CC78A875B9DF66A0C62 /* FLTPHPickerSaveImageToPathOperation.m in Sources */,
+				3AD5F24B48626AAB1FBE74CECC6EEB8E /* FLTImagePickerImageUtil.m in Sources */,
+				61E5F7573D622574A5E598F056D15C07 /* FLTImagePickerMetaDataUtil.m in Sources */,
+				5E6FC84297757CD4CA74EC0A07005017 /* FLTImagePickerPhotoAssetUtil.m in Sources */,
+				0639167E5B9EFF4FD94FE76154F2D6FA /* FLTImagePickerPlugin.m in Sources */,
+				A22C82B460EF7AD5054E85778CC85133 /* FLTPHPickerSaveImageToPathOperation.m in Sources */,
 				1DFEF620E8E0478C322476E90DF713E7 /* image_picker-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1160,7 +1160,7 @@
 		};
 		5EE699D2737F966D20571C152079D88D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21C4EEABEA072B8690338C84825E4BF6 /* image_picker.debug.xcconfig */;
+			baseConfigurationReference = F79F41A2725D80DB5C3FC05DC2112DEA /* image_picker.debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1383,7 +1383,7 @@
 		};
 		A63A09CCD599344B3DAAD71AE626C1C8 /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCD3CA365ECF6FBDCA28A5D479A280D5 /* image_picker.release.xcconfig */;
+			baseConfigurationReference = A0C091E1E67497C1925AAF4B7639F816 /* image_picker.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1489,7 +1489,7 @@
 		};
 		E9B96EC68F7030D77E12F2981DE718E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCD3CA365ECF6FBDCA28A5D479A280D5 /* image_picker.release.xcconfig */;
+			baseConfigurationReference = A0C091E1E67497C1925AAF4B7639F816 /* image_picker.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
