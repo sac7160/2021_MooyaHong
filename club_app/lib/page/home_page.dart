@@ -21,22 +21,20 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: MainDrawer(),
-      body: Container(
+      body: Stack(
+        children: <Widget> [
+         Container(
+            height: MediaQuery.of(context).size.height *0.4,
+            decoration: BoxDecoration(
+            
+                  image: DecorationImage(
+                    image:AssetImage('assets/club_logo2.png'),
+                    alignment: Alignment.centerLeft,
+                    ))),
+      /*Container(
         decoration: BoxDecoration(color: kBackgroundColor,),
         padding: EdgeInsets.only(left: 10, right: 10),
         child: ListView(children: <Widget>[
-          /*Positioned(
-                  top:40,
-                  left:20,
-                  child: IconButton(
-                    icon: Icon(Icons.menu),
-                    iconSize: 30,
-                    color: Colors.white,
-                    onPressed: (){
-                      _scaffoldkey.currentState.openDrawer();
-                    },
-                    ),
-                ),*/
           Stack(
             children: <Widget>[
               Container(
@@ -51,22 +49,28 @@ class _HomePageState extends State<HomePage> {
                   Radius.circular(5.0),)),
               ),
             ],
-          ),
-          _pageOfTop(),
-          //_pageOfMyClub(),
-          SelectClub(),
+          ),*/
+          Container(
+            padding: EdgeInsets.only(left: 10, right: 10),
+            child: ListView(
+              children: [
+                SizedBox(height: MediaQuery.of(context).size.height*0.2,),
+                _pageOfTop(),
+            //_pageOfMyClub(),
+                SelectClub(),
 
-          SizedBox(height: 30),
-          _pageOfMyClub2(),
+                SizedBox(height: 30),
+                _pageOfMyClub2(),
    
-          SizedBox(height: 30),
-          example(),
-          example(),
-          example(),
-          example(),
-          example(),
+                SizedBox(height: 30),
+                example(),
+                example(),
+                example(),
+                example(),
+                example(),],),
+          )
+          
         ]),
-      ),
     );
   }
 }
