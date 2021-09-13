@@ -38,7 +38,7 @@ class _MyClubPageState extends State<MyClubPage> {
   Widget build(BuildContext context) {
     return WillPopScope(    //회원가입이나 아이디찾기 후 로그인하면 메인화면에서 뒤로가기가능함
       child: Scaffold(
-        body: Padding(
+        body: SafeArea(child:Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
         children: [
@@ -124,7 +124,7 @@ class _MyClubPageState extends State<MyClubPage> {
               )),
           SizedBox(height: 20),
           Container(
-            height: MediaQuery.of(context).size.height * 0.6,
+            height: MediaQuery.of(context).size.height * 0.5,
             width: MediaQuery.of(context).size.width,
             child: ListView.builder(
                 padding: const EdgeInsets.all(8),
@@ -172,7 +172,7 @@ class _MyClubPageState extends State<MyClubPage> {
           ),
         ],
       ),
-    )),
+    ))),
     onWillPop: ()async{
     return false;},);
   }

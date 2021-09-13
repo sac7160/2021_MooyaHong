@@ -110,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		+W0qZcvcCOsBDVh83hMkl+lCQOo=
+		W+ReO2ZfGy/Ye4sipOFyFeB0EwY=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Xn0ITCbNeVe9xZ37qGtaDE7aWVk=
+		/Bp4crBeKr4fkeqpW76LrhiU+7Q=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES</key>
 		<data>
-		26e0aEp7AytSV5zZCsoKjODkgZU=
+		CWBGsWXVh5nH9nkGe44M+vktRxk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/club_logo.jpeg</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		J/8AweOJ0OXbyheT9wzNyASoX2Y=
+		1DT75yWe+nHcNm6f1gvcPt7HToA=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -629,11 +629,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+W0qZcvcCOsBDVh83hMkl+lCQOo=
+			W+ReO2ZfGy/Ye4sipOFyFeB0EwY=
 			</data>
 			<key>hash2</key>
 			<data>
-			qPYCqUGEz4t6sbxE+eScdTR1HGGftbbuxNIUhMcra10=
+			xaDy7VvU/faMOdnNDTYbas4M5/2Vh1HtFEs+cszm/78=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -651,11 +651,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xn0ITCbNeVe9xZ37qGtaDE7aWVk=
+			/Bp4crBeKr4fkeqpW76LrhiU+7Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZpIK1QQUK8ZZpCscDD1YQM8aaIJWfnO4AShdgIxHFXg=
+			4cucIKCoZK37+DKfMaoDSWzdcr5dPeWAZ4fPowYoG+Y=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -684,11 +684,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			26e0aEp7AytSV5zZCsoKjODkgZU=
+			CWBGsWXVh5nH9nkGe44M+vktRxk=
 			</data>
 			<key>hash2</key>
 			<data>
-			5laM+JCnkXl0h/6PcmnFy4+AT2Cl6bvgxJk+S2/X9ao=
+			zt+TREHmi8LI21PPYZr56HdvAQ5Dp4a7eUDQqZKTD5Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/club_logo.jpeg</key>
@@ -750,11 +750,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J/8AweOJ0OXbyheT9wzNyASoX2Y=
+			1DT75yWe+nHcNm6f1gvcPt7HToA=
 			</data>
 			<key>hash2</key>
 			<data>
-			9C2PnBxAGNHXgzxjkLUUdmlS4iaMVyjx1EdySmzRlds=
+			uUHRN3cDLgXwQyu1IIZYq8EHY2jwd9hzDpg0cNHEyng=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
