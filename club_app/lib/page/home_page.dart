@@ -20,7 +20,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  WillPopScope(child: Scaffold(
       /*appBar: AppBar(
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -144,7 +144,9 @@ class _HomePageState extends State<HomePage> {
           )
           
         ]),
-    );
+    ),
+     onWillPop: ()async{
+    return false;},);
   }
 }
 
@@ -221,7 +223,7 @@ Widget _pageOfMyClub2() {
               width: MediaQuery.of(context).size.width,
               margin: EdgeInsets.symmetric(horizontal: 5.0),
               decoration: BoxDecoration(
-                  color: Colors.amber,
+                  color: kActiveIconColor,
                   borderRadius: BorderRadius.circular(10.0)),
               child: Text(
                 '배너 $i',
