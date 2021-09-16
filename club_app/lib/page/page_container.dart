@@ -5,8 +5,9 @@ import 'package:club_app/page/chat/chat_page.dart';
 import 'package:club_app/page/home_page.dart';
 
 class FirstPage extends StatefulWidget {
-  const FirstPage({Key? key}) : super(key: key);
+  final int index;
 
+  const FirstPage({Key? key, required this.index}) : super(key: key);
   @override
   _FirstPageState createState() => _FirstPageState();
 }
@@ -17,7 +18,7 @@ class _FirstPageState extends State<FirstPage> {
     HomePage(),
     ChatScreen(),
     NoticeBoardPage(),
-    AdBoardPagenew()
+    AdBoardPagenew(),
   ];
   void _onTap(int index) {
     setState(() {
