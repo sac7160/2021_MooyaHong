@@ -38,10 +38,6 @@ class HomeScreen extends StatelessWidget {
             height: size.height * .45,
             decoration: BoxDecoration(
               color: Color(0xFFF5CEB8),
-              image: DecorationImage(
-                alignment: Alignment.centerLeft,
-                image: AssetImage("assets/images/undraw_pilates_gpdb.png"),
-              ),
             ),
           ),
           SafeArea(
@@ -60,7 +56,6 @@ class HomeScreen extends StatelessWidget {
                         color: Color(0xFFF2BEA1),
                         shape: BoxShape.circle,
                       ),
-                      child: SvgPicture.asset("assets/icons/menu.svg"),
                     ),
                   ),
                   Text(
@@ -79,16 +74,47 @@ class HomeScreen extends StatelessWidget {
                       crossAxisSpacing: 20,
                       mainAxisSpacing: 20,
                       children: <Widget>[
-                        CategoryCard(
-                          title: "책아띠",
-                          svgSrc: "assets/svg/1.svg",
-                          press: () {Navigator.push(
+                        InkWell(
+                          child:Container(
+                           child:  Image.asset("assets/images/1.jpeg"),
+                               ),
+                            onTap: (){Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
                                 return DetailScreen(index: 1,);
                               }),
-                            );},
-                        ),
+                            );},), 
+                            //svg 이미지 사용하기 복잡한거같은데 이런식으로 하면 안될까요?
+                       InkWell(
+                          child:Container(
+                           child:  Image.asset("assets/images/2.jpeg"),
+                               ),
+                            onTap: (){Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return DetailScreen(index: 2,);
+                              }),
+                            );},), 
+                        InkWell(
+                          child:Container(
+                           child:  Image.asset("assets/images/3.jpeg"),
+                               ),
+                            onTap: (){Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return DetailScreen(index: 3,);
+                              }),
+                            );},), 
+                        InkWell(
+                          child:Container(
+                           child:  Image.asset("assets/images/4.jpeg"),
+                               ),
+                            onTap: (){Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return DetailScreen(index: 4,);
+                              }),
+                            );},), 
                         CategoryCard(
                           title: "royalblack",
                           svgSrc: "assets/svg/2.svg",

@@ -44,7 +44,7 @@ class _DetailScreenState extends State<DetailScreen> {
         children: [
           Expanded(child: buildFotoProducSlider()),
           SizedBox(
-            height: 50,
+            height: 40,
           ),
           Expanded(
               child: Container(
@@ -127,15 +127,16 @@ class _DetailScreenState extends State<DetailScreen> {
           items: 
           // Image.network(clubimages),
             [
-              FlutterLogo(
-              size: 150,
-            ),
-            FlutterLogo(
-              size: 150,
-            ),
-            FlutterLogo(
-              size: 150,
-            ),
+              Image.asset("assets/images/1.jpeg"),
+              Image.asset("assets/images/2.jpeg"),
+              Image.asset("assets/images/3.jpeg"),
+              Image.asset("assets/images/4.jpeg"),
+              Image.asset("assets/images/5.jpeg"),
+              Image.asset("assets/images/6.jpeg"),
+              Image.asset("assets/images/7.jpeg"),
+              Image.asset("assets/images/8.jpeg"),
+              Image.asset("assets/images/9.jpeg"),
+              Image.asset("assets/images/10.jpeg"),
           ],
           //이칸에 동아리 홍보 사진이 들어가야 하는데 ,,, ㅠ
           carouselController: _controller,

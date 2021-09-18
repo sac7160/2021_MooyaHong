@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: <Widget>[
             SizedBox(
-              height: MediaQuery.of(context).size.height - 56,
+              height: MediaQuery.of(context).size.height - 90,
               child: ListView(children: <Widget>[
                 /*Positioned(
                   top:40,
