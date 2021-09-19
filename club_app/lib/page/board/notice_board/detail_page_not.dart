@@ -18,7 +18,7 @@ class DetailPagenot extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightGreen,
+        backgroundColor: Colors.red[300],
         ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -37,7 +37,7 @@ class DetailPagenot extends StatelessWidget {
                   }, 
                   child: Text("삭제"),
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.lightGreen[700],
+                    primary: Colors.red[300],
                     // textStyle: TextStyle(fontSize: 15, fontWeight: FontWeight.normal)
                     ),
                 ),
@@ -48,7 +48,7 @@ class DetailPagenot extends StatelessWidget {
                    }, 
                   child: Text("수정"),
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.lightGreen[700]
+                    primary: Colors.red[300]
                   ),
                 ),
               ],

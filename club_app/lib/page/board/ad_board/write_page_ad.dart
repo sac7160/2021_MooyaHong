@@ -13,7 +13,7 @@ class WritePageadd extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightGreen,
+        backgroundColor: Colors.red[300],
         title: Text("홍보 게시글 작성"),),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

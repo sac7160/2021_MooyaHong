@@ -1,4 +1,5 @@
 import 'package:club_app/components/custom_elevated_button.dart';
+import 'package:club_app/components/custom_textarea.dart';
 import 'package:club_app/components/custsom_text_formfield.dart';
 import 'package:club_app/page/board/ad_board/detail_page.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,7 @@ class JoinPage extends StatelessWidget {
           children: [
             Container(
               alignment: Alignment.center,
-              height: 200,
+              height: 70,
               child: Text("지원서 작성 페이지", style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),
               ),
             ),
@@ -52,14 +53,14 @@ class JoinPage extends StatelessWidget {
                 ),
                 CustomTextFormField(
                 hint: "전화번호",
-                funValidator: validatePassword() 
+                funValidator: validatephonenumber() 
                 //원래 옛날에 만들었던 회원가입 페이지 그대로 이용이라 validate 속성좀 변경해야 할듯
                 ),
                 CustomTextFormField(
                 hint: "Email",
                 funValidator: validateEmail(),
                 ),
-                CustomTextFormField(
+                CustomTextArea(
                 hint: "지원동기",
                 funValidator: validatewrite()
                 //이부분 칸좀 늘리기***&validate 수정하기
@@ -99,8 +100,8 @@ validateUsername() {
   return (String? value){ 
     if (value!.isEmpty) {
       return "이름에는 공백이 들어갈 수 없습니다."; 
-    } else if (!isAlphanumeric(value)){
-      return "유저 네임에는 알파벳과 숫자만이 들어갈 수 있습니다.";
+    } else if (!isNumeric(value)){
+      return "유저 네임에는 한글과 알파벳만이 들어갈 수 있습니다.";
     } else if (value.length > 12){
       return "유저네임의 길이를 초과하였습니다.";
     } else if( value.length < 4 ){
@@ -111,14 +112,16 @@ validateUsername() {
   };
 }
 
-validatePassword() {
+validatephonenumber() {
   return (String? value){ 
     if (value!.isEmpty) {
       return "전화번호에는 공백이 들어갈 수 없습니다."; 
-    } else if (value.length > 12){
-      return "전화번호의 길이를 초과하였습니다.";
-    } else if( value.length < 4 ){
-      return "전화번호의 최소 길이는 4자입니다.";
+    } else if (value.length > 11){
+      return "01012345678형식으로 입력해주세요";
+    } else if( value.length < 9 ){
+      return "01012345678형식으로 입력해주세요";
+    } else if (!isNumeric(value)){
+      return "전화번호에는 숫자만이 들어갈 수 있습니다.";
     } else {
       return null;
     }

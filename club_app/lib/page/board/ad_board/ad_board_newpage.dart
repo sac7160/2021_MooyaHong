@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:validators/validators.dart';
 
 import '../../../constants.dart';
 import '../search_bar.dart';
-import 'category_card.dart';
 import 'detail_page.dart';
 
 
@@ -31,13 +30,14 @@ class HomeScreen extends StatelessWidget {
     var size = MediaQuery.of(context)
         .size; //this gonna give us total height and with of our device
     return Scaffold(
+      resizeToAvoidBottomInset : false,
       body: Stack(
         children: <Widget>[
           Container(
             // Here the height of the container is 45% of our total height
             height: size.height * .45,
             decoration: BoxDecoration(
-              color: Color(0xFFF5CEB8),
+              color: Color(0xFFC7B8F5),
             ),
           ),
           SafeArea(
@@ -53,7 +53,7 @@ class HomeScreen extends StatelessWidget {
                       height: 52,
                       width: 52,
                       decoration: BoxDecoration(
-                        color: Color(0xFFF2BEA1),
+                        color:  Color(0xFF817DC0),
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -70,14 +70,26 @@ class HomeScreen extends StatelessWidget {
                     child: 
                       GridView.count(
                       crossAxisCount: 2,
-                      childAspectRatio: .85,
-                      crossAxisSpacing: 20,
-                      mainAxisSpacing: 20,
+                      childAspectRatio: .7,
+                      crossAxisSpacing: 40,
+                      mainAxisSpacing: 30,
                       children: <Widget>[
                         InkWell(
-                          child:Container(
-                           child:  Image.asset("assets/images/1.jpeg"),
-                               ),
+                          child:Column(
+                            children: <Widget>[
+                              Row(
+                                children: [
+                                  SizedBox(width: 17),
+                                  Text("책아띠",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  SizedBox(width: 30),
+                                  Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("학술")],)
+                                ],
+                              ),
+                              Image.asset("assets/images/1.jpeg"),
+                              Text("#독서 #독서토론 #토론 #연합 #연합동아리",style: TextStyle(color:Colors.black),)
+                              
+                            ],
+                          ),
                             onTap: (){Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
@@ -85,68 +97,162 @@ class HomeScreen extends StatelessWidget {
                               }),
                             );},), 
                             //svg 이미지 사용하기 복잡한거같은데 이런식으로 하면 안될까요?
-                       InkWell(
-                          child:Container(
-                           child:  Image.asset("assets/images/2.jpeg"),
-                               ),
+                            
+                        InkWell(
+                          child:Column(
+                            children: <Widget>[
+                              Row(
+                                children: [
+                                  SizedBox(width: 17,height: 5,),
+                                  Text("로얄 블랙",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  SizedBox(width: 30,height: 5,),
+                                  Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("친목")],)
+                                ],
+                              ),
+                              Image.asset("assets/images/2.jpeg"),
+                              Text("#소통 #연합 #연합동아리",style: TextStyle(color:Colors.black),)
+                              
+                            ],
+                          ),
                             onTap: (){Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return DetailScreen(index: 2,);
+                                return DetailScreen(index: 1,);
                               }),
                             );},), 
                         InkWell(
-                          child:Container(
-                           child:  Image.asset("assets/images/3.jpeg"),
-                               ),
+                          child:Column(
+                            children: <Widget>[
+                              Row(
+                                children: [
+                                  SizedBox(width: 17,height: 5,),
+                                  Text("BITA",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  SizedBox(width: 30,height: 5,),
+                                  Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("학술")],)
+                                ],
+                              ),
+                              Image.asset("assets/images/3.jpeg"),
+                              Text("#빅데이터 #학술",style: TextStyle(color:Colors.black),)
+                              
+                            ],
+                          ),
                             onTap: (){Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return DetailScreen(index: 3,);
+                                return DetailScreen(index: 1,);
                               }),
                             );},), 
                         InkWell(
-                          child:Container(
-                           child:  Image.asset("assets/images/4.jpeg"),
-                               ),
+                          child:Column(
+                            children: <Widget>[
+                              Row(
+                                children: [
+                                  SizedBox(width: 17,height: 5,),
+                                  Text("SIGNAL",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  SizedBox(width: 30,height: 5,),
+                                  Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("영상")],)
+                                ],
+                              ),
+                              Image.asset("assets/images/4.jpeg"),
+                              Text("#영상 #동영상 #만들기 #연합 #연합동아리",style: TextStyle(color:Colors.black),)
+                              
+                            ],
+                          ),
                             onTap: (){Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return DetailScreen(index: 4,);
+                                return DetailScreen(index: 1,);
                               }),
                             );},), 
-                        CategoryCard(
-                          title: "royalblack",
-                          svgSrc: "assets/svg/2.svg",
-                          press: () {Navigator.push(
+                        InkWell(
+                          child:Column(
+                            children: <Widget>[
+                              Row(
+                                children: [
+                                  SizedBox(width: 17,height: 5,),
+                                  Text("SNOL",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  SizedBox(width: 30,height: 5,),
+                                  Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("기획")],)
+                                ],
+                              ),
+                              Image.asset("assets/images/5.jpeg"),
+                              Text("#파티문화 #기획 #포스터",style: TextStyle(color:Colors.black),)
+                              
+                            ],
+                          ),
+                            onTap: (){Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return DetailScreen(index: 2);
+                                return DetailScreen(index: 1,);
                               }),
-                            );},
-                        ),
-                        CategoryCard(
-                          title: "BITA",
-                          svgSrc: "assets/svg/3.svg",
-                          press: () {
-                            Navigator.push(
+                            );},), 
+                        InkWell(
+                          child:Column(
+                            children: <Widget>[
+                              Row(
+                                children: [
+                                  SizedBox(width: 17,height: 5,),
+                                  Text("신나구",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  SizedBox(width: 30,height: 5,),
+                                  Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("운동")],)
+                                ],
+                              ),
+                              Image.asset("assets/images/6.jpeg"),
+                              Text("#야구직관 #야구 #신촌연합 #연합동아리",style: TextStyle(color:Colors.black),)
+                              
+                            ],
+                          ),
+                            onTap: (){Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return DetailScreen(index: 3);
+                                return DetailScreen(index: 1,);
                               }),
-                            );
-                          },
-                        ),
-                        CategoryCard(
-                          title: "signal",
-                          svgSrc: "assets/svg/4.svg",
-                          press: () {Navigator.push(
+                            );},), 
+                        InkWell(
+                          child:Column(
+                            children: <Widget>[
+                              Row(
+                                children: [
+                                  SizedBox(width: 17,height: 5,),
+                                  Text("DAISY",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  SizedBox(width: 30,height: 5,),
+                                  Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("학술")],)
+                                ],
+                              ),
+                              Image.asset("assets/images/7.jpeg"),
+                              Text("#영어 #영어회화 #연합 #연합동아리",style: TextStyle(color:Colors.black),)
+                              
+                            ],
+                          ),
+                            onTap: (){Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return DetailScreen(index: 4);
+                                return DetailScreen(index: 1,);
                               }),
-                            );},
-                        ),
+                            );},), 
+                        InkWell(
+                          child:Column(
+                            children: <Widget>[
+                              Row(
+                                children: [
+                                  SizedBox(width: 17,height: 5,),
+                                  Text("이너리뷰",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  SizedBox(width: 30,height: 5,),
+                                  Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("영상")],)
+                                ],
+                              ),
+                              Image.asset("assets/images/8.jpeg"),
+                              Text("#유튜브 #콘텐츠 #작가 #편집자",style: TextStyle(color:Colors.black),)
+                              
+                            ],
+                          ),
+                            onTap: (){Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return DetailScreen(index: 1,);
+                              }),
+                            );},), 
+                        
                       ],
                     ),
                   ),

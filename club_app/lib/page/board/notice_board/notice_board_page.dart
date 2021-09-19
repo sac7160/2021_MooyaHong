@@ -19,7 +19,7 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightGreen,
+        backgroundColor: Colors.red[300],
         title: Text('공지사항'),
         centerTitle: true,
         elevation: 0.0,
