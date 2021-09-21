@@ -23,7 +23,7 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
         color: Colors.grey[300],
       ),
       appBar: AppBar(
-        backgroundColor: Colors.lightGreen,
+        backgroundColor: Colors.red[300],
         title: Text('공지사항'),
         centerTitle: true,
         elevation: 0.0,

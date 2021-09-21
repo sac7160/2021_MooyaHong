@@ -1,14 +1,19 @@
+import 'package:club_app/page/board/ad_board/ad_board_newpage.dart';
 import 'package:flutter/material.dart';
 import 'package:club_app/page/board/notice_board/notice_board_page.dart';
 import 'package:club_app/page/chat/chat_page.dart';
 import 'package:club_app/page/home_page.dart';
+<<<<<<< HEAD
 import 'package:club_app/page/board/ad_board_page.dart';
 import 'package:club_app/constants.dart';
 import 'package:club_app/page/settings/profile_setting_page.dart';
+=======
+>>>>>>> jsver
 
 class FirstPage extends StatefulWidget {
-  const FirstPage({Key? key}) : super(key: key);
+  final int index;
 
+  const FirstPage({Key? key, required this.index}) : super(key: key);
   @override
   _FirstPageState createState() => _FirstPageState();
 }
@@ -18,9 +23,13 @@ class _FirstPageState extends State<FirstPage> {
   final List<Widget> _children = [
     ChatScreen(),
     NoticeBoardPage(),
+<<<<<<< HEAD
     HomePage(),
     AdBoardPage(),
     ProfileSetting()
+=======
+    AdBoardPagenew(),
+>>>>>>> jsver
   ];
   void _onTap(int index) {
     setState(() {

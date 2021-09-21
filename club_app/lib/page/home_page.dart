@@ -115,6 +115,7 @@ class _HomePageState extends State<HomePage> {
       /*Container(
         decoration: BoxDecoration(color: kBackgroundColor,),
         padding: EdgeInsets.only(left: 10, right: 10),
+<<<<<<< HEAD
         child: ListView(children: <Widget>[
           Stack(
             children: <Widget>[
@@ -138,6 +139,28 @@ class _HomePageState extends State<HomePage> {
               children: [
                
                
+=======
+        child: Column(
+          children: <Widget>[
+            SizedBox(
+              height: MediaQuery.of(context).size.height - 90,
+              child: ListView(children: <Widget>[
+                /*Positioned(
+                  top:40,
+                  left:20,
+                  child: IconButton(
+                    icon: Icon(Icons.menu),
+                    iconSize: 30,
+                    color: Colors.white,
+                    onPressed: (){
+                      _scaffoldkey.currentState.openDrawer();
+                    },
+                    ),
+                ),*/
+                _pageOfTop(),
+                _pageOfMyClub(),
+                SizedBox(height: 30),
+>>>>>>> jsver
                 _pageOfMyClub2(),
                 
                 SizedBox(height: 30),
