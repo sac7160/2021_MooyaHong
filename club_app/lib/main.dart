@@ -13,11 +13,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
     return MaterialApp(
-=======
-    return GetMaterialApp(
->>>>>>> jsver
       debugShowCheckedModeBanner: false,
       title: 'First page',
       theme: ThemeData(
@@ -25,11 +21,7 @@ class MyApp extends StatelessWidget {
         textTheme: Theme.of(context).textTheme.apply(displayColor: kTextColor),
         primaryColor: Color(0xFFF5CEB8)
       ),
-<<<<<<< HEAD
       home: LoginPage(),
-=======
-      home: FirstPage(index: 3,),
->>>>>>> jsver
     );
   }
 }

@@ -18,12 +18,8 @@ class DetailPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-<<<<<<< HEAD:club_app/lib/page/board/notice_board/detail_page.dart
-        backgroundColor: Colors.lightGreen,),
-=======
         backgroundColor: Colors.red[300],
         ),
->>>>>>> jsver:club_app/lib/page/board/notice_board/detail_page_not.dart
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -39,29 +35,21 @@ class DetailPage extends StatelessWidget {
                   onPressed : () { 
                     Get.off(NoticeBoardPage());
                   }, 
-<<<<<<< HEAD:club_app/lib/page/board/notice_board/detail_page.dart
-                  child: Text("삭제")
-=======
                   child: Text("삭제"),
                   style: ElevatedButton.styleFrom(
                     primary: Colors.red[300],
                     // textStyle: TextStyle(fontSize: 15, fontWeight: FontWeight.normal)
                     ),
->>>>>>> jsver:club_app/lib/page/board/notice_board/detail_page_not.dart
                 ),
                 SizedBox(width: 10),
                 ElevatedButton(
                   onPressed : () {
                     Get.to(WritePage());
                    }, 
-<<<<<<< HEAD:club_app/lib/page/board/notice_board/detail_page.dart
-                  child: Text("수정")
-=======
                   child: Text("수정"),
                   style: ElevatedButton.styleFrom(
                     primary: Colors.red[300]
                   ),
->>>>>>> jsver:club_app/lib/page/board/notice_board/detail_page_not.dart
                 ),
               ],
             ),

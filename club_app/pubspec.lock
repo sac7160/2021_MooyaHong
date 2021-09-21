@@ -103,22 +103,14 @@ packages:
       name: flutter_plugin_android_lifecycle
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "2.0.3"
-=======
-    version: "2.0.2"
->>>>>>> jsver
   flutter_svg:
     dependency: "direct main"
     description:
       name: flutter_svg
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "0.19.3"
-=======
-    version: "0.22.0"
->>>>>>> jsver
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -156,11 +148,7 @@ packages:
       name: image_picker
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "0.8.4"
-=======
-    version: "0.8.3+3"
->>>>>>> jsver
   image_picker_for_web:
     dependency: transitive
     description:
@@ -174,11 +162,7 @@ packages:
       name: image_picker_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "2.4.1"
-=======
-    version: "2.3.0"
->>>>>>> jsver
   intl:
     dependency: transitive
     description:
@@ -220,18 +204,13 @@ packages:
       name: path_drawing
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "0.4.1+1"
-=======
-    version: "0.5.1"
->>>>>>> jsver
   path_parsing:
     dependency: transitive
     description:
       name: path_parsing
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "0.1.4"
   path_provider:
     dependency: "direct main"
@@ -268,9 +247,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.3"
-=======
-    version: "0.2.1"
->>>>>>> jsver
   pedantic:
     dependency: transitive
     description:
@@ -284,7 +260,6 @@ packages:
       name: petitparser
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "3.1.0"
   platform:
     dependency: transitive
@@ -293,9 +268,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.2"
-=======
-    version: "4.1.0"
->>>>>>> jsver
   plugin_platform_interface:
     dependency: transitive
     description:
@@ -356,22 +328,14 @@ packages:
       name: syncfusion_flutter_core
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "19.2.62"
-=======
-    version: "19.2.59"
->>>>>>> jsver
   syncfusion_flutter_datepicker:
     dependency: "direct main"
     description:
       name: syncfusion_flutter_datepicker
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "19.2.62"
-=======
-    version: "19.2.59"
->>>>>>> jsver
   term_glyph:
     dependency: transitive
     description:
@@ -414,7 +378,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
-<<<<<<< HEAD
   win32:
     dependency: transitive
     description:
@@ -429,19 +392,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.2.0"
-=======
->>>>>>> jsver
   xml:
     dependency: transitive
     description:
       name: xml
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "4.5.1"
-=======
-    version: "5.1.2"
->>>>>>> jsver
 sdks:
   dart: ">=2.13.0 <3.0.0"
   flutter: ">=2.0.0"

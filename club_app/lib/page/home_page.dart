@@ -7,7 +7,7 @@ import 'package:club_app/constants.dart';
 import 'package:club_app/page/settings/my_club_page.dart';
 import 'package:club_app/widgets/carousel.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
-import 'package:club_app/page/board/ad_board_page.dart';
+import 'package:club_app/page/board/ad_board/ad_board_newpage.dart';
 
 
 //import 'package:get/route_manager.dart';
@@ -115,7 +115,6 @@ class _HomePageState extends State<HomePage> {
       /*Container(
         decoration: BoxDecoration(color: kBackgroundColor,),
         padding: EdgeInsets.only(left: 10, right: 10),
-<<<<<<< HEAD
         child: ListView(children: <Widget>[
           Stack(
             children: <Widget>[
@@ -139,28 +138,6 @@ class _HomePageState extends State<HomePage> {
               children: [
                
                
-=======
-        child: Column(
-          children: <Widget>[
-            SizedBox(
-              height: MediaQuery.of(context).size.height - 90,
-              child: ListView(children: <Widget>[
-                /*Positioned(
-                  top:40,
-                  left:20,
-                  child: IconButton(
-                    icon: Icon(Icons.menu),
-                    iconSize: 30,
-                    color: Colors.white,
-                    onPressed: (){
-                      _scaffoldkey.currentState.openDrawer();
-                    },
-                    ),
-                ),*/
-                _pageOfTop(),
-                _pageOfMyClub(),
-                SizedBox(height: 30),
->>>>>>> jsver
                 _pageOfMyClub2(),
                 
                 SizedBox(height: 30),
@@ -415,7 +392,7 @@ Widget example3() {
               onTap: (){
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => AdBoardPage()));
+                  MaterialPageRoute(builder: (context) => AdBoardPagenew()));
               },
               child:Container(
               child: Row(
