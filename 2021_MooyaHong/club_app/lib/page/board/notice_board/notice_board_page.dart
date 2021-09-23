@@ -14,8 +14,11 @@ class NoticeBoardPage extends StatefulWidget {
 }
 
 class _NoticeBoardPageState extends State<NoticeBoardPage> {
+  
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context)
+        .size;
     return Scaffold(
       drawer: Container(
         width: 300,
@@ -23,7 +26,7 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
         color: Colors.grey[300],
       ),
       appBar: AppBar(
-        backgroundColor: Colors.red[300],
+        backgroundColor: Color(0xFFF5CEB8),
         title: Text('공지사항'),
         centerTitle: true,
         elevation: 0.0,
@@ -49,8 +52,19 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
           ),
           ]
       ),
-      body: 
-       ListView.separated(
+      body: Stack(
+        children: <Widget>[
+          Container(
+            // Here the height of the container is 45% of our total height
+            height: size.height * .80,
+            decoration: BoxDecoration(
+              color: Color(0xFFF5CEB8).withOpacity(0.3),
+            ),
+          ),
+          SafeArea(
+            child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child:    ListView.separated(
         itemCount : 20,
         itemBuilder: (context, index) {
           return ListTile(
@@ -66,6 +80,11 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
         return Divider();
       } ,
     ),
+      )
+      ),
+        ]
+      )
+    
     );
   }
 }
