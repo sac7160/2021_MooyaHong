@@ -35,13 +35,7 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
           icon: Icon(Icons.create),
           onPressed: () {
             print('create button is clicked');
-            Get.to(WritePage());
-            }
-          ),
-          IconButton(
-          icon: Icon(Icons.sync_alt),
-          onPressed: () {
-            print('sync_alt button is clicked');
+            Navigator.push(context,MaterialPageRoute(builder: (context) => (WritePage())));
             }
           ),
           IconButton(
