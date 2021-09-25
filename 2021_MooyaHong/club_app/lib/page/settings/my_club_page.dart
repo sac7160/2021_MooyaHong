@@ -69,7 +69,7 @@ class _MyClubPageState extends State<MyClubPage> {
                               setState(() {
                                 _myClubs = MyClubs.club1;
                                 print(_myClubs);
-                                Get.snackbar('동아리1', '메인동아리로 설정됨');
+                                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("동아리1 메인동아리로 설정됨")));
                               });
                             },
                           )),
@@ -82,7 +82,7 @@ class _MyClubPageState extends State<MyClubPage> {
                             onChanged: (value) {
                               setState(() {
                                 _myClubs = MyClubs.club2;
-                                Get.snackbar('동아리2', '메인동아리로 설정됨');
+                               ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("동아리2 메인동아리로 설정됨")));
                               });
                             },
                           )),
@@ -95,7 +95,7 @@ class _MyClubPageState extends State<MyClubPage> {
                             onChanged: (value) {
                               setState(() {
                                 _myClubs = MyClubs.club3;
-                                Get.snackbar('동아리3', '메인동아리로 설정됨');
+                                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("동아리3 메인동아리로 설정됨")));
                               });
                             },
                           )),
@@ -107,7 +107,7 @@ class _MyClubPageState extends State<MyClubPage> {
                             onChanged: (value) {
                               setState(() {
                                 _myClubs = MyClubs.club4;
-                                Get.snackbar('동아리4', '메인동아리로 설정됨');
+                                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("동아리4 메인동아리로 설정됨")));
                               });
                             },
                           )),
@@ -120,7 +120,7 @@ class _MyClubPageState extends State<MyClubPage> {
                             onChanged: (value) {
                               setState(() {
                                 _myClubs = MyClubs.club5;
-                                Get.snackbar('동아리5', '메인동아리로 설정됨');
+                               ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("동아리5 메인동아리로 설정됨")));
                               });
                             },
                           ))

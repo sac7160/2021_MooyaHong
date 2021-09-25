@@ -227,28 +227,35 @@ Widget _calendar() {
 Widget _pageOfMyClub2() {
     final List<String> images = [
    
-    'assets/mooyahong.png'
-  
-    
+    'assets/mooyahong.png',
+    'assets/club_logo.jpeg',
+    'assets/club_logo2.png',
+     'assets/club_logo.jpeg',
+     'assets/club_logo2.png',
   ];
   
   return CarouselSlider(
     options: CarouselOptions(
-      enlargeCenterPage: true,
+      //enlargeCenterPage: true,
         height: 150.0, autoPlay: true, autoPlayInterval: Duration(seconds: 3)),
     items: [0, 1, 2, 3, 4].map((i) {
       return Builder(
         builder: (BuildContext context) {
           return InkWell(
             onTap: (){
-              if(i==1){
+              if(i==0){
                 Navigator.push(
                            context,
                            MaterialPageRoute(
                             builder: (context) => MyClubPage())); //배너 각자 설정하는법관련 수정필요
 
             }},
-            child:Image.asset(images[i])   
+            child:Container(
+              child: Image.asset(images[i]),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10), //설정안됨
+                ),
+              height: 300,) 
              /* child:Container(
               alignment: Alignment.center,
               width: MediaQuery.of(context).size.width,
