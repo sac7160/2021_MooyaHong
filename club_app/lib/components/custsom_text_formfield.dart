@@ -17,7 +17,6 @@ class CustomTextFormField extends StatelessWidget {
         decoration: InputDecoration(
           hintText:"Enter $hint",
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20),
             ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(20),

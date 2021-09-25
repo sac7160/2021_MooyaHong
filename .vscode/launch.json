@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "club_app",
+            "cwd": "club_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "club_app (profile mode)",
+            "cwd": "club_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "club_app",
+            "cwd": "2021_MooyaHong/club_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "club_app (profile mode)",
+            "cwd": "2021_MooyaHong/club_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        }
+    ]
+}

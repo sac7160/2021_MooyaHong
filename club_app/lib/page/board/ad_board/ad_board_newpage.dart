@@ -1,4 +1,7 @@
+import 'package:club_app/page/board/ad_board/write_page_ad.dart';
+import 'package:club_app/page/board/notice_board/write_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:validators/validators.dart';
 
 import '../../../constants.dart';
@@ -11,16 +14,43 @@ class AdBoardPagenew extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Club App',
-      theme: ThemeData(
-        fontFamily: "Cairo",
-        scaffoldBackgroundColor: kBackgroundColor,
-        textTheme: Theme.of(context).textTheme.apply(displayColor: kTextColor),
+    return Scaffold(
+      drawer: Container(
+        width: 300,
+        height: double.infinity,
+        color: Colors.grey[300],
       ),
-      home: HomeScreen(),
+      appBar: AppBar(
+        backgroundColor: Color(0xFFF5CEB8).withOpacity(0.3),
+        centerTitle: true,
+        elevation: 0.0,
+        actions: <Widget>[
+           IconButton(
+          icon: Icon(Icons.create),
+          onPressed: () {
+            print('create button is clicked');
+            Navigator.push(context,MaterialPageRoute(builder: (context) {
+              return WritePageadd();
+              }
+              ),
+              );
+            }
+          ),
+          ]
+      ),
+      body: HomeScreen()
+       
     );
+    // return MaterialApp(
+    //   debugShowCheckedModeBanner: false,
+    //   title: 'Club App',
+    //   theme: ThemeData(
+    //     fontFamily: "Cairo",
+    //     scaffoldBackgroundColor: kBackgroundColor,
+    //     textTheme: Theme.of(context).textTheme.apply(displayColor: kTextColor),
+    //   ),
+    //   home: HomeScreen(),
+    
   }
 }
 
@@ -35,9 +65,9 @@ class HomeScreen extends StatelessWidget {
         children: <Widget>[
           Container(
             // Here the height of the container is 45% of our total height
-            height: size.height * .45,
+            height: size.height * .80,
             decoration: BoxDecoration(
-              color: Color(0xFFC7B8F5),
+              color: Color(0xFFF5CEB8).withOpacity(0.3),
             ),
           ),
           SafeArea(
@@ -46,18 +76,18 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Align(
-                    alignment: Alignment.topRight,
-                    child: Container(
-                      alignment: Alignment.center,
-                      height: 52,
-                      width: 52,
-                      decoration: BoxDecoration(
-                        color:  Color(0xFF817DC0),
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                  ),
+                  // Align(
+                  //   alignment: Alignment.topRight,
+                  //   child: Container(
+                  //     alignment: Alignment.center,
+                  //     height: 52,
+                  //     width: 52,
+                  //     decoration: BoxDecoration(
+                  //       color:  Color(0xFF817DC0),
+                  //       shape: BoxShape.circle,
+                  //     ),
+                  //   ),
+                  // ),
                   Text(
                     "Club advertise Board ",
                     style: Theme.of(context)
