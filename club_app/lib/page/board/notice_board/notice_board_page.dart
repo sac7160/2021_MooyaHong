@@ -1,3 +1,4 @@
+//todo detailpage route null. first, get => navigator error
 import 'package:flutter/material.dart';
 //import 'package:club_app/page/board/notice_board/notice_page.dart';
 //import 'package:club_app/page/board/notice_board/create_notice_page.dart';
@@ -23,22 +24,20 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
         color: Colors.grey[300],
       ),
       appBar: AppBar(
-        backgroundColor: Colors.red[300],
+        backgroundColor: Colors.red[200],
         title: Text('공지사항'),
         centerTitle: true,
         elevation: 0.0,
         actions: <Widget>[
-           IconButton(
+          IconButton(
           icon: Icon(Icons.create),
           onPressed: () {
             print('create button is clicked');
-            Get.to(WritePage());
-            }
-          ),
-          IconButton(
-          icon: Icon(Icons.sync_alt),
-          onPressed: () {
-            print('sync_alt button is clicked');
+            Navigator.push(context,MaterialPageRoute(builder: (context) {
+              return WritePage();
+              }
+              ),
+              );
             }
           ),
           IconButton(
@@ -50,22 +49,37 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
           ]
       ),
       body: 
-       ListView.separated(
-        itemCount : 20,
-        itemBuilder: (context, index) {
-          return ListTile(
-            onTap: () { 
-              Get.to(DetailPage(index),arguments: "arguments 속성 테스트");
-            },
-            title: Text('공지사항 제목',style: TextStyle(fontSize: 20.0),),
-            leading: Text("1"),
-            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal:0.0),
-            );
-          }, 
-      separatorBuilder:  (context, index) {
-        return Divider();
-      } ,
-    ),
+       Stack(
+         children: <Widget> 
+          [Container(
+            // Here the height of the container is 45% of our total height
+            height: 1000,
+            decoration: BoxDecoration(
+              color: Color(0xFFF5CEB8).withOpacity(0.3),
+            ),
+          ),ListView.separated(
+          itemCount : 20,
+          itemBuilder: (context, index) {
+            return ListTile(
+              onTap: () { 
+                // Get.to(DetailPage(index),arguments: "arguments 속성 테스트");
+                Navigator.push(context,MaterialPageRoute(builder: (context) {
+                return DetailPage(index);
+                }
+                ),
+                );
+              },
+              title: Text('공지사항 제목',style: TextStyle(fontSize: 20.0),),
+              leading: Text("1"),
+              contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal:0.0),
+              );
+            }, 
+             separatorBuilder:  (context, index) {
+          return Divider();
+             } ,
+           ),
+          ]
+       ),
     );
   }
 }

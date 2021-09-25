@@ -8,7 +8,6 @@ import 'write_page.dart';
 class DetailPage extends StatelessWidget {
 
   final int id;
-
   const DetailPage(this.id); 
 
   @override

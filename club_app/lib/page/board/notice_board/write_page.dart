@@ -13,32 +13,43 @@ class WritePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red[300]),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Form(
-          key: _formKey,
-          child: ListView(
-            children:[
-            CustomTextFormField(
-              hint: "Title", 
-              funValidator: validateTitle(),
+        backgroundColor: Colors.red[300],
+        title: Text("공지글 작성")),
+      body: Stack(
+        children: <Widget>[
+          Container(
+            // Here the height of the container is 45% of our total height
+            height: 1000,
+            decoration: BoxDecoration(
+              color: Color(0xFFF5CEB8).withOpacity(0.3),
             ),
-            CustomTextArea(
-              hint: "Content" ,
-              funValidator: validateContent(),
-            ),
-            CustomElevatedButton(
-              text: "글쓰기",
-              funPageRoute: () {
-                if (_formKey.currentState!.validate()){
-                  Get.off(NoticeBoardPage());
-                }
-              },
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Form(
+            key: _formKey,
+            child: ListView(
+              children:[
+              CustomTextFormField(
+                hint: "Title", 
+                funValidator: validateTitle(),
               ),
-              ]
+              CustomTextArea(
+                hint: "Content" ,
+                funValidator: validateContent(),
               ),
-              ),
+              CustomElevatedButton(
+                text: "글쓰기",
+                funPageRoute: () {
+                  if (_formKey.currentState!.validate()){
+                    Get.off(NoticeBoardPage());
+                  }
+                },
+                ),
+                ]
+                ),
+                ),
+        ),] 
       )
       );
   }
