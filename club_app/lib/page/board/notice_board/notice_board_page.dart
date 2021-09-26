@@ -1,6 +1,7 @@
 //왼쪽정렬이 필요한데 안되네??
 //todo detailpage route null. first, get => navigator error
 import 'package:club_app/components/custsom_text_formfield.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 //import 'package:club_app/page/board/notice_board/notice_page.dart';
 //import 'package:club_app/page/board/notice_board/create_notice_page.dart';
@@ -105,7 +106,13 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
                                     //왼쪽정렬이 필요한데 안되네??
                               )])],
                           ),
-                          CustomTextFormField(hint: "Comment",funValidator: validateContent()),
+                          Row(
+                            children: <Widget>[
+                              TextField(
+                                decoration:InputDecoration.collapsed(hintText: 'Comment'),
+                              
+                              ),
+                            ]),
                           ]
                         ),
                       )
@@ -130,4 +137,6 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
        ),
     );
   }
+
+  
 }

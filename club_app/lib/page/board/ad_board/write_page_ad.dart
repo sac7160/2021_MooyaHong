@@ -79,7 +79,7 @@ class _WritePageaddState extends State<WritePageadd> {
                //내용에는 ~가 들어갈 수 없습니다. 
             ),
             CustomElevatedButton(
-              text: "글쓰기",
+              text: "글 작성하기",
               funPageRoute: () {
                 if (_formKey.currentState!.validate()){
                   Get.off(WritePageadd());

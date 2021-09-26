@@ -13,7 +13,6 @@ class JoinPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF5CEB8).withOpacity(0.3),
       appBar: AppBar(
         backgroundColor:Colors.red[300],
         elevation: 0,leading: IconButton(
@@ -25,19 +24,28 @@ class JoinPage extends StatelessWidget {
             color: Colors.black87,
           ),
         ),),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: ListView(
-          children: [
-            Container(
-              alignment: Alignment.center,
-              height: 70,
-              child: Text("지원서 작성 페이지", style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),
-              ),
+      body: Stack(
+        children: <Widget> [
+          Container(
+            height: 1000,
+            decoration: BoxDecoration(
+              color: Color(0xFFF5CEB8).withOpacity(0.3),
             ),
-            _joinForm(),
-      ],  
-      ),
+          ),
+          Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: ListView(
+            children: [
+              Container(
+                alignment: Alignment.center,
+                height: 70,
+                child: Text("지원서 작성 페이지", style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),
+                ),
+              ),
+              _joinForm(),
+        ],  
+        ),
+        ),]
       ),
     );
   }
