@@ -1,4 +1,3 @@
-//왼쪽정렬이 필요한데 안되네??
 //todo detailpage route null. first, get => navigator error
 import 'package:club_app/components/custsom_text_formfield.dart';
 import 'package:flutter/cupertino.dart';
@@ -18,15 +17,14 @@ class NoticeBoardPage extends StatefulWidget {
 }
 
 class _NoticeBoardPageState extends State<NoticeBoardPage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    //   drawer: Container(
-    //     width: 300,
-    //     height: double.infinity,
-    //     color: Colors.grey[300],
-    //   ),
+      drawer: Container(
+        width: 300,
+        height: double.infinity,
+        color: Colors.grey[300],
+      ),
       appBar: AppBar(
         backgroundColor: Colors.red[200],
         title: Text('공지사항'),
@@ -118,22 +116,14 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
                       )
                       
                 
-                      ]),
-                ),
-                leading: IconButton(
-                  icon: Icon(Icons.check),
-                  onPressed: () {
-                    print("check ");
-                  },
-                ),
-                contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal:0.0),
-                );
-              }, 
-            separatorBuilder:  (context, index) {
-          return Divider();
-             } ,
-           ),
-          ]
+                      ]
+                      ),
+                      ),
+                      );
+
+            }, separatorBuilder: (BuildContext context, int index) { 
+              return Divider();
+             },)]
        ),
     );
   }
