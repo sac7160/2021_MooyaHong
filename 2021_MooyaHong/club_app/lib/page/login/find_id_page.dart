@@ -17,6 +17,7 @@ class _FindIdState extends State<FindId> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        color: Color(0xFFF5CEB8).withOpacity(0.6),
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.all(16),
@@ -51,14 +52,14 @@ class _FindIdState extends State<FindId> {
                 alignment: Alignment.center,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                         primary: Colors.orange, onPrimary: Colors.black),
+                         primary: Color(0xFFF5CEB8), onPrimary: Colors.black),
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => LoginPage())
                     );
                   },
-                  child: Text('아이디찾기'),
+                  child: Text('아이디 찾기'),
                 ),
               ),
  

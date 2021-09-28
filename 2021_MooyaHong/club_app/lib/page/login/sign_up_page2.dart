@@ -69,7 +69,7 @@ class _SignUpPage2State extends State<SignUpPage2> {
   Widget build(BuildContext context) {
     return Scaffold(
       body:Container(
-        color: Color(0xFFF5CEB8),
+        color: Color(0xFFF5CEB8).withOpacity(0.6),
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.all(16),
@@ -155,11 +155,11 @@ class _SignUpPage2State extends State<SignUpPage2> {
                      ),
             ),
             Container(
-                margin: const EdgeInsets.only(top: 16.0),
-                alignment: Alignment.center,
+                width: MediaQuery.of(context).size.width * 0.8,
+                margin: const EdgeInsets.only(top: 16.0,bottom: 10),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                         primary: Colors.orange, onPrimary: Colors.black),
+                         primary: Color(0xFFF5CEB8), onPrimary: Colors.black),
                   onPressed: () {
                     _register();
                     Navigator.pop(context);
