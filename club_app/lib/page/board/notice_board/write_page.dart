@@ -17,12 +17,12 @@ class WritePage extends StatelessWidget {
         title: Text("공지글 작성")),
       body: Stack(
         children: <Widget>[
-          Container(
-            height: 1000,
-            decoration: BoxDecoration(
-              color: Color(0xFFF5CEB8).withOpacity(0.3),
-            ),
-          ),
+          // Container(
+          //   height: 1000,
+          //   decoration: BoxDecoration(
+          //     color: Color(0xFFF5CEB8).withOpacity(0.3),
+          //   ),
+          // ),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Form(
