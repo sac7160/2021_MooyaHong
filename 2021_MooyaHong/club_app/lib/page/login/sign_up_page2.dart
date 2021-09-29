@@ -17,6 +17,8 @@ class _SignUpPage2State extends State<SignUpPage2> {
   final TextEditingController _idController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _nameController = TextEditingController();
+   final TextEditingController _majorController = TextEditingController();
+
 
    DateTime date = DateTime.now();
   
@@ -95,6 +97,16 @@ class _SignUpPage2State extends State<SignUpPage2> {
               return null;
             },*/
             ),
+
+            TextFormField(
+              controller: _majorController,
+              decoration: InputDecoration(
+                icon: Icon(Icons.account_circle),
+                labelText: '전공 학과 입력',
+                border: OutlineInputBorder(),
+                hintText: 'major',
+              ),
+            ),
            
             
             TextFormField(
@@ -145,7 +157,11 @@ class _SignUpPage2State extends State<SignUpPage2> {
               ),
               
             Container(
-              height: 90,
+              decoration: BoxDecoration(
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(10),
+                ),
+              height: 60,
               width: MediaQuery.of(context).size.width,
               child: DefaultTextStyle(
                  style: CupertinoTheme.of(context).textTheme.textStyle,

@@ -31,7 +31,7 @@ class _FindPwState extends State<FindPw> {
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   icon: Icon(Icons.account_circle),
-                  labelText: '이름입력',
+                  labelText: '아이디 입력',
                   hintText: '이름' ),
                 onSaved: (val){},
               ),
