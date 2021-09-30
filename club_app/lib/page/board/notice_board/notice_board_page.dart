@@ -50,18 +50,19 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
           ),
           ]
       ),
+      // resizeToAvoidBottomInset: false,
       body: 
        Stack(
          children: <Widget> 
           [Container(
-            // Here the height of the container is 45% of our total height
             height: 1000,
             decoration: BoxDecoration(
               color: Color(0xFFF5CEB8).withOpacity(0.3),
             ),
           ),
           ListView.separated(
-            itemCount : 20,
+            shrinkWrap : true,
+            itemCount : 10,
             itemBuilder: (context, index) {
               return ListTile(
                 onTap: () { 
@@ -106,10 +107,8 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
                           ),
                           Row(
                             children: <Widget>[
-                              TextField(
-                                decoration:InputDecoration.collapsed(hintText: 'Comment'),
-                              
-                              ),
+                              CustomTextFormField(hint: "Title",
+                                funValidator: validateTitle(),),
                             ]),
                           ]
                         ),

@@ -112,7 +112,7 @@ validateUsername() {
       return "유저 네임에는 한글과 알파벳만이 들어갈 수 있습니다.";
     } else if (value.length > 12){
       return "유저네임의 길이를 초과하였습니다.";
-    } else if( value.length < 4 ){
+    } else if( value.length < 3 ){
       return "유저네임의 최소 길이는 4자입니다.";
     } else {
       return null;

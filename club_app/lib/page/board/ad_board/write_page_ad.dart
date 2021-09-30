@@ -109,7 +109,7 @@ validatePeriod() {
   return (String? value){ 
     if (value!.isEmpty) {
       return "기간에는 공백이 들어갈 수 없습니다."; 
-    } else if (value.length > 500) {
+    } else if (value.length > 50) {
       return "기간의 길이 초과하였습니다.";
     } else {
       return null;
