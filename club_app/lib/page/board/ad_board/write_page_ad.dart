@@ -6,6 +6,9 @@ import 'package:club_app/components/custsom_text_formfield.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:validators/validators.dart';
+
+import 'ad_board_newpage.dart';
 
 class WritePageadd extends StatefulWidget {
 
@@ -66,12 +69,12 @@ class _WritePageaddState extends State<WritePageadd> {
               funValidator: validateTitle(), //제목에는 ~가 들어갈 수 없습니다. 
             ),
             CustomTextFormField(
-              hint: "Period", 
-              funValidator: validatePeriod(), //제목에는 ~가 들어갈 수 없습니다. 
+              hint: "Deadline", 
+              funValidator: validatePeriod(), //기간에는 ~가 들어갈 수 없습니다. 
             ),
             CustomTextFormField(
               hint: "HashTag", 
-              funValidator: validateTag(), //제목에는 ~가 들어갈 수 없습니다. 
+              funValidator: validateTag(), //태그에는 ~가 들어갈 수 없습니다. 
             ),
             CustomTextArea(
               hint: "Content" ,
@@ -82,7 +85,7 @@ class _WritePageaddState extends State<WritePageadd> {
               text: "글 작성하기",
               funPageRoute: () {
                 if (_formKey.currentState!.validate()){
-                  Get.off(WritePageadd());
+                  Get.to(AdBoardPagenew());
                 }
               },
               ),
@@ -109,6 +112,8 @@ validatePeriod() {
   return (String? value){ 
     if (value!.isEmpty) {
       return "기간에는 공백이 들어갈 수 없습니다."; 
+    }else if (!isDate(value)) {
+      return "2021-10-30형식으로 입력해주세요."; 
     } else if (value.length > 50) {
       return "기간의 길이 초과하였습니다.";
     } else {

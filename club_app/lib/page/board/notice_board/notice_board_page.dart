@@ -56,7 +56,7 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
           [Container(
             height: 1000,
             decoration: BoxDecoration(
-              color: Color(0xFFF5CEB8).withOpacity(0.3),),
+              color: Colors.white,),
             ),
             ListView.separated(
               separatorBuilder: (BuildContext context,int index) {

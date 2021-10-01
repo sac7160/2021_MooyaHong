@@ -12,6 +12,27 @@ class DetailPage extends StatelessWidget {
   final int id;
   const DetailPage(this.id); 
 
+_showMessageDialog(BuildContext context) => showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+            title: Text('주의'),
+            content: Text('정말 이 글을 삭제하시겠습니까?'),
+            actions: <Widget>[
+              TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: Text('아니요')),
+              TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => NoticeBoardPage()));
+                  },
+                  child: Text('예')),
+            ],
+          ));
+
   @override
   Widget build(BuildContext context) {
 
@@ -35,7 +56,7 @@ class DetailPage extends StatelessWidget {
               children: [
                 ElevatedButton(
                   onPressed : () { 
-                    Get.off(NoticeBoardPage());
+                    return _showMessageDialog(context);
                   }, 
                   child: Text("삭제"),
                   style: ElevatedButton.styleFrom(
@@ -60,7 +81,7 @@ class DetailPage extends StatelessWidget {
                 child: Text("공지 사항 내용"*30 ,style: TextStyle(fontSize: 18),))
                 ),
             Column(children : <Widget>[ 
-                    Divider(height: 40,),
+                    Divider(height: 20,),
                     Row(children: <Widget> [
                       Image.asset('assets/profile.jpg',
                         width: 40, height:40, fit: BoxFit.cover),
@@ -87,7 +108,7 @@ class DetailPage extends StatelessWidget {
             ],
       ),
       Column(children : <Widget>[ 
-                    Divider(height: 40,),
+                    Divider(height: 20,),
                     Row(children: <Widget> [
                       Image.asset('assets/profile.jpg',
                         width: 40, height:40, fit: BoxFit.cover),
@@ -114,7 +135,7 @@ class DetailPage extends StatelessWidget {
             ],
       ),
       Column(children : <Widget>[ 
-                    Divider(height: 40,),
+                    Divider(height: 20,),
                     Row(children: <Widget> [
                       Image.asset('assets/profile.jpg',
                         width: 40, height:40, fit: BoxFit.cover),
@@ -141,7 +162,7 @@ class DetailPage extends StatelessWidget {
             ],
       ),
       Column(children : <Widget>[ 
-                    Divider(height: 40,),
+                    Divider(height: 20,),
                     Row(children: <Widget> [
                       Image.asset('assets/profile.jpg',
                         width: 40, height:40, fit: BoxFit.cover),

@@ -6,9 +6,32 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:validators/validators.dart';
 
+import 'ad_board_newpage.dart';
+
 class JoinPage extends StatelessWidget {
 
   final _formKey = GlobalKey<FormState>();
+
+  _showMessageDialog(BuildContext context) => showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+            title: Text('주의'),
+            content: Text('지원서를 제출하시겠습니까? 지원서는 수정이 불가능합니다.'),
+            actions: <Widget>[
+              TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: Text('아니요')),
+              TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => DetailScreen(index: 1,)));
+                  },
+                  child: Text('예')),
+            ],
+          ));
 
   @override
   Widget build(BuildContext context) {
@@ -89,9 +112,7 @@ class JoinPage extends StatelessWidget {
 
 validatewrite() {return (String? value){ 
     if (value!.isEmpty) {
-      return "지원동기에는 공백이 들어갈 수 없습니다."; 
-    } else if (!isAlphanumeric(value)){
-      return "지원동기에는 알파벳과 숫자만이 들어갈 수 있습니다."; //한글로 바꿔야 할듯.
+      return "지원동기에는 공백이 들어갈 수 없습니다.";
     } else if (value.length > 1000){
       return "지원동기의 최대 길이는 1000자입니다.";
     } else if( value.length < 50 ){
@@ -108,7 +129,7 @@ validateUsername() {
   return (String? value){ 
     if (value!.isEmpty) {
       return "이름에는 공백이 들어갈 수 없습니다."; 
-    } else if (!isNumeric(value)){
+    } else if (isNumeric(value)){
       return "유저 네임에는 한글과 알파벳만이 들어갈 수 있습니다.";
     } else if (value.length > 12){
       return "유저네임의 길이를 초과하였습니다.";
