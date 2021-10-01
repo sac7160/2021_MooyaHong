@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
          Container(
             height: MediaQuery.of(context).size.height *0.4,
             decoration: BoxDecoration(
-                  color: Color(0xFFF5CEB8), 
+                  color: Color(0xFFF5CEB8).withOpacity(0.6), 
                   /*image: DecorationImage(
                     image:AssetImage('assets/club_logo2.png'),
                     alignment: Alignment.center,

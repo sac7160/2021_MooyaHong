@@ -17,6 +17,8 @@ class _SignUpPage2State extends State<SignUpPage2> {
   final TextEditingController _idController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _nameController = TextEditingController();
+   final TextEditingController _majorController = TextEditingController();
+
 
    DateTime date = DateTime.now();
   
@@ -69,7 +71,7 @@ class _SignUpPage2State extends State<SignUpPage2> {
   Widget build(BuildContext context) {
     return Scaffold(
       body:Container(
-        color: Color(0xFFF5CEB8),
+        color: Color(0xFFF5CEB8).withOpacity(0.6),
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.all(16),
@@ -94,6 +96,16 @@ class _SignUpPage2State extends State<SignUpPage2> {
               }
               return null;
             },*/
+            ),
+
+            TextFormField(
+              controller: _majorController,
+              decoration: InputDecoration(
+                icon: Icon(Icons.account_circle),
+                labelText: '전공 학과 입력',
+                border: OutlineInputBorder(),
+                hintText: 'major',
+              ),
             ),
            
             
@@ -145,7 +157,11 @@ class _SignUpPage2State extends State<SignUpPage2> {
               ),
               
             Container(
-              height: 90,
+              decoration: BoxDecoration(
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(10),
+                ),
+              height: 60,
               width: MediaQuery.of(context).size.width,
               child: DefaultTextStyle(
                  style: CupertinoTheme.of(context).textTheme.textStyle,
@@ -155,11 +171,11 @@ class _SignUpPage2State extends State<SignUpPage2> {
                      ),
             ),
             Container(
-                margin: const EdgeInsets.only(top: 16.0),
-                alignment: Alignment.center,
+                width: MediaQuery.of(context).size.width * 0.8,
+                margin: const EdgeInsets.only(top: 16.0,bottom: 10),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                         primary: Colors.orange, onPrimary: Colors.black),
+                         primary: Color(0xFFF5CEB8), onPrimary: Colors.black),
                   onPressed: () {
                     _register();
                     Navigator.pop(context);

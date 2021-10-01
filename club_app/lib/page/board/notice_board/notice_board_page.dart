@@ -2,6 +2,7 @@
 import 'package:club_app/components/custsom_text_formfield.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 //import 'package:club_app/page/board/notice_board/notice_page.dart';
 //import 'package:club_app/page/board/notice_board/create_notice_page.dart';
 import 'package:get/get.dart';
@@ -51,81 +52,54 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
           ]
       ),
       // resizeToAvoidBottomInset: false,
-      body: 
-       Stack(
+      body: Stack(
          children: <Widget> 
           [Container(
             height: 1000,
             decoration: BoxDecoration(
-              color: Color(0xFFF5CEB8).withOpacity(0.3),
+              color: Color(0xFFF5CEB8).withOpacity(0.3),),
             ),
-          ),
-          ListView.separated(
-            shrinkWrap : true,
-            itemCount : 10,
-            itemBuilder: (context, index) {
+            ListView.separated(
+              separatorBuilder: (BuildContext context,int index) {
+                return Divider();
+              }, 
+              itemCount: 10,
+              itemBuilder: (context,index){
               return ListTile(
-                onTap: () { 
-                  // Get.to(DetailPage(index),arguments: "arguments 속성 테스트");
-                  Navigator.push(context,MaterialPageRoute(builder: (context) {
-                  return DetailPage(index);
-                  }
-                  ),
-                  );
-              } ,
-                title: Transform(
+                leading: Icon(Icons.check),
+                title:Transform(
                   transform: Matrix4.translationValues(-20, 0.0, 0.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Container(width: 190,child: Text('2021.09.26',style: TextStyle(fontSize: 16.0))),
+                      Container(width: 190,child: Text('2021.09.26/오후 2:16',style: TextStyle(fontSize: 16.0))),
                       SizedBox(height: 20,),
                       Center(child: Text('2학기 무야홍 회비 입금 안내',style: TextStyle(fontSize: 23.0,fontWeight: FontWeight.bold),)),
                       SizedBox(height: 20,),
                       Text('공지 사항 내용 '*30, style: TextStyle(fontSize: 18),),
-                      Padding(
-                        padding: const EdgeInsets.all(4.0),
-                        child: Column(
-                          children : <Widget>[ 
-                            Divider(height: 40,),
-                            Row(
-                            children: <Widget> [
-                              Image.asset('assets/profile.jpg',
-                                  width: 40, height:40, fit: BoxFit.cover),
-                              Column(
-                                children:<Widget>[
-                                  Padding(padding: const EdgeInsets.only(left: 4.0),
-                                  child: Align(
-                                    alignment: Alignment(-1.0,-1.0),
-                                    child: Row(children :[ SizedBox(width: 5),Text('전지수  | 2 minutes ago',textAlign: TextAlign.start,)]))),
-                                  Padding(padding: const EdgeInsets.all(4.0),
-                                    child:Container(child: Align(
-                                    alignment:Alignment.centerLeft,
-                                    child: Text('언제까지 내야하나요??????????')))
-                                    //왼쪽정렬이 필요한데 안되네??
-                              )])],
-                          ),
-                          Row(
-                            children: <Widget>[
-                              CustomTextFormField(hint: "Title",
-                                funValidator: validateTitle(),),
+                      SizedBox(height: 15),
+                      Container(
+                        child: Row(
+                          children:<Widget>[
+                            Text("4개의 댓글",style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Image.asset('assets/profile.jpg'),
+                            Image.asset('assets/profile.jpg'),
+                            Image.asset('assets/profile.jpg')
                             ]),
-                          ]
-                        ),
                       )
-                      
-                
-                      ]
-                      ),
-                      ),
-                      );
 
-            }, separatorBuilder: (BuildContext context, int index) { 
-              return Divider();
-             },)]
-       ),
+                      ]
+                        ),
+                        ),
+                        );
+                        }
+                      
+          
+          )
+          ]
+          )
+          
     );
   }
-
-  
 }

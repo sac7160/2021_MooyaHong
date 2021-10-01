@@ -33,7 +33,7 @@ class _SignUpPage1State extends State<SignUpPage1> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-          color: Color(0xFFF5CEB8),
+          color: Color(0xFFF5CEB8).withOpacity(0.6),
           padding: EdgeInsets.all(20),
           child: Center(
             child: ListView(
@@ -163,8 +163,8 @@ class _SignUpPage1State extends State<SignUpPage1> {
                        height: 50,
                        child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                          primary: Colors.orange,
-                          onPrimary: Colors.white,
+                          primary: Color(0xFFF5CEB8),
+                          onPrimary: Colors.black,
                                  ),
                        onPressed: () {
                                Navigator.pop(context);
@@ -179,7 +179,7 @@ class _SignUpPage1State extends State<SignUpPage1> {
                          height: 50,
                          child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                         primary: Colors.orange, onPrimary: Colors.white),
+                         primary: Color(0xFFF5CEB8), onPrimary: Colors.black),
                          onPressed: () {
                            if(_isChecked_1 == false || _isChecked_2 ==false){
                              _showMessageDialog(context);
