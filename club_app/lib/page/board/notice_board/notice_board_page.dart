@@ -91,7 +91,6 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
                               ]),
                               
                         ),
-                        Divider(color: Colors.red[200],)
               
                         ]
                           ),
