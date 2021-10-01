@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+// import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../constants.dart';
 
@@ -48,7 +48,7 @@ class CategoryCard extends StatelessWidget {
                         .headline6!
                         .copyWith(fontSize: 15),
                   ),
-                  SvgPicture.asset(svgSrc),
+                  // SvgPicture.asset(svgSrc),
                   
                 ],
               ),
