@@ -20,11 +20,11 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Container(
-        width: 300,
-        height: double.infinity,
-        color: Colors.grey[300],
-      ),
+      // drawer: Container(
+      //   width: 300,
+      //   height: double.infinity,
+      //   color: Colors.grey[300],
+      // ),
       appBar: AppBar(
         backgroundColor: Colors.red[200],
         title: Text('공지사항'),
@@ -42,12 +42,12 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
               );
             }
           ),
-          IconButton(
-          icon: Icon(Icons.settings),
-          onPressed: () {
-            print('setting button is clicked');
-            }
-          ),
+          // IconButton(
+          // icon: Icon(Icons.settings),
+          // onPressed: () {
+          //   print('setting button is clicked');
+          //   }
+          // ),
           ]
       ),
       // resizeToAvoidBottomInset: false,
@@ -60,12 +60,13 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
             ),
             ListView.separated(
               separatorBuilder: (BuildContext context,int index) {
-                return Divider();
+                return Divider(height: 1,color: Colors.grey,thickness: 0.5,);
               }, 
               itemCount: 10,
               itemBuilder: (context,index){
               return InkWell(
                 child: ListTile(
+                  focusColor: Colors.red[300],
                   leading: Icon(Icons.check),
                   title:Transform(
                     transform: Matrix4.translationValues(-20, 0.0, 0.0),
@@ -78,7 +79,7 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
                         SizedBox(height: 20,),
                         Text('공지 사항 내용 '*30, style: TextStyle(fontSize: 18),),
                         SizedBox(height: 15),
-                        Divider(color: Colors.red[200]),
+                        Divider(),
                         Container(
                           child: Row(
                             children:<Widget>[

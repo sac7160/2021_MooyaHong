@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:club_app/components/custom_elevated_button.dart';
 import 'package:club_app/components/custom_textarea.dart';
 import 'package:club_app/components/custsom_text_formfield.dart';
+import 'package:club_app/widgets/Image_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
@@ -55,42 +56,60 @@ class _WritePageaddState extends State<WritePageadd> {
         padding: const EdgeInsets.all(16.0),
         child: Form(
           key: _formKey,
-          child: ListView(
+          child: Column(
             children:[
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Colors.red[200],
+              Spacer(),
+              image != null
+                    /*? ClipOval(
+                      child: Image.file(
+                        image!,
+                        width: 160,
+                        height: 160,
+                        fit: BoxFit.cover,
+                ),
+                )
+                : FlutterLogo(size: 160),*/
+                    ? ImageWidget(
+                        image: image!, onClicked: (source) => pickImage(source))
+                    : ClipOval(
+                        child: Image.asset('assets/profile.jpg',
+                            width: 160, height: 160, fit: BoxFit.cover),    
+                      ), 
+                const SizedBox(height: 24),
+              
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.red[200],
+                ),
+                onPressed: () => pickImage(ImageSource.gallery), 
+                child: Text("Image Add"),
               ),
-              onPressed: () => pickImage(ImageSource.gallery), 
-              child: Text("Image Add"),
-            ),
-            CustomTextFormField(
-              hint: "Title", 
-              funValidator: validateTitle(), //제목에는 ~가 들어갈 수 없습니다. 
-            ),
-            CustomTextFormField(
-              hint: "Deadline", 
-              funValidator: validatePeriod(), //기간에는 ~가 들어갈 수 없습니다. 
-            ),
-            CustomTextFormField(
-              hint: "HashTag", 
-              funValidator: validateTag(), //태그에는 ~가 들어갈 수 없습니다. 
-            ),
-            CustomTextArea(
-              hint: "Content" ,
-              funValidator: validateContent(),
-               //내용에는 ~가 들어갈 수 없습니다. 
-            ),
-            CustomElevatedButton(
-              text: "글 작성하기",
-              funPageRoute: () {
-                if (_formKey.currentState!.validate()){
-                  Get.to(AdBoardPagenew());
-                }
-              },
+              CustomTextFormField(
+                hint: "Title", 
+                funValidator: validateTitle(), //제목에는 ~가 들어갈 수 없습니다. 
               ),
-              ]
+              CustomTextFormField(
+                hint: "Deadline", 
+                funValidator: validatePeriod(), //기간에는 ~가 들어갈 수 없습니다. 
               ),
+              CustomTextFormField(
+                hint: "HashTag", 
+                funValidator: validateTag(), //태그에는 ~가 들어갈 수 없습니다. 
+              ),
+              CustomTextArea(
+                hint: "Content" ,
+                funValidator: validateContent(),
+                 //내용에는 ~가 들어갈 수 없습니다. 
+              ),
+              CustomElevatedButton(
+                text: "글 작성하기",
+                funPageRoute: () {
+                  if (_formKey.currentState!.validate()){
+                    Get.to(AdBoardPagenew());
+                  }
+                },
+                ),]
+          ),
               ),
     ),])
     );
