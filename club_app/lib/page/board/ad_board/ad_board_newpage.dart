@@ -15,17 +15,23 @@ class AdBoardPagenew extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Container(
-        width: 300,
-        height: double.infinity,
-        color: Colors.grey[300],
-      ),
+      // drawer: Container(
+        
+      //   width: 300,
+      //   height: double.infinity,
+      //   color: Colors.grey[300],
+      // ),
       appBar: AppBar(
+        leading: IconButton(
+        icon: Icon(Icons.menu, color: Colors.black), // set your color here
+        onPressed: () {},
+  ),
         backgroundColor: Color(0xFFF5CEB8).withOpacity(0.3),
         centerTitle: true,
         elevation: 0.0,
         actions: <Widget>[
            IconButton(
+          color: Colors.black,
           icon: Icon(Icons.create),
           onPressed: () {
             print('create button is clicked');

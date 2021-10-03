@@ -12,7 +12,7 @@ class CustomTextArea extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 5),
       child: TextFormField(
-        maxLines: 10,
+        maxLines: 5,
         validator: funValidator,
         decoration: InputDecoration(
           hintText:"Enter $hint",

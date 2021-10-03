@@ -47,7 +47,7 @@ class _WritePageaddState extends State<WritePageadd> {
         children: <Widget>[
         Container(
             // Here the height of the container is 45% of our total height
-            height: size.height * .80,
+            height: size.height * .99,
             decoration: BoxDecoration(
               color: Color(0xFFF5CEB8).withOpacity(0.3),
             ),
@@ -57,8 +57,8 @@ class _WritePageaddState extends State<WritePageadd> {
         child: Form(
           key: _formKey,
           child: Column(
+            // crossAxisAlignment: CrossAxisAlignment.start,
             children:[
-              Spacer(),
               image != null
                     /*? ClipOval(
                       child: Image.file(
@@ -71,8 +71,7 @@ class _WritePageaddState extends State<WritePageadd> {
                 : FlutterLogo(size: 160),*/
                     ? ImageWidget(
                         image: image!, onClicked: (source) => pickImage(source))
-                    : ClipOval(
-                        child: Image.asset('assets/profile.jpg',
+                    : ClipOval(child: Image.asset('assets/profile.jpg',
                             width: 160, height: 160, fit: BoxFit.cover),    
                       ), 
                 const SizedBox(height: 24),
