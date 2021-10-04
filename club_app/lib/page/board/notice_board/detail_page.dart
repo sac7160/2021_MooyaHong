@@ -43,12 +43,13 @@ _showMessageDialog(BuildContext context) => showDialog(
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red[200],
+        title: Text('공지글 상세페이지'),
         ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+          children: <Widget>[
             Center(child: Text("2학기 무야홍 회비 입금 안내",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),)),
             Divider(),
             Text("Page Number $id $data;2021.09.26 오후 2:16"),
