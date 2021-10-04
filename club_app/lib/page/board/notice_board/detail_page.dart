@@ -1,5 +1,6 @@
 
 import 'package:club_app/components/custsom_text_formfield.dart';
+import 'package:club_app/page/board/notice_board/comment.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -80,114 +81,16 @@ _showMessageDialog(BuildContext context) => showDialog(
               child: SingleChildScrollView(
                 child: Text("공지 사항 내용"*30 ,style: TextStyle(fontSize: 18),))
                 ),
-            Column(children : <Widget>[ 
-                    Divider(height: 20,),
-                    Row(children: <Widget> [
-                      Image.asset('assets/profile.jpg',
-                        width: 40, height:40, fit: BoxFit.cover),
-                          Column(children:<Widget>[
-                            Padding(padding: const EdgeInsets.only(left: 4.0),
-                              child: Align(
-                                alignment: Alignment(-1.0,-1.0),
-                                child: Row(children :[ 
-                                  SizedBox(width: 5),Text('전지수  | 2021.09.26.오후 3:15',textAlign: TextAlign.start,)
-                                  ]
-                                  ))),
-                            Padding(padding: const EdgeInsets.all(4.0),
-                              child:Container(child: Align(
-                                alignment:Alignment.centerLeft,
-                                  child: Text('언제까지 내야하나요??????????')
-                                  )
-                                  )  //왼쪽정렬이 필요한데 안되네??
-                                )
-                                ]
-                                )
-            
-          ],
-          )
-            ],
-      ),
-      Column(children : <Widget>[ 
-                    Divider(height: 20,),
-                    Row(children: <Widget> [
-                      Image.asset('assets/profile.jpg',
-                        width: 40, height:40, fit: BoxFit.cover),
-                          Column(children:<Widget>[
-                            Padding(padding: const EdgeInsets.only(left: 4.0),
-                              child: Align(
-                                alignment: Alignment(-1.0,-1.0),
-                                child: Row(children :[ 
-                                  SizedBox(width: 5),Text('권예빈  | 2021.09.26.오후 3:19',textAlign: TextAlign.start,)
-                                  ]
-                                  ))),
-                            Padding(padding: const EdgeInsets.all(4.0),
-                              child:Container(child: Align(
-                                alignment:Alignment.centerLeft,
-                                  child: Text('내일까지 납부 부탁드립니다.')
-                                  )
-                                  )  //왼쪽정렬이 필요한데 안되네??
-                                )
-                                ]
-                                )
-            
-          ],
-          )
-            ],
-      ),
-      Column(children : <Widget>[ 
-                    Divider(height: 20,),
-                    Row(children: <Widget> [
-                      Image.asset('assets/profile.jpg',
-                        width: 40, height:40, fit: BoxFit.cover),
-                          Column(children:<Widget>[
-                            Padding(padding: const EdgeInsets.only(left: 4.0),
-                              child: Align(
-                                alignment: Alignment(-1.0,-1.0),
-                                child: Row(children :[ 
-                                  SizedBox(width: 5),Text('박창현  | 2021.09.26.오후 3:21',textAlign: TextAlign.start,)
-                                  ]
-                                  ))),
-                            Padding(padding: const EdgeInsets.all(4.0),
-                              child:Container(child: Align(
-                                alignment:Alignment.centerLeft,
-                                  child: Text('동아리 회비 금액은 어느정도인가요?')
-                                  )
-                                  )  //왼쪽정렬이 필요한데 안되네??
-                                )
-                                ]
-                                )
-            
-          ],
-          )
-            ],
-      ),
-      Column(children : <Widget>[ 
-                    Divider(height: 20,),
-                    Row(children: <Widget> [
-                      Image.asset('assets/profile.jpg',
-                        width: 40, height:40, fit: BoxFit.cover),
-                          Column(children:<Widget>[
-                            Padding(padding: const EdgeInsets.only(left: 4.0),
-                              child: Align(
-                                alignment: Alignment(-1.0,-1.0),
-                                child: Row(children :[ 
-                                  SizedBox(width: 5),Text('김인영  | 2021.09.26.오후 3:25',textAlign: TextAlign.start,)
-                                  ]
-                                  ))),
-                            Padding(padding: const EdgeInsets.all(4.0),
-                              child:Container(child: Align(
-                                alignment:Alignment.centerLeft,
-                                  child: Text('한학기 무야홍 회비는 25만원입니다.')
-                                  )
-                                  )  //왼쪽정렬이 필요한데 안되네??
-                                )
-                                ]
-                                )
-            
-          ],
-          )
-            ],
-      )
+            ElevatedButton(
+                  onPressed : () {
+                    Get.to(TestMe());
+                   }, 
+                  child: Text("댓글"),
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.red[300]
+                  ),
+                ),
+          
           ]
         )
       )

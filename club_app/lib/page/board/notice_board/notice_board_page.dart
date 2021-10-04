@@ -1,5 +1,6 @@
 //todo detailpage route null. first, get => navigator error
 import 'package:club_app/components/custsom_text_formfield.dart';
+import 'package:comment_box/comment/comment.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 //import 'package:club_app/page/board/notice_board/notice_page.dart';
@@ -100,6 +101,7 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
                 onTap: (){Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
+                                
                                 return DetailPage(1);
                               }),
                             );},
@@ -107,7 +109,8 @@ class _NoticeBoardPageState extends State<NoticeBoardPage> {
                         }
                       
           
-          )
+          ),
+          
           ]
           )
           

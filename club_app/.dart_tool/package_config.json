@@ -44,6 +44,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "comment_box",
+      "rootUri": "file:///Users/jisu/flutter/.pub-cache/hosted/pub.dartlang.org/comment_box-0.0.16",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "cross_file",
       "rootUri": "file:///Users/jisu/flutter/.pub-cache/hosted/pub.dartlang.org/cross_file-0.3.1+5",
       "packageUri": "lib/",
@@ -320,7 +326,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-10-01T06:59:53.570737Z",
+  "generated": "2021-10-03T14:45:13.877944Z",
   "generator": "pub",
   "generatorVersion": "2.14.3"
 }

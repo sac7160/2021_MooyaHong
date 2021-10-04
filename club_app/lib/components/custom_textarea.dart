@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+//To 홍보게시물 작성
 class CustomTextArea extends StatelessWidget {
   
   final String hint;
@@ -12,7 +12,7 @@ class CustomTextArea extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 5),
       child: TextFormField(
-        maxLines: 5,
+        maxLines: 8,
         validator: funValidator,
         decoration: InputDecoration(
           hintText:"Enter $hint",

@@ -1,5 +1,5 @@
 import 'package:club_app/components/custom_elevated_button.dart';
-import 'package:club_app/components/custom_textarea.dart';
+import 'package:club_app/components/custom_textarea2.dart';
 import 'package:club_app/components/custsom_text_formfield.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -33,7 +33,7 @@ class WritePage extends StatelessWidget {
                 hint: "Title", 
                 funValidator: validateTitle(),
               ),
-              CustomTextArea(
+              CustomTextArea2(
                 hint: "Content" ,
                 funValidator: validateContent(),
               ),
