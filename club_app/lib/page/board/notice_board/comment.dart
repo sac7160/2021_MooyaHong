@@ -73,44 +73,49 @@ class _TestMeState extends State<TestMe> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       appBar: AppBar(
+        backgroundColor: Colors.red[200],
+        title: Text('공지글 상세페이지 댓글'),
+        ),
       body: 
           Container(
-          width: 400,
-          height: 400,
-          padding: EdgeInsets.all(10.0), 
-          color: Colors.green,
-          child: CommentBox(//현재 작성중인 comment
-            userImage:
-                "https://lh3.googleusercontent.com/a-/AOh14GjRHcaendrf6gU5fPIVd8GIl1OgblrMMvGUoCBj4g=s400",
-            child: commentChild(filedata),//이미 작성된 comment
-            labelText: 'Write a comment...',
-            withBorder: false,
-            errorText: 'Comment cannot be blank',
-            sendButtonMethod: () {
-              if (formKey.currentState!.validate()) {
-                print(commentController.text);
-                setState(() {
-                  var value = {
-                    'name': 'New User',
-                    'pic':
-                        'https://lh3.googleusercontent.com/a-/AOh14GjRHcaendrf6gU5fPIVd8GIl1OgblrMMvGUoCBj4g=s400',
-                    'message': commentController.text
-                  };
-                  filedata.insert(0, value);
-                });
-                commentController.clear();
-                FocusScope.of(context).unfocus();
-              } else {
-                print("Not validated");
-              }
-            },
-            formKey: formKey,
-            commentController: commentController,
-            backgroundColor: Colors.black,
-            textColor: Colors.white,
-            sendWidget: Icon(Icons.send_sharp, size: 30, color: Colors.white),
+            // width: 400,
+            // height: 400,
+            padding: EdgeInsets.all(10.0), 
+            color: Color(0xFFF5CEB8).withOpacity(0.3),
+            child: CommentBox(//현재 작성중인 comment
+              userImage:
+                  "https://lh3.googleusercontent.com/a-/AOh14GjRHcaendrf6gU5fPIVd8GIl1OgblrMMvGUoCBj4g=s400",
+              child: commentChild(filedata),//이미 작성된 comment
+              labelText: '댓글 작성중...',
+              withBorder: false,
+              errorText: '댓글에 빈칸을 입력할 수 없습니다.',
+              sendButtonMethod: () {
+                if (formKey.currentState!.validate()) {
+                  print(commentController.text);
+                  setState(() {
+                    var value = {
+                      'name': 'New User',
+                      'pic':
+                          'https://lh3.googleusercontent.com/a-/AOh14GjRHcaendrf6gU5fPIVd8GIl1OgblrMMvGUoCBj4g=s400',
+                      'message': commentController.text
+                    };
+                    filedata.insert(0, value);
+                  });
+                  commentController.clear();
+                  FocusScope.of(context).unfocus();
+                } else {
+                  print("Not validated");
+                }
+              },
+              formKey: formKey,
+              commentController: commentController,
+              backgroundColor: Colors.black,
+              textColor: Colors.white,
+              sendWidget: Icon(Icons.send_sharp, size: 30, color: Colors.white),
+            ),
+                  
           ),
-        ),
     );
   }
 }
