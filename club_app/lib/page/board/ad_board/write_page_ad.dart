@@ -41,7 +41,7 @@ class _WritePageaddState extends State<WritePageadd> {
         .size;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red[300],
+        backgroundColor:  Color(0xFFF5CEB8),
         title: Text("홍보 게시글 작성"),),
       body: Stack(
         children: <Widget>[
@@ -49,7 +49,7 @@ class _WritePageaddState extends State<WritePageadd> {
             // Here the height of the container is 45% of our total height
             height: size.height * .99,
             decoration: BoxDecoration(
-              color: Color(0xFFF5CEB8).withOpacity(0.3),
+              color: Color(0xFFF5CEB8).withOpacity(0.6),
             ),
           ),
         Padding(
@@ -78,7 +78,8 @@ class _WritePageaddState extends State<WritePageadd> {
               
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.red[200],
+                  primary:  Color(0xFFF5CEB8),
+                  onPrimary: Colors.black
                 ),
                 onPressed: () => pickImage(ImageSource.gallery), 
                 child: Text("Image Add"),

@@ -116,13 +116,13 @@ class HomeScreen extends StatelessWidget {
                               Row(
                                 children: [
                                   SizedBox(width: 17),
-                                  Text("책아띠",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  Text("책아띠",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                                   SizedBox(width: 30),
                                   Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("학술")],)
                                 ],
                               ),
                               Image.asset("assets/images/1.jpeg"),
-                              Text("#독서 #독서토론 #토론 #연합 #연합동아리",style: TextStyle(color:Colors.black),)
+                              //Text("#독서 #독서토론 #토론 #연합 #연합동아리",style: TextStyle(color:Colors.black),)
                               
                             ],
                           ),
@@ -140,13 +140,13 @@ class HomeScreen extends StatelessWidget {
                               Row(
                                 children: [
                                   SizedBox(width: 17,height: 5,),
-                                  Text("로얄 블랙",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  Text("로얄 블랙",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                                   SizedBox(width: 30,height: 5,),
                                   Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("친목")],)
                                 ],
                               ),
                               Image.asset("assets/images/2.jpeg"),
-                              Text("#소통 #연합 #연합동아리",style: TextStyle(color:Colors.black),)
+                             // Text("#소통 #연합 #연합동아리",style: TextStyle(color:Colors.black),)
                               
                             ],
                           ),
@@ -162,13 +162,13 @@ class HomeScreen extends StatelessWidget {
                               Row(
                                 children: [
                                   SizedBox(width: 17,height: 5,),
-                                  Text("BITA",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  Text("BITA",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                                   SizedBox(width: 30,height: 5,),
                                   Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("학술")],)
                                 ],
                               ),
                               Image.asset("assets/images/3.jpeg"),
-                              Text("#빅데이터 #학술",style: TextStyle(color:Colors.black),)
+                              //Text("#빅데이터 #학술",style: TextStyle(color:Colors.black),)
                               
                             ],
                           ),
@@ -184,13 +184,13 @@ class HomeScreen extends StatelessWidget {
                               Row(
                                 children: [
                                   SizedBox(width: 17,height: 5,),
-                                  Text("SIGNAL",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  Text("SIGNAL",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                                   SizedBox(width: 30,height: 5,),
                                   Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("영상")],)
                                 ],
                               ),
                               Image.asset("assets/images/4.jpeg"),
-                              Text("#영상 #동영상 #만들기 #연합 #연합동아리",style: TextStyle(color:Colors.black),)
+                              //Text("#영상 #동영상 #만들기 #연합 #연합동아리",style: TextStyle(color:Colors.black),)
                               
                             ],
                           ),
@@ -206,13 +206,13 @@ class HomeScreen extends StatelessWidget {
                               Row(
                                 children: [
                                   SizedBox(width: 17,height: 5,),
-                                  Text("SNOL",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  Text("SNOL",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                                   SizedBox(width: 30,height: 5,),
                                   Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("기획")],)
                                 ],
                               ),
                               Image.asset("assets/images/5.jpeg"),
-                              Text("#파티문화 #기획 #포스터",style: TextStyle(color:Colors.black),)
+                              //Text("#파티문화 #기획 #포스터",style: TextStyle(color:Colors.black),)
                               
                             ],
                           ),
@@ -228,13 +228,13 @@ class HomeScreen extends StatelessWidget {
                               Row(
                                 children: [
                                   SizedBox(width: 17,height: 5,),
-                                  Text("신나구",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  Text("신나구",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                                   SizedBox(width: 30,height: 5,),
                                   Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("운동")],)
                                 ],
                               ),
                               Image.asset("assets/images/6.jpeg"),
-                              Text("#야구직관 #야구 #신촌연합 #연합동아리",style: TextStyle(color:Colors.black),)
+                              //Text("#야구직관 #야구 #신촌연합 #연합동아리",style: TextStyle(color:Colors.black),)
                               
                             ],
                           ),
@@ -250,13 +250,13 @@ class HomeScreen extends StatelessWidget {
                               Row(
                                 children: [
                                   SizedBox(width: 17,height: 5,),
-                                  Text("DAISY",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  Text("DAISY",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                                   SizedBox(width: 30,height: 5,),
                                   Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("학술")],)
                                 ],
                               ),
                               Image.asset("assets/images/7.jpeg"),
-                              Text("#영어 #영어회화 #연합 #연합동아리",style: TextStyle(color:Colors.black),)
+                              //Text("#영어 #영어회화 #연합 #연합동아리",style: TextStyle(color:Colors.black),)
                               
                             ],
                           ),
@@ -272,13 +272,13 @@ class HomeScreen extends StatelessWidget {
                               Row(
                                 children: [
                                   SizedBox(width: 17,height: 5,),
-                                  Text("이너리뷰",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                                  Text("이너리뷰",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                                   SizedBox(width: 30,height: 5,),
                                   Column(children: [Text("모집중",style: TextStyle(color:Colors.redAccent)),Text("영상")],)
                                 ],
                               ),
                               Image.asset("assets/images/8.jpeg"),
-                              Text("#유튜브 #콘텐츠 #작가 #편집자",style: TextStyle(color:Colors.black),)
+                              //Text("#유튜브 #콘텐츠 #작가 #편집자",style: TextStyle(color:Colors.black),)
                               
                             ],
                           ),
