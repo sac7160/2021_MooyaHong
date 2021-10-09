@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+//공지글 수정 페이지 제목
 class CustomTextFormField extends StatelessWidget {
   
   final String hint;
@@ -12,6 +12,7 @@ class CustomTextFormField extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 5),
       child: TextFormField(
+        initialValue: '2학기 무야홍 회비 입금 안내',
         validator: funValidator,
         obscureText: hint=="Password" ? true : false,
         decoration: InputDecoration(

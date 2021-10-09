@@ -12,6 +12,7 @@ class CustomTextArea extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 5),
       child: TextFormField(
+        initialValue: '공지 사항 내용 '*30,
         maxLines: 8,
         validator: funValidator,
         decoration: InputDecoration(
