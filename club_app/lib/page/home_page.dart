@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
          Container(
             height: MediaQuery.of(context).size.height *0.4,
             decoration: BoxDecoration(
-                  color: Color(0xFFF5CEB8), 
+                  color: Color(0xFFF5CEB8).withOpacity(0.6), 
                   /*image: DecorationImage(
                     image:AssetImage('assets/club_logo2.png'),
                     alignment: Alignment.center,
@@ -82,7 +82,8 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Text('TEAM401',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,)),
                               Text(' 스노우보드 동아리',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,)),
-                              Text(' 동아리원 - 30'),
+                              Row(children: [
+                                Icon(Icons.account_box_rounded), Text(' 30')]),
                               Text(' 임원진 - 회장')
                             ],
                           )
@@ -227,37 +228,47 @@ Widget _calendar() {
 Widget _pageOfMyClub2() {
     final List<String> images = [
    
-    'assets/mooyahong.png'
-  
-    
+    'assets/mooyahong.png',
+    'assets/hongik_logo.jpg',
+    'assets/club_logo2.png',
+     'assets/club_logo.jpeg',
+     'assets/hongik_logo.jpg',
   ];
   
   return CarouselSlider(
     options: CarouselOptions(
       enlargeCenterPage: true,
-        height: 150.0, autoPlay: true, autoPlayInterval: Duration(seconds: 3)),
+        height: 200.0, autoPlay: true, autoPlayInterval: Duration(seconds: 3)),
     items: [0, 1, 2, 3, 4].map((i) {
       return Builder(
         builder: (BuildContext context) {
           return InkWell(
             onTap: (){
-              if(i==1){
+              if(i==0){
                 Navigator.push(
                            context,
                            MaterialPageRoute(
                             builder: (context) => MyClubPage())); //배너 각자 설정하는법관련 수정필요
 
             }},
-            child:Image.asset(images[i])   
-             /* child:Container(
-              alignment: Alignment.center,
-              width: MediaQuery.of(context).size.width,
-              margin: EdgeInsets.symmetric(horizontal: 5.0),
-              decoration: BoxDecoration(
-                  color: kActiveIconColor,
-                  borderRadius: BorderRadius.circular(10.0)),
-              child: Text('어플 사용법 / 홍보')
-              )    이미지오류뜸*/);
+            child: Wrap(
+              children: [
+                Container(
+                  height: 200,
+                  width: MediaQuery.of(context).size.width,
+                  margin: EdgeInsets.symmetric(
+                    horizontal: 3.0,
+                  ),
+                  decoration: BoxDecoration(
+
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    child: Image.asset(images[i],fit: BoxFit.fill,),
+                  ),)
+              ],
+            )
+            );
         },
       );
     }).toList(),

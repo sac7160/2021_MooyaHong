@@ -103,7 +103,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     height: 10,
                   ),
                   Text('2021.09.16~2021.10.15'),
-                  Text('#독서 #독서토론 #토론 #연합 #연합동아리'),
+                  Text('#독서 #독서토'),
                   SizedBox(
                     height: 10,
                   ),

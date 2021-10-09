@@ -118,7 +118,7 @@ class _ProfileSettingState extends State<ProfileSetting> {
 }*/
     return Scaffold(
       body: Container(
-          color: Color(0xFFF5CEB8),
+          color: Color(0xFFF5CEB8).withOpacity(0.6),
           padding: EdgeInsets.all(32),
           child: Center(
             child: Column(

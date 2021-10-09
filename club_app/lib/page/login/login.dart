@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:club_app/page/page_container.dart';
 import 'package:club_app/page/login/sign_up_page1.dart';
 import 'package:club_app/page/login/find_id_page.dart';
+import 'package:club_app/page/login/find_pw_page.dart';
 
 class LoginPage extends StatefulWidget {
   static final route = 'LoginPage';
@@ -18,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body:  Container(
-      color: Color(0xFFF5CEB8),
+      color:Color(0xFFF5CEB8).withOpacity(0.6),
       padding: EdgeInsets.all(32),
       child: Center(
         child: Column(
@@ -26,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                SizedBox(height: 50),
+                SizedBox(height: 80),
                 Column(
                   children: <Widget>[
                     Icon(
@@ -86,7 +87,7 @@ class _LoginPageState extends State<LoginPage> {
                       height: 120,
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                              primary: Color(0xFFBCAAA4),  //버튼 색깔 정해야함
+                              primary: Color(0xFFF5CEB8),  //버튼 색깔 정해야함
                               onPrimary: Colors.black),
                           onPressed: () {
                             Navigator.pop(context);
@@ -105,16 +106,16 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 SizedBox(height: 30),
                 Container(
-                    width: MediaQuery.of(context).size.width * 0.7,
+                    width: MediaQuery.of(context).size.width * 0.9,
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.orange[400],
+                            primary: Color(0xFFF5CEB8).withOpacity(0.9),
                             onPrimary: Colors.black),
                         onPressed: () {},
                         child: Text('gmail 로 로그인'))),
                 SizedBox(height: 10),
                 Container(
-                  width: MediaQuery.of(context).size.width * 0.7,
+                  width: MediaQuery.of(context).size.width * 0.9,
                   child: Divider(
                     thickness: 1,
                     color: Colors.grey,
@@ -138,7 +139,12 @@ class _LoginPageState extends State<LoginPage> {
                         TextButton(
                             style: TextButton.styleFrom(primary: Colors.black),
                             child: Text('비밀번호 찾기'),
-                            onPressed: () {}),
+                            onPressed: () {
+                               Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => FindPw()));
+                            }),
                         TextButton(
                             style: TextButton.styleFrom(primary: Colors.black),
                             child: Text('회원가입'),

@@ -15,11 +15,10 @@ class FirstPage extends StatefulWidget {
 }
 
 class _FirstPageState extends State<FirstPage> {
-  int _selectedIndex = 2;
+  int _selectedIndex = 0;
   final List<Widget> _children = [
-    ChatScreen(),
-    NoticeBoardPage(),
     HomePage(),
+    NoticeBoardPage(),
     AdBoardPagenew(),
     ProfileSetting()
   ];
@@ -44,16 +43,12 @@ class _FirstPageState extends State<FirstPage> {
           onTap: _onTap,
           items: [
             BottomNavigationBarItem(
-              label: 'chat',
-              icon: Icon(Icons.chat),
+              label: 'home',
+              icon: Icon(Icons.home),
             ),
             BottomNavigationBarItem(
               label: 'notice',
               icon: Icon(Icons.library_books),
-            ),
-            BottomNavigationBarItem(
-              label: 'home',
-              icon: Icon(Icons.home),
             ),
             BottomNavigationBarItem(
               label: 'ad',
