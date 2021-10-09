@@ -71,7 +71,7 @@ class _WritePageaddState extends State<WritePageadd> {
                 : FlutterLogo(size: 160),*/
                     ? ImageWidget(
                         image: image!, onClicked: (source) => pickImage(source))
-                    : ClipOval(child: Image.asset('assets/profile.jpg',
+                    : ClipOval(child: Image.asset('assets/defaultimage.jpg',
                             width: 160, height: 160, fit: BoxFit.cover),    
                       ), 
                 const SizedBox(height: 24),

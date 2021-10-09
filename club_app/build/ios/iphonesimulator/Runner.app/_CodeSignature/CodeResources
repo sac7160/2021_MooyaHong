@@ -110,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		6qVRWRQfD5NstJy36PeERQtMhKI=
+		lUab+OFyWLXzh1q/jrBPyVIJ3G0=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -118,11 +118,11 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		xpFTxDQ6ypPyolOyvW2LRg2Hz/w=
+		PHNETs4wICQByQHkfkz0iVRQg/Y=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		w1Wm4h7IEL2c57eEGoMlaqxWLVA=
+		GKGAUIhafuuzybpsvSvMJEWe63A=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -195,6 +195,10 @@
 		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Cairo-SemiBold.ttf</key>
 		<data>
 		416ZcJMuXh4qXcF2JE4xpEn+1Go=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/hongik_logo.jpg</key>
+		<data>
+		z08ohjUZzOvtFfcO6zFZgzsWF0c=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/1.jpeg</key>
 		<data>
@@ -350,7 +354,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		dBS9ekplfJHeLtyw5rkcQOp/+WM=
+		gNxbQ6R08tWiJYDFUNADhhiGJPc=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -530,7 +534,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lsQpS85/ujO7Hxo3f5grletQojw=
+		PsIgbzyG+5En7xTsXsiNWKGXSac=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -829,11 +833,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6qVRWRQfD5NstJy36PeERQtMhKI=
+			lUab+OFyWLXzh1q/jrBPyVIJ3G0=
 			</data>
 			<key>hash2</key>
 			<data>
-			WAK4MT230jCn5+lkqkWiIGLBHOYvSwvAsDtoAioLcBQ=
+			xcdgMgZrJSo8wh8t+2+Y11xcty6KB/Y11f+Tvyx0jVs=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -851,22 +855,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xpFTxDQ6ypPyolOyvW2LRg2Hz/w=
+			PHNETs4wICQByQHkfkz0iVRQg/Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Phh98KGTXb82On2+sQMFI02Wz6CDF/Chn9/enWBd74=
+			TeMt/izE5vb4T/GAFfrFwPCenR2vj7YkKIabJUMJbYw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			w1Wm4h7IEL2c57eEGoMlaqxWLVA=
+			GKGAUIhafuuzybpsvSvMJEWe63A=
 			</data>
 			<key>hash2</key>
 			<data>
-			rKEGaGR4QRQtF7dpGCywGXNN/j8pDZMDhOXdfnxYeOo=
+			Awuy7bSMECz8WORf2Bp3EVr7unje6yzYzletiDTe3rQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -1065,6 +1069,17 @@
 			<key>hash2</key>
 			<data>
 			yrUvLvYEyoUTgPuwu1VeiEdI0xoHRzQNg3y/YxckrR8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/hongik_logo.jpg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z08ohjUZzOvtFfcO6zFZgzsWF0c=
+			</data>
+			<key>hash2</key>
+			<data>
+			tzvSXWlyo/JBsxMOCvJmyHou0iGto4xaB8jCHTP/wzg=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/1.jpeg</key>
@@ -1489,11 +1504,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dBS9ekplfJHeLtyw5rkcQOp/+WM=
+			gNxbQ6R08tWiJYDFUNADhhiGJPc=
 			</data>
 			<key>hash2</key>
 			<data>
-			sXgTFB8Kbirgv6A/IQavr8dX1/UPFxwv5a4Ucv8666w=
+			MltzCraKltKJRsxYR+qgfa7ntbi7hGI0WYP3Fi5+ZBo=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

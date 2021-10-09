@@ -61,25 +61,43 @@ class _ApplicationPageState extends State<ApplicationPage> {
                               Text('지원동기: '),
                             ],
                           ),
-                          SizedBox(height: 30),
+                          SizedBox(height: 10),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Container(
-                                width: 150,
-                                child: ElevatedButton(
-                                  onPressed: () {},
-                                  child: Text('수락'),
-                                ),
-                              ),
-                              SizedBox(width: 30),
-                              Container(
-                                width: 150,
-                                child: ElevatedButton(
-                                  onPressed: () {},
-                                  child: Text('거절'),
-                                ),
-                              )
+                                 margin: const EdgeInsets.only(top: 5.0),
+                                 width: 150,
+                                
+                                 child: ElevatedButton(
+                                 style: ElevatedButton.styleFrom(
+                                 primary: Color(0xFFF5CEB8), onPrimary: Colors.black),
+                                 onPressed: () {
+                                     Navigator.push(
+                                     context,
+                                      MaterialPageRoute(
+                                        builder: (context) => ApplicationPage()),
+                                   );
+                                 },
+                                   child: Text('수락'))
+                               ),
+                               SizedBox(width: 30),
+                               Container(
+                                 margin: const EdgeInsets.only(top: 5.0),
+                                 width: 150,
+                                
+                                 child: ElevatedButton(
+                                 style: ElevatedButton.styleFrom(
+                                 primary: Color(0xFFF5CEB8), onPrimary: Colors.black),
+                                 onPressed: () {
+                                     Navigator.push(
+                                     context,
+                                      MaterialPageRoute(
+                                        builder: (context) => ApplicationPage()),
+                                   );
+                                 },
+                                   child: Text('거절'))
+                               ),
                             ],
                           ),
                         ],

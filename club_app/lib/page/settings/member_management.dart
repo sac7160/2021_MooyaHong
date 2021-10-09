@@ -54,10 +54,10 @@ class _MemberManagementState extends State<MemberManagement> {
                 children: [
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 5),
-                    width: MediaQuery.of(context).size.width * 0.5,
+                    width: MediaQuery.of(context).size.width * 0.6,
                     decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black, width: 3),
-                        borderRadius: BorderRadius.circular(50)),
+                        border: Border.all(color: Colors.black, width: 1),
+                        borderRadius: BorderRadius.circular(10)),
                     child: TextField(
                       keyboardType: TextInputType.text,
                       decoration: InputDecoration(
@@ -70,9 +70,13 @@ class _MemberManagementState extends State<MemberManagement> {
                       controller: memberNameController,
                     ),
                   ),
-                  ElevatedButton(onPressed: () {}, child: Text('편집하기')),
-                  ElevatedButton(
-                      onPressed: () {
+                  Container(
+                margin: const EdgeInsets.only(top: 15.0,right: 30),
+                alignment: Alignment.center,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                         primary: Color(0xFFF5CEB8), onPrimary: Colors.black),
+                  onPressed: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -80,6 +84,8 @@ class _MemberManagementState extends State<MemberManagement> {
                         );
                       },
                       child: Text('지원자 확인'))
+              ),
+
                 ],
               ),
             ),

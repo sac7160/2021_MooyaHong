@@ -29,7 +29,7 @@ class _EditPasswordState extends State<EditPassword> {
                     margin: EdgeInsets.symmetric(horizontal: 5),
                     width: MediaQuery.of(context).size.width * 0.8,
                     decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black, width: 3),
+                        border: Border.all(color: Colors.black, width: 1),
                         borderRadius: BorderRadius.circular(10)),
                     child: TextField(
                       keyboardType: TextInputType.text,
