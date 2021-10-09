@@ -1,4 +1,5 @@
 import 'package:club_app/components/custom_elevated_button.dart';
+import 'package:club_app/components/custom_text_form2.dart';
 import 'package:club_app/components/custom_textarea2.dart';
 import 'package:club_app/components/custsom_text_formfield.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,7 @@ class WritePage extends StatelessWidget {
             key: _formKey,
             child: ListView(
               children:[
-              CustomTextFormField(
+              CustomTextFormField2(
                 hint: "Title", 
                 funValidator: validateTitle(),
               ),

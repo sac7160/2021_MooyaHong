@@ -3,6 +3,8 @@ import 'dart:io';
 import 'package:club_app/components/custom_elevated_button.dart';
 import 'package:club_app/components/custom_textarea.dart';
 import 'package:club_app/components/custsom_text_formfield.dart';
+import 'package:club_app/page/board/ad_board/component/text_form.dart';
+import 'package:club_app/page/board/ad_board/component/textareaad.dart';
 import 'package:club_app/widgets/Image_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -84,19 +86,15 @@ class _WritePageaddState extends State<WritePageadd> {
                 onPressed: () => pickImage(ImageSource.gallery), 
                 child: Text("Image Add"),
               ),
-              CustomTextFormField(
+              CustomTextFormFieldad(
                 hint: "Title", 
                 funValidator: validateTitle(), //제목에는 ~가 들어갈 수 없습니다. 
               ),
-              CustomTextFormField(
+              CustomTextFormFieldad(
                 hint: "Deadline", 
                 funValidator: validatePeriod(), //기간에는 ~가 들어갈 수 없습니다. 
               ),
-              CustomTextFormField(
-                hint: "HashTag", 
-                funValidator: validateTag(), //태그에는 ~가 들어갈 수 없습니다. 
-              ),
-              CustomTextArea(
+              CustomTextAreaad(
                 hint: "Content" ,
                 funValidator: validateContent(),
                  //내용에는 ~가 들어갈 수 없습니다. 
