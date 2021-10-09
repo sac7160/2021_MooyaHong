@@ -230,16 +230,14 @@ Widget _pageOfMyClub2() {
    
     'assets/mooyahong.png',
     'assets/hongik_logo.jpg',
-    'assets/club_logo2.png',
-     'assets/club_logo.jpeg',
-     'assets/hongik_logo.jpg',
+ 
   ];
   
   return CarouselSlider(
     options: CarouselOptions(
       enlargeCenterPage: true,
         height: 200.0, autoPlay: true, autoPlayInterval: Duration(seconds: 3)),
-    items: [0, 1, 2, 3, 4].map((i) {
+    items: [0, 1,].map((i) {
       return Builder(
         builder: (BuildContext context) {
           return InkWell(

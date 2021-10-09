@@ -13,7 +13,7 @@ class WritePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red[300],
+        backgroundColor:  Color(0xFFF5CEB8),
         title: Text("공지글 작성")),
       body: Stack(
         children: <Widget>[
