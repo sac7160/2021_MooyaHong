@@ -168,21 +168,21 @@ class _ProfileSettingState extends State<ProfileSetting> {
                 Card(
                   child: ListTile(
                     leading: Icon(Icons.phone),
-                    title: Text('1학년'),
+                    title: Text('010-0000-0000'),
                     onTap: () {},
                   ),
                 ),
                 Card(
                   child: ListTile(
                     leading: Icon(Icons.location_city),
-                    title: Text('예시'),
+                    title: Text('1학년'),
                     onTap: () {},
                   ),
                 ),
                 Card(
                   child: ListTile(
-                    leading: Icon(Icons.favorite),
-                    title: Text('예시'),
+                    leading: Icon(Icons.account_circle),
+                    title: Text('abc@naver.com'),
                     onTap: () {},
                   ),
                 ),

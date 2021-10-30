@@ -18,6 +18,8 @@ class _SignUpPage2State extends State<SignUpPage2> {
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _nameController = TextEditingController();
    final TextEditingController _majorController = TextEditingController();
+   final TextEditingController _emailController = TextEditingController();
+   final TextEditingController _phonenumberController = TextEditingController();
 
 
    DateTime date = DateTime.now();
@@ -105,6 +107,24 @@ class _SignUpPage2State extends State<SignUpPage2> {
                 labelText: '전공 학과 입력',
                 border: OutlineInputBorder(),
                 hintText: 'major',
+              ),
+            ),
+             TextFormField(
+              controller: _phonenumberController,
+              decoration: InputDecoration(
+                icon: Icon(Icons.account_circle),
+                labelText: '전화번호 입력',
+                border: OutlineInputBorder(),
+                hintText: 'phone number',
+              ),
+            ),
+            TextFormField(
+              controller: _emailController,
+              decoration: InputDecoration(
+                icon: Icon(Icons.account_circle),
+                labelText: '이메일 입력',
+                border: OutlineInputBorder(),
+                hintText: 'email',
               ),
             ),
            
