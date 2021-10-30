@@ -29,7 +29,7 @@ class _EditPasswordState extends State<EditPassword> {
                     margin: EdgeInsets.symmetric(horizontal: 5),
                     width: MediaQuery.of(context).size.width * 0.8,
                     decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black, width: 1),
+                        border: Border.all(color: Colors.black, width: 3),
                         borderRadius: BorderRadius.circular(10)),
                     child: TextField(
                       keyboardType: TextInputType.text,
@@ -78,8 +78,11 @@ class _EditPasswordState extends State<EditPassword> {
                   ),
             SizedBox(height: 50),
             Container(
-              margin: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.4),
+              margin: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.35),
               child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                              primary: Color(0xFFF5CEB8),  //버튼 색깔 정해야함
+                              onPrimary: Colors.black),
                 onPressed: (){},
                 child: Text('비밀번호 변경')),
             )

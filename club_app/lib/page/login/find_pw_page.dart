@@ -25,7 +25,7 @@ class _FindPwState extends State<FindPw> {
           key: _formKey,
           child: Column(
             children: <Widget>[
-              SizedBox(height: 50),
+              SizedBox(height: 200),
               TextFormField(
                 controller: _nameController,
                 decoration: InputDecoration(

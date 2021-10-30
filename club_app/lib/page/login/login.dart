@@ -27,22 +27,26 @@ class _LoginPageState extends State<LoginPage> {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                SizedBox(height: 80),
+                SizedBox(height: 90),
                 Column(
                   children: <Widget>[
-                    Icon(
-                      Icons.flutter_dash,
-                      size: 200,
+                    Container(
+                       child: Image.asset('assets/hongiklogo.png'
+                      ,
+                        width: 200,
+                        height: 200,
+                       
+                   )
                     ),
-                    SizedBox(height: 20),
+                    SizedBox(height: 40),
                     Text(
-                      '무야홍',
+                      'HONGARI',
                       style:
                           TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
-                const SizedBox(height: 100),
+                const SizedBox(height: 40),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

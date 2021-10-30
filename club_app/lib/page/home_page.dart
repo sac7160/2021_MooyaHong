@@ -369,10 +369,13 @@ Widget example2() {
           height: 20,
           color: Colors.black,),
 
-        Text(' 공지사항입니다',style: TextStyle(fontSize: 15)),
-        Text(' 공지사항입니다',style: TextStyle(fontSize: 15)),
-        Text(' 공지사항입니다',style: TextStyle(fontSize: 15)),
-        Text(' 공지사항입니다',style: TextStyle(fontSize: 15))
+        Text(' 2학기 무야홍 회비 입금 안내',style: TextStyle(fontSize: 15)),
+        Text(' 2학기 무야홍 회비 입금 안내',style: TextStyle(fontSize: 15)),
+        Text(' 2학기 무야홍 회비 입금 안내',style: TextStyle(fontSize: 15)),
+        Text(' 2학기 무야홍 회비 입금 안내',style: TextStyle(fontSize: 15)),
+        Text(' 2학기 무야홍 회비 입금 안내',style: TextStyle(fontSize: 15)),
+        Text(' 2학기 무야홍 회비 입금 안내',style: TextStyle(fontSize: 15)),
+        Text(' 2학기 무야홍 회비 입금 안내',style: TextStyle(fontSize: 15)),
         
       ],)
     ),
@@ -417,11 +420,14 @@ Widget example3() {
           height: 20,
           color: Colors.black,),
 
-        Text(' 홍보입니다',style: TextStyle(fontSize: 15)),
-        Text(' 홍보입니다',style: TextStyle(fontSize: 15)),
-        Text(' 홍보입니다',style: TextStyle(fontSize: 15)),
-        Text(' 홍보입니다',style: TextStyle(fontSize: 15))
-        
+        Text(' 책아띠',style: TextStyle(fontSize: 15)),
+        Text(' 로얄 블랙',style: TextStyle(fontSize: 15)),
+        Text(' BITA',style: TextStyle(fontSize: 15)),
+        Text(' SIGNAL',style: TextStyle(fontSize: 15)),
+        Text(' SNOL',style: TextStyle(fontSize: 15)),
+        Text(' 신나',style: TextStyle(fontSize: 15)),
+        Text(' DAISY',style: TextStyle(fontSize: 15)),
+        Text(' 이너리뷰',style: TextStyle(fontSize: 15)),
       ],)
     ),
     

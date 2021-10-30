@@ -92,7 +92,8 @@ class _SignUpPage1State extends State<SignUpPage1> {
                   border: Border.all(color: Colors.black, width: 1),
                   borderRadius: BorderRadius.circular(5)),
                   child: ListView(
-                    children: [Text('이용약관이용약관이용약관 ')],
+                    children: [Text('본 정책은 Hognari 가 제공하는 기능을 지원하기 위해 Hongari에서 처리하는 정보를 설명합니다. 추가적인 도구 및 정보는 Hongari 설정에서 확인할 수 있습니다. \n 1.당사가 수집하는 정보의 유형 \n Hongari 서비스를 제공하기 위해 당사는 회원님에 대한 정보를 처리해야 합니다. 수집하는 정보의 유형은 회원님이 Hongari 서비스를 이용하는 방법에 따라 다릅니다. ',
+                    style: TextStyle(fontWeight: FontWeight.w100),)],
                   ),
                 ),
                 Row(
@@ -121,7 +122,8 @@ class _SignUpPage1State extends State<SignUpPage1> {
                   border: Border.all(color: Colors.black, width: 1),
                   borderRadius: BorderRadius.circular(5)),
                   child: ListView(
-                    children: [Text('개인정보 개인정보 개인정보 개인정보 ')],
+                    children: [Text('서비스 약관 \n Hongari 에 오신 것을 환영합니다. Hongari는 사람들이 서로 교류하고 community를 만들며 동아리를 활성화할 수 있는 기술과 서비스를 개발합니다.(본 약관이 아닌) 별도의 약관이 적용된다고 명시되어있지 않은 한 본 약관은 회원님의 Hongari 및 기타 Hongari가 제공하는 소프트웨어 이용에 적용됩니다. Hongari는 회원님에게 Hongari가 적용되는 제품의 사용료를 청구하지 않습니다.',
+                  style: TextStyle(fontWeight: FontWeight.w100),)],
                   ),
                 ),
                 Row(
@@ -150,7 +152,8 @@ class _SignUpPage1State extends State<SignUpPage1> {
                   border: Border.all(color: Colors.black, width: 1),
                   borderRadius: BorderRadius.circular(5)),
                   child: ListView(
-                    children: [Text('이용약관이용약관이용약관 ')],
+                    children: [Text('홍보 약관 \n홍보 해도 될까요?',
+                    style: TextStyle(fontWeight: FontWeight.w100),)],
                   ),
                 ),
                 SizedBox(height: 30),

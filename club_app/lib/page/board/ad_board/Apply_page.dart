@@ -1,12 +1,14 @@
 import 'package:club_app/components/custom_elevated_button.dart';
 import 'package:club_app/components/custom_textarea.dart';
 import 'package:club_app/components/custsom_text_formfield.dart';
+import 'package:club_app/page/board/ad_board/component/text_form.dart';
 import 'package:club_app/page/board/ad_board/detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:validators/validators.dart';
 
 import 'ad_board_newpage.dart';
+import 'component/textareaad.dart';
 
 class JoinPage extends StatelessWidget {
 
@@ -37,7 +39,7 @@ class JoinPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor:Colors.red[300],
+        backgroundColor: Color(0xFFF5CEB8).withOpacity(0.6), 
         elevation: 0,leading: IconButton(
           onPressed: () {
             Navigator.of(context).pop();
@@ -78,24 +80,31 @@ class JoinPage extends StatelessWidget {
       key: _formKey,
             child: Column(
               children: [
-                CustomTextFormField(
-                hint: "Username",
-                funValidator: validateUsername()
-                ),
-                CustomTextFormField(
-                hint: "전화번호",
-                funValidator: validatephonenumber() 
+                CustomTextFormFieldad(hint: "Username", funValidator: validateUsername(),),
+                // CustomTextFormField(
+                // hint: "Username",
+                // funValidator: validateUsername()
+                // ),
+                CustomTextFormFieldad(hint: "전화번호", funValidator: validatephonenumber()
+                // hint: "전화번호",
+                // funValidator: validat로phonenumber() 
                 //원래 옛날에 만들었던 회원가입 페이지 그대로 이용이라 validate 속성좀 변경해야 할듯
                 ),
-                CustomTextFormField(
-                hint: "Email",
-                funValidator: validateEmail(),
-                ),
-                CustomTextArea(
-                hint: "지원동기",
-                funValidator: validatewrite()
+                CustomTextFormFieldad(hint: "Email", funValidator:  validateEmail(),),
+                // CustomTextFormField(
+                // hint: "Email",
+                // funValidator: validateEmail(),
+                // ),
+                CustomTextAreaad(
+                hint: "지원동기" ,
+                funValidator:validatewrite() ,
+                 //내용에는 ~가 들어갈 수 없습니다. 
+              ),
+              //   CustomTextArea(
+              //   hint: "지원동기",
+              //   funValidator: validatewrite()
                 //이부분 칸좀 늘리기***&validate 수정하기
-                ),
+                
                 CustomElevatedButton(
                   text: "지원서 제출하기",
                   funPageRoute: () {

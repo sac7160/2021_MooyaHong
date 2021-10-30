@@ -123,7 +123,7 @@ class MainDrawer extends StatelessWidget {
                 fontSize: 20,
               ),
             ),
-            trailing: Icon(Icons.add),   
+              
           ),
           ListTile(
             onTap: () => Navigator.push(
