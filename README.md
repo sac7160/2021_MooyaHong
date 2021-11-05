@@ -1,13 +1,13 @@
 
- 2021_MooyaHong
-#### 홍익대학교 컴퓨터공학과 프로젝트대회 
-#### 통합 동아리 관리앱
+# 2021_MooyaHong
+# 홍익대학교 컴퓨터공학과 프로젝트대회 
+# 통합 동아리 관리앱
 
-front_end
+#### front_end
 
-club_app 폴더가 최종본
+#### club_app 폴더가 최종본
 
-발표 ppt
+## 발표 ppt
 
 ![무야홍_찐찐막](https://user-images.githubusercontent.com/77865395/140472654-b2b4d67b-d9b9-4c34-b123-1ca735f9625a.jpg)
 
